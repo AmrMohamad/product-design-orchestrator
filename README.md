@@ -1,4 +1,4 @@
-# Product Design Orchestrator v4.1
+# Product Design Orchestrator 0.4.1 beta
 
 A repository-level operating system for an AI agent that must **research, design, implement, verify, and improve** digital products with the judgment of a multidisciplinary product-design team.
 
