@@ -1,0 +1,1635 @@
+{
+  "v1_skills": [
+    {
+      "skill": "brief-to-tasks",
+      "lines": 74,
+      "headings": [
+        "Example prompts",
+        "Process",
+        "Task List Template",
+        "Foundation",
+        "Core UI",
+        "Interactions & States",
+        "Responsive & Polish",
+        "Review",
+        "Rules"
+      ],
+      "snippet": "1. Read the design brief. Look for `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are working on. Also check for `INFORMATION_ARCHITECTURE.md` and a tokens file in the same subfolder. If none exist, ask the user to describe what they are building. 2. Explore the existing codebase to understand what is already built. Scan specifically for: - **Component directories**: `components/`, `ui/`, `shared/` and list every component by name - **Existing pages/views**: what is already built that this feature must coexist with - **Token/theme files**: `tokens.css`, `globals.css`, Tailwind config, theme providers - **File"
+    },
+    {
+      "skill": "design-brief",
+      "lines": 120,
+      "headings": [
+        "Example prompts",
+        "Process",
+        "File Output",
+        "Brief Template",
+        "Problem",
+        "Solution",
+        "Experience Principles",
+        "Aesthetic Direction",
+        "Existing Patterns",
+        "Component Inventory",
+        "Key Interactions",
+        "Responsive Behavior",
+        "Accessibility Requirements",
+        "Out of Scope"
+      ],
+      "snippet": "1. Ask the user for a detailed description of what they want to build, who it is for, and any constraints or ideas they already have. 2. Explore the existing codebase to understand the current state. Scan for each of the following specifically: - **CSS variables / tokens**: files named `tokens.css`, `variables.css`, `theme.css`, or `:root` declarations with custom properties - **Tailwind config**: `tailwind.config.js` or `tailwind.config.ts`, check `theme.extend` for custom values - **UI framework themes**: Material UI `createTheme`, Chakra `extendTheme`, shadcn `globals.css` and `components.json` - **Component directories**: `components/`, `ui/`, `shared/`, or any folder containing reusable"
+    },
+    {
+      "skill": "design-flow",
+      "lines": 124,
+      "headings": [
+        "Example prompts",
+        "The Sequence",
+        "Rules",
+        "Phase Details",
+        "### Phase 1: Grill Me",
+        "### Phase 2: Design Brief",
+        "### Phase 3: Information Architecture",
+        "### Phase 4: Design Tokens",
+        "### Phase 5: Brief to Tasks",
+        "### Phase 6: Frontend Design",
+        "### Phase 7: Design Review (on request only)",
+        "Project Files Structure",
+        "If the Designer Returns Mid-Flow"
+      ],
+      "snippet": "``` 1. Grill Me \u2192 Clarify thinking 2. Design Brief \u2192 Document intent 3. Info Architecture \u2192 Define structure 4. Design Tokens \u2192 Establish visual system 5. Brief to Tasks \u2192 Plan the build 6. Frontend Design \u2192 Build it \u2014 7. Design Review \u2192 Run separately when ready ```"
+    },
+    {
+      "skill": "design-review",
+      "lines": 249,
+      "headings": [
+        "Example prompts",
+        "Process",
+        "Review Checklist",
+        "### Visual Hierarchy",
+        "### Consistency",
+        "### Aesthetic Fidelity",
+        "### Component Quality",
+        "### States and Interactions",
+        "### Responsive Behavior",
+        "### Accessibility",
+        "### Typography",
+        "### Dark Mode",
+        "### Mobile-First",
+        "Output Format",
+        "Screenshots Captured",
+        "Summary",
+        "Must Fix",
+        "Should Fix",
+        "Could Improve",
+        "What Works Well"
+      ],
+      "snippet": "1. **Read the brief.** Look for the active feature's brief at `.design/<feature-slug>/DESIGN_BRIEF.md`. If multiple feature folders exist under `.design/`, ask the user which feature to review. If no `.design/` folder exists, fall back to `DESIGN_BRIEF.md` in the project root. If neither exists, ask the user what the intended design direction was. 2. **Explore the built code.** Examine every component, page, and style file that was created or modified. Scan specifically for: - All new or modified components and their relationship to pre-existing components - Token/variable usage: are components using shared tokens or hardcoding values? - Duplicate components that should be consolidated - Fil"
+    },
+    {
+      "skill": "design-tokens",
+      "lines": 196,
+      "headings": [
+        "Example prompts",
+        "Process",
+        "Token Categories",
+        "### Color",
+        "### Spacing",
+        "### Typography",
+        "### Layout",
+        "### Motion",
+        "### Responsive Breakpoints",
+        "Dark Mode",
+        "Output"
+      ],
+      "snippet": "1. **Check what already exists.** Before generating anything, scan the codebase for: - CSS variable definitions (`:root`, `[data-theme]`, custom property files) - Tailwind config (`tailwind.config.js`, `tailwind.config.ts`) and any theme extensions - Theme provider files (Material UI `createTheme`, Chakra `extendTheme`, shadcn `globals.css`) - Design token JSON files (Style Dictionary format, Figma token exports) - Any `tokens.css`, `variables.css`, `theme.css`, or similarly named files - `package.json` for UI framework dependencies (tailwindcss, @mui/material, @chakra-ui/react, etc.) If tokens already exist, **extend them** rather than replacing. Identify gaps (missing dark mode, incomplete"
+    },
+    {
+      "skill": "frontend-design",
+      "lines": 144,
+      "headings": [
+        "Example prompts",
+        "Before You Write Any Code",
+        "Aesthetic Philosophies",
+        "### Dieter Rams (Functionalist)",
+        "### Swiss / International Typographic",
+        "### Japanese Minimalism (Ma)",
+        "### Brutalist / Raw",
+        "### Scandinavian",
+        "### Art Deco / Geometric",
+        "### Neo-Memphis",
+        "### Editorial / Magazine",
+        "Implementation Guidelines",
+        "Mobile-First",
+        "Dark Mode"
+      ],
+      "snippet": "1. **Explore the existing codebase first.** Scan specifically for: - **Component directories**: `components/`, `ui/`, `shared/` and list every component by name and its props/API - **CSS variables / tokens**: files named `tokens.css`, `variables.css`, `theme.css`, or `:root` declarations with custom properties - **Tailwind config**: `tailwind.config.js` or `tailwind.config.ts`, check `theme.extend` for custom values - **UI framework themes**: Material UI `createTheme`, Chakra `extendTheme`, shadcn `globals.css` and `components.json` - **Storybook**: `.storybook/` directory or `*.stories.*` files indicating documented components - **Font loading**: Google Fonts links, `@font-face` declaration"
+    },
+    {
+      "skill": "grill-me",
+      "lines": 21,
+      "headings": [
+        "Example prompts",
+        "Instructions"
+      ],
+      "snippet": "Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one by one. If a question can be answered by exploring the codebase, explore the codebase instead of asking me. If a question can be answered by examining existing components, styles, or design tokens in the project, examine them instead of asking me. For each question, provide your recommended answer."
+    },
+    {
+      "skill": "information-architecture",
+      "lines": 111,
+      "headings": [
+        "Example prompts",
+        "Process",
+        "IA Document Template",
+        "Site Map",
+        "Navigation Model",
+        "Content Hierarchy",
+        "### [Page Name]",
+        "User Flows",
+        "### [Flow Name] (e.g., \"New user onboarding\" or \"Create a project\")",
+        "Naming Conventions",
+        "Component Reuse Map",
+        "Content Growth Plan",
+        "URL Strategy"
+      ],
+      "snippet": "1. Look for an existing design brief at `.design/*/DESIGN_BRIEF.md`. If multiple subfolders exist, use the most recently modified one, or ask the user which feature they are working on. If no brief exists, ask the user what they are building and for whom. 2. Explore the existing codebase to understand what structure already exists: - **Routing**: Next.js `app/` or `pages/` directory, React Router config, Vue Router, SvelteKit routes, or static HTML page files - **Navigation components**: header, sidebar, navbar, breadcrumb, footer components - **Layout components**: root layouts, nested layouts, page wrappers, container components - **Page directories**: how pages are currently organized in"
+    }
+  ],
+  "v2_skills": [
+    {
+      "plugin": "design-ops",
+      "skill": "design-critique",
+      "title": "Design Critique",
+      "lines": 44,
+      "headings": [
+        "What You Do",
+        "Critique Framework",
+        "### Before the Critique",
+        "### During the Critique",
+        "### Feedback Format",
+        "### After the Critique",
+        "Critique Types",
+        "Common Pitfalls",
+        "Best Practices"
+      ],
+      "snippet": "You structure and facilitate design critiques that produce clear, actionable feedback."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "design-qa-checklist",
+      "title": "Design QA Checklist",
+      "lines": 57,
+      "headings": [
+        "What You Do",
+        "QA Categories",
+        "### Visual Accuracy",
+        "### Layout",
+        "### Interaction",
+        "### Content",
+        "### Accessibility",
+        "### Cross-Platform",
+        "QA Process",
+        "Best Practices"
+      ],
+      "snippet": "You create checklists that help designers systematically verify that implementations match design specifications."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "design-review-process",
+      "title": "Design Review Process",
+      "lines": 51,
+      "headings": [
+        "What You Do",
+        "Review Gates",
+        "### Gate 1: Concept Review",
+        "### Gate 2: Design Review",
+        "### Gate 3: Pre-Handoff Review",
+        "### Gate 4: Implementation QA",
+        "Review Criteria",
+        "Approval Workflow",
+        "Best Practices"
+      ],
+      "snippet": "You create review processes with clear gates, criteria, and workflows that ensure design quality."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "design-sprint-plan",
+      "title": "Design Sprint Plan",
+      "lines": 51,
+      "headings": [
+        "What You Do",
+        "Sprint Structure (5-Day Classic)",
+        "### Day 1: Understand",
+        "### Day 2: Diverge",
+        "### Day 3: Decide",
+        "### Day 4: Prototype",
+        "### Day 5: Test",
+        "Sprint Variations",
+        "Planning Checklist",
+        "Best Practices"
+      ],
+      "snippet": "You plan structured design sprints that take teams from challenge to tested prototype in a focused timeframe."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "handoff-spec",
+      "title": "Handoff Spec",
+      "lines": 46,
+      "headings": [
+        "What You Do",
+        "Handoff Contents",
+        "### Visual Specifications",
+        "### Interaction Specifications",
+        "### Content Specifications",
+        "### Asset Delivery",
+        "### Edge Cases",
+        "### Implementation Notes",
+        "Best Practices"
+      ],
+      "snippet": "You create handoff documents that give developers everything needed to implement a design accurately."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "team-workflow",
+      "title": "Team Workflow",
+      "lines": 52,
+      "headings": [
+        "What You Do",
+        "Workflow Components",
+        "### Task Management",
+        "### Collaboration Rituals",
+        "### Communication Norms",
+        "### Tooling Stack",
+        "### Design-Development Collaboration",
+        "Workflow Stages",
+        "Best Practices"
+      ],
+      "snippet": "You design workflows that help design teams collaborate effectively, manage work, and deliver quality."
+    },
+    {
+      "plugin": "design-ops",
+      "skill": "version-control-strategy",
+      "title": "Version Control Strategy",
+      "lines": 44,
+      "headings": [
+        "What You Do",
+        "What to Version",
+        "Versioning Approaches",
+        "### Design Files",
+        "### Component Libraries",
+        "### Design Tokens",
+        "Branching Strategy",
+        "Changelog Practices",
+        "Best Practices"
+      ],
+      "snippet": "You define strategies for versioning design work so teams can collaborate, track changes, and maintain consistency."
+    },
+    {
+      "plugin": "design-research",
+      "skill": "affinity-diagram",
+      "title": "Affinity Diagram",
+      "lines": 23,
+      "headings": [
+        "Context",
+        "Instructions"
+      ],
+      "snippet": "1. **Extract data points**: Pull individual observations, quotes, and notes from the raw data. 2. **Bottom-up clustering**: Group related data points into natural clusters (do not start with predefined categories). 3. **Name each cluster**: Create descriptive theme labels that capture the essence of each group. 4. **Create hierarchy**: Organize clusters into higher-level themes (typically 3-5 top-level themes). 5. **Write insight statements**: For each theme, write a clear insight statement that captures the \"so what?\" 6. **Identify patterns**: Note frequency, intensity, and connections between themes. 7. **Prioritize**: Rank insights by impact on design decisions. 8. Present the affinity di"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "card-sort-analysis",
+      "title": "Card Sort Analysis",
+      "lines": 22,
+      "headings": [
+        "Context",
+        "Instructions"
+      ],
+      "snippet": "1. **Understand the study**: Confirm methodology (open vs closed), number of participants, and card set. 2. **Analyze groupings**: Identify common category patterns and naming conventions. 3. **Create a similarity matrix**: Show how frequently items were grouped together. 4. **Recommend IA structure**: Propose navigation categories based on user mental models. 5. **Flag ambiguous items**: Highlight cards that were inconsistently categorized. 6. **Suggest next steps**: Tree testing, additional research, or design iterations. 7. Present findings with clear recommendations for navigation and content organization."
+    },
+    {
+      "plugin": "design-research",
+      "skill": "diary-study-plan",
+      "title": "Diary Study Plan",
+      "lines": 26,
+      "headings": [
+        "Context",
+        "Instructions"
+      ],
+      "snippet": "1. **Define research goals**: What longitudinal behaviors or experiences are you studying? 2. **Design the study**: - **Duration**: Recommended length (typically 1-4 weeks) - **Participants**: 8-15 participants, screening criteria, compensation plan - **Entry prompts**: Daily or event-triggered prompts (mix of structured and open-ended) - **Capture methods**: Photo, video, text, voice \u2014 what to ask participants to document - **Check-in schedule**: Mid-study interviews or pulse surveys - **Onboarding**: Participant briefing, practice entries, tool setup 3. **Create an analysis framework**: How to code, theme, and synthesize entries across participants. 4. **Plan for attrition**: Strategies to"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "empathy-map",
+      "title": "Empathy Map",
+      "lines": 40,
+      "headings": [
+        "Context",
+        "Domain Context",
+        "Instructions",
+        "Further Reading"
+      ],
+      "snippet": "The user will describe their user type and available research data. Work through these steps: 1. **Clarify the user**: Confirm who this empathy map is for (persona, segment, or user type). 2. **Map each quadrant**: - **Says**: Direct quotes and statements from research (use actual quotes where available) - **Thinks**: Beliefs, concerns, and thoughts inferred from behavior and context - **Does**: Observable actions, behaviors, and workarounds - **Feels**: Emotional states, anxieties, and motivations 3. **Identify goals**: What is this user trying to achieve? 4. **Identify pain points**: What barriers, frustrations, or unmet needs exist? 5. **Extract insights**: What design implications emerge"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "interview-script",
+      "title": "Interview Script",
+      "lines": 37,
+      "headings": [
+        "Context",
+        "Domain Context",
+        "Instructions",
+        "Further Reading"
+      ],
+      "snippet": "1. **Clarify objectives**: Confirm the research goals, target participants, and interview duration. 2. **Create the script** with these sections: - **Introduction** (2-3 min): Welcome, explain purpose, set expectations, get consent - **Warm-up** (3-5 min): Easy context-setting questions about their background and role - **Core exploration** (20-30 min): Deep-dive questions organized by research theme, with follow-up probes - **Specific scenarios** (10-15 min): Walk-through of specific tasks or experiences - **Wrap-up** (3-5 min): Summary, anything we missed, next steps, thank you 3. **Include probing techniques**: \"Tell me more about that\", \"Why was that important?\", \"What happened next?\" 4."
+    },
+    {
+      "plugin": "design-research",
+      "skill": "jobs-to-be-done",
+      "title": "Jobs-to-Be-Done",
+      "lines": 31,
+      "headings": [
+        "Context",
+        "Domain Context",
+        "Instructions"
+      ],
+      "snippet": "1. **Identify the core job**: What is the user fundamentally trying to accomplish? 2. **Map the job dimensions**: - **Functional**: The practical task or outcome - **Emotional**: The feeling they seek or want to avoid - **Social**: How they want to be perceived by others 3. **Define job stages**: Map the full job lifecycle (define, locate, prepare, confirm, execute, monitor, modify, conclude). 4. **Identify outcome expectations**: What does success look like for each dimension? 5. **Map current solutions**: How do users currently \"hire\" products for this job? 6. **Find opportunities**: Where are current solutions underserving the job? 7. Present JTBD mapping in a structured format with clear"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "journey-map",
+      "title": "Journey Map",
+      "lines": 43,
+      "headings": [
+        "Context",
+        "Domain Context",
+        "Instructions",
+        "Further Reading"
+      ],
+      "snippet": "The user will describe the product/feature and target user. Work through these steps: 1. **Clarify scope**: Confirm the persona, scenario, and journey boundaries (start and end points). 2. **Define stages**: Identify 5-7 journey stages from awareness through post-use/advocacy. 3. **Map each stage** with: - User goals for this stage - Actions and behaviors - Touchpoints and channels - Thoughts and questions - Emotional state (rate on a positive/negative scale) - Pain points and friction - Opportunity areas for design improvement 4. **Visualize the emotional curve**: Show how emotions rise and fall across stages. 5. **Prioritize opportunities**: Rank the top 3-5 design opportunities by impact"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "summarize-interview",
+      "title": "Summarize Interview",
+      "lines": 28,
+      "headings": [
+        "Context",
+        "Instructions"
+      ],
+      "snippet": "1. **Read the transcript** carefully, noting key moments. 2. **Create a structured summary** with: - **Participant profile**: Role, context, experience level - **Key themes**: 3-5 major themes that emerged, with supporting quotes - **Jobs-to-be-done**: What the participant is trying to accomplish - **Pain points**: Frustrations, barriers, and unmet needs (with severity) - **Workarounds**: How they currently solve problems - **Delighters**: What works well or exceeds expectations - **Notable quotes**: 5-8 verbatim quotes that capture key insights - **Surprises**: Anything unexpected or counter to assumptions - **Action items**: Specific design or research follow-ups suggested by the findings"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "usability-test-plan",
+      "title": "Usability Test Plan",
+      "lines": 32,
+      "headings": [
+        "Context",
+        "Instructions",
+        "Further Reading"
+      ],
+      "snippet": "1. **Define objectives**: What specific questions should this test answer? 2. **Create the test plan** with: - **Research questions**: 3-5 specific questions to answer - **Methodology**: Moderated vs unmoderated, remote vs in-person, think-aloud protocol - **Participants**: Screening criteria, sample size (5-8 per segment), recruitment approach - **Tasks**: 5-8 realistic task scenarios with success criteria and expected completion time - **Metrics**: Task success rate, time on task, error rate, SUS/SEQ scores, satisfaction rating - **Facilitation guide**: Script for introduction, task delivery, probing, and debrief - **Data collection**: What to record, observation template, note-taking fram"
+    },
+    {
+      "plugin": "design-research",
+      "skill": "user-persona",
+      "title": "User Persona",
+      "lines": 43,
+      "headings": [
+        "Context",
+        "Domain Context",
+        "Instructions",
+        "Further Reading"
+      ],
+      "snippet": "The user will describe their product and available research data. Work through these steps: 1. **Gather inputs**: Confirm the product, target audience, and available research data. Ask for clarification if anything is ambiguous. 2. **Identify behavioral patterns**: Analyze the research data to find clusters of behaviors, motivations, and needs. 3. **Define 2-4 personas** \u2014 for each persona, include: - Name, photo description, and a one-line quote that captures their mindset - Demographics: age range, occupation, tech comfort, relevant context - Goals: what they want to achieve (functional, emotional, social) - Frustrations: current pain points and unmet needs - Behaviors: how they currently"
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "accessibility-audit",
+      "title": "Accessibility Audit",
+      "lines": 26,
+      "headings": [
+        "What You Do",
+        "WCAG 2.2 Principles (POUR)",
+        "Severity Ratings",
+        "Issue Format",
+        "Best Practices"
+      ],
+      "snippet": "You conduct thorough accessibility audits identifying barriers and providing remediation guidance."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "component-spec",
+      "title": "Component Spec",
+      "lines": 23,
+      "headings": [
+        "What You Do",
+        "Specification Structure",
+        "Best Practices"
+      ],
+      "snippet": "You create complete component specs covering anatomy, behavior, variants, states, accessibility, and usage."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "design-token",
+      "title": "Design Token",
+      "lines": 27,
+      "headings": [
+        "What You Do",
+        "Token Categories",
+        "Token Tiers",
+        "Naming Convention",
+        "Best Practices"
+      ],
+      "snippet": "You help define, organize, and document design tokens \u2014 the atomic values that drive visual consistency. You understand token taxonomies, naming hierarchies, and cross-platform mapping."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "documentation-template",
+      "title": "Documentation Template",
+      "lines": 27,
+      "headings": [
+        "What You Do",
+        "Template Types",
+        "### Component Docs",
+        "### Pattern Docs",
+        "### Foundation Docs",
+        "Standards",
+        "Best Practices"
+      ],
+      "snippet": "You generate templates that standardize how design system artifacts are documented."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "icon-system",
+      "title": "Icon System",
+      "lines": 27,
+      "headings": [
+        "What You Do",
+        "Foundations",
+        "Naming",
+        "Delivery",
+        "Accessibility",
+        "Best Practices"
+      ],
+      "snippet": "You create icon system specs ensuring visual consistency and scalable management."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "naming-convention",
+      "title": "Naming Convention",
+      "lines": 26,
+      "headings": [
+        "What You Do",
+        "Principles",
+        "Patterns",
+        "Common Pitfalls",
+        "Best Practices"
+      ],
+      "snippet": "You establish naming conventions that make design systems predictable, searchable, and maintainable."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "pattern-library",
+      "title": "Pattern Library",
+      "lines": 24,
+      "headings": [
+        "What You Do",
+        "Pattern Entry Structure",
+        "Categories",
+        "Best Practices"
+      ],
+      "snippet": "You create pattern library entries capturing design knowledge in a reusable format."
+    },
+    {
+      "plugin": "design-systems",
+      "skill": "theming-system",
+      "title": "Theming System",
+      "lines": 29,
+      "headings": [
+        "What You Do",
+        "Architecture",
+        "Theme Types",
+        "Dark Mode Considerations",
+        "Implementation",
+        "Best Practices"
+      ],
+      "snippet": "You design theming systems allowing one component library to support multiple visual themes through token mapping."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "case-study",
+      "title": "Case Study",
+      "lines": 57,
+      "headings": [
+        "What You Do",
+        "Case Study Structure",
+        "### 1. Overview",
+        "### 2. Challenge",
+        "### 3. Process",
+        "### 4. Solution",
+        "### 5. Impact",
+        "### 6. Reflection",
+        "Visual Storytelling",
+        "Writing Tips",
+        "Best Practices"
+      ],
+      "snippet": "You structure case studies that tell the story of a design project, demonstrating process, thinking, and impact."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "design-rationale",
+      "title": "Design Rationale",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Rationale Structure",
+        "### 1. Decision",
+        "### 2. Context",
+        "### 3. Options Considered",
+        "### 4. Evidence",
+        "### 5. Reasoning",
+        "### 6. Trade-offs",
+        "### 7. Validation Plan",
+        "When to Write Rationale",
+        "Rationale Quality Checklist",
+        "Best Practices"
+      ],
+      "snippet": "You write clear design rationale that connects decisions to evidence, principles, and goals."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "design-system-adoption",
+      "title": "Design System Adoption",
+      "lines": 53,
+      "headings": [
+        "What You Do",
+        "Adoption Strategy",
+        "### Awareness",
+        "### Education",
+        "### Enablement",
+        "### Incentives",
+        "Measuring Adoption",
+        "Common Adoption Barriers",
+        "Overcoming Resistance",
+        "Best Practices"
+      ],
+      "snippet": "You create strategies and materials that help teams adopt and consistently use a design system."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "design-token-audit",
+      "title": "Design Token Audit",
+      "lines": 40,
+      "headings": [
+        "What You Do",
+        "Audit Scope",
+        "### Token Coverage",
+        "### Token Consistency",
+        "### Token Gaps",
+        "Audit Process",
+        "Audit Report Format",
+        "Best Practices"
+      ],
+      "snippet": "You audit how design tokens are used (or not used) in a product, identifying inconsistencies, gaps, and hard-coded values."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "presentation-deck",
+      "title": "Presentation Deck",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Presentation Types",
+        "### Stakeholder Update",
+        "### Design Review",
+        "### Final Showcase",
+        "### Portfolio/Case Study",
+        "Universal Structure",
+        "Slide Design Principles",
+        "Audience Adaptation",
+        "Best Practices"
+      ],
+      "snippet": "You structure presentations that tell a compelling design story tailored to the audience."
+    },
+    {
+      "plugin": "designer-toolkit",
+      "skill": "ux-writing",
+      "title": "UX Writing",
+      "lines": 54,
+      "headings": [
+        "What You Do",
+        "UX Writing Categories",
+        "### Microcopy",
+        "### Error Messages",
+        "### Empty States",
+        "### Confirmation Messages",
+        "### Onboarding Copy",
+        "### CTAs (Calls to Action)",
+        "Voice and Tone Guidelines",
+        "Writing Principles",
+        "Best Practices"
+      ],
+      "snippet": "You write UI copy that helps users accomplish tasks, understand status, and feel confident."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "animation-principles",
+      "title": "Animation Principles",
+      "lines": 42,
+      "headings": [
+        "What You Do",
+        "Core UI Animation Principles",
+        "### Easing",
+        "### Duration",
+        "### Motion Principles",
+        "Animation Types",
+        "Stagger and Sequence",
+        "Best Practices"
+      ],
+      "snippet": "You apply animation principles to make interfaces feel natural, guide attention, and communicate state changes."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "error-handling-ux",
+      "title": "Error Handling UX",
+      "lines": 49,
+      "headings": [
+        "What You Do",
+        "Error Handling Hierarchy",
+        "### 1. Prevention",
+        "### 2. Detection",
+        "### 3. Communication",
+        "### 4. Recovery",
+        "Error Message Format",
+        "Error States by Context",
+        "Best Practices"
+      ],
+      "snippet": "You design error handling that minimizes frustration and helps users succeed."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "feedback-patterns",
+      "title": "Feedback Patterns",
+      "lines": 51,
+      "headings": [
+        "What You Do",
+        "Feedback Types",
+        "### Immediate Feedback",
+        "### Confirmation Feedback",
+        "### Status Feedback",
+        "### Notification Feedback",
+        "Feedback Channels",
+        "Feedback Hierarchy",
+        "Duration and Dismissal",
+        "Best Practices"
+      ],
+      "snippet": "You design feedback mechanisms that confirm actions, communicate status, and guide next steps."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "gesture-patterns",
+      "title": "Gesture Patterns",
+      "lines": 48,
+      "headings": [
+        "What You Do",
+        "Core Gestures",
+        "Gesture Design Rules",
+        "### Discoverability",
+        "### Feedback",
+        "### Thresholds",
+        "Conflict Resolution",
+        "Accessibility",
+        "Best Practices"
+      ],
+      "snippet": "You design gesture interactions that feel natural and discoverable across touch and pointer devices."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "loading-states",
+      "title": "Loading States",
+      "lines": 36,
+      "headings": [
+        "What You Do",
+        "Loading Patterns",
+        "### Skeleton Screens",
+        "### Spinner/Progress",
+        "### Progressive Loading",
+        "### Optimistic UI",
+        "### Placeholder Content",
+        "Duration Guidelines",
+        "Transition Behavior",
+        "Best Practices"
+      ],
+      "snippet": "You design loading patterns that keep users informed and reduce perceived wait time."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "micro-interaction-spec",
+      "title": "Micro-Interaction Spec",
+      "lines": 33,
+      "headings": [
+        "What You Do",
+        "Micro-Interaction Framework",
+        "### 1. Trigger",
+        "### 2. Rules",
+        "### 3. Feedback",
+        "### 4. Loops and Modes",
+        "Common Micro-Interactions",
+        "Specification Format",
+        "Best Practices"
+      ],
+      "snippet": "You specify micro-interactions using a structured framework covering trigger, rules, feedback, and loops."
+    },
+    {
+      "plugin": "interaction-design",
+      "skill": "state-machine",
+      "title": "State Machine",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "State Machine Components",
+        "Common UI State Machines",
+        "### Form",
+        "### Data Fetching",
+        "### Authentication",
+        "### Multi-Step Wizard",
+        "Modeling Approach",
+        "Benefits",
+        "Best Practices"
+      ],
+      "snippet": "You model UI components and flows as state machines to eliminate impossible states and make behavior predictable."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "a-b-test-design",
+      "title": "A/B Test Design",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Test Structure",
+        "### 1. Hypothesis",
+        "### 2. Variants",
+        "### 3. Primary Metric",
+        "### 4. Secondary Metrics",
+        "### 5. Sample Size",
+        "### 6. Duration",
+        "Common Pitfalls",
+        "When Not to A/B Test",
+        "Best Practices"
+      ],
+      "snippet": "You design A/B tests with clear hypotheses, controlled variants, appropriate metrics, and statistical rigor."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "accessibility-test-plan",
+      "title": "Accessibility Test Plan",
+      "lines": 42,
+      "headings": [
+        "What You Do",
+        "Testing Layers",
+        "### 1. Automated Testing",
+        "### 2. Manual Testing",
+        "### 3. Assistive Technology Testing",
+        "### 4. User Testing with Disabilities",
+        "Test Matrix",
+        "WCAG Criteria Checklist",
+        "Reporting",
+        "Best Practices"
+      ],
+      "snippet": "You create testing plans that systematically evaluate accessibility across assistive technologies and WCAG criteria."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "click-test-plan",
+      "title": "Click Test Plan",
+      "lines": 38,
+      "headings": [
+        "What You Do",
+        "Test Types",
+        "Test Plan Structure",
+        "### 1. Objective",
+        "### 2. Stimuli",
+        "### 3. Tasks",
+        "### 4. Success Criteria",
+        "### 5. Participants",
+        "Analysis",
+        "Best Practices"
+      ],
+      "snippet": "You design first-click and click tests that measure whether users can find information and features."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "heuristic-evaluation",
+      "title": "Heuristic Evaluation",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Nielsen's 10 Usability Heuristics",
+        "Evaluation Process",
+        "Issue Documentation",
+        "Severity Scale",
+        "Best Practices"
+      ],
+      "snippet": "You evaluate interfaces against established usability heuristics to identify problems before user testing."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "prototype-strategy",
+      "title": "Prototype Strategy",
+      "lines": 34,
+      "headings": [
+        "What You Do",
+        "Fidelity Spectrum",
+        "### Low Fidelity",
+        "### Medium Fidelity",
+        "### High Fidelity",
+        "Prototyping Methods",
+        "Choosing Fidelity",
+        "Best Practices"
+      ],
+      "snippet": "You help teams choose the right fidelity, tool, and method for prototyping based on what they need to learn."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "test-scenario",
+      "title": "Test Scenario",
+      "lines": 38,
+      "headings": [
+        "What You Do",
+        "Scenario Structure",
+        "### Context Setting",
+        "### Task",
+        "### Success Criteria",
+        "### Observation Guide",
+        "Task Types",
+        "Scenario Writing Rules",
+        "Best Practices"
+      ],
+      "snippet": "You write test scenarios with realistic tasks, clear success criteria, and structured observation guides."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "user-flow-diagram",
+      "title": "User Flow Diagram",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Flow Diagram Elements",
+        "Flow Types",
+        "Creating Effective Flows",
+        "Flow Annotations",
+        "Best Practices"
+      ],
+      "snippet": "You create flow diagrams showing how users move through a product to accomplish goals, including decisions, branches, and error paths."
+    },
+    {
+      "plugin": "prototyping-testing",
+      "skill": "wireframe-spec",
+      "title": "Wireframe Spec",
+      "lines": 44,
+      "headings": [
+        "What You Do",
+        "Wireframe Components",
+        "### Content Blocks",
+        "### Annotations",
+        "### Content Specifications",
+        "Fidelity Levels",
+        "Wireframe Conventions",
+        "Best Practices"
+      ],
+      "snippet": "You specify wireframe layouts defining content priority, component placement, behavior annotations, and responsive considerations."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "color-system",
+      "title": "Color System",
+      "lines": 34,
+      "headings": [
+        "What You Do",
+        "Color System Layers",
+        "### 1. Brand Palette",
+        "### 2. Neutral Palette",
+        "### 3. Semantic Colors",
+        "### 4. Extended Palette",
+        "Accessibility Requirements",
+        "Color Relationships",
+        "Best Practices"
+      ],
+      "snippet": "You create comprehensive color systems with raw palettes, semantic mapping, and accessibility compliance."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "dark-mode-design",
+      "title": "Dark Mode Design",
+      "lines": 39,
+      "headings": [
+        "What You Do",
+        "Core Principles",
+        "Surface Hierarchy (Dark Mode)",
+        "Color Adaptation",
+        "Images and Media",
+        "Accessibility in Dark Mode",
+        "Best Practices"
+      ],
+      "snippet": "You design dark mode experiences that go beyond simple color inversion."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "data-visualization",
+      "title": "Data Visualization",
+      "lines": 45,
+      "headings": [
+        "What You Do",
+        "Chart Selection",
+        "### Comparison",
+        "### Trend Over Time",
+        "### Part of Whole",
+        "### Distribution",
+        "### Relationship",
+        "Design Principles",
+        "Color in Data Viz",
+        "Accessibility",
+        "Responsive Data Viz",
+        "Best Practices"
+      ],
+      "snippet": "You design data visualizations that communicate insights effectively using appropriate chart types and styling."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "illustration-style",
+      "title": "Illustration Style",
+      "lines": 41,
+      "headings": [
+        "What You Do",
+        "Style Definition",
+        "Color in Illustration",
+        "Character Design (if applicable)",
+        "Illustration Types",
+        "Application Rules",
+        "Best Practices"
+      ],
+      "snippet": "You create illustration style guides ensuring consistent visual storytelling across a product."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "layout-grid",
+      "title": "Layout Grid",
+      "lines": 34,
+      "headings": [
+        "What You Do",
+        "Grid Anatomy",
+        "Grid Types",
+        "Responsive Behavior",
+        "Common Patterns",
+        "Best Practices"
+      ],
+      "snippet": "You define responsive grid systems that create consistent, flexible page layouts across breakpoints."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "responsive-design",
+      "title": "Responsive Design",
+      "lines": 38,
+      "headings": [
+        "What You Do",
+        "Responsive Strategies",
+        "Common Breakpoints",
+        "Responsive Patterns",
+        "Input Method Adaptation",
+        "Responsive Typography and Images",
+        "Best Practices"
+      ],
+      "snippet": "You design adaptive layouts and interactions that work across all screen sizes, pixel densities, and input methods."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "spacing-system",
+      "title": "Spacing System",
+      "lines": 38,
+      "headings": [
+        "What You Do",
+        "Base Unit",
+        "Spacing Types",
+        "Application Rules",
+        "Density Modes",
+        "Best Practices"
+      ],
+      "snippet": "You create spacing systems that bring consistency and rhythm to layouts."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "typography-scale",
+      "title": "Typography Scale",
+      "lines": 43,
+      "headings": [
+        "What You Do",
+        "Scale Components",
+        "### Size Scale",
+        "### Weight Scale",
+        "### Line Height",
+        "### Letter Spacing",
+        "Font Pairing",
+        "Responsive Typography",
+        "Best Practices"
+      ],
+      "snippet": "You create modular typography scales that ensure readable, harmonious, and consistent text across a product."
+    },
+    {
+      "plugin": "ui-design",
+      "skill": "visual-hierarchy",
+      "title": "Visual Hierarchy",
+      "lines": 37,
+      "headings": [
+        "What You Do",
+        "Hierarchy Tools",
+        "### Size",
+        "### Weight",
+        "### Color and Contrast",
+        "### Spacing",
+        "### Position",
+        "### Density",
+        "Hierarchy Levels",
+        "Common Patterns",
+        "Best Practices"
+      ],
+      "snippet": "You establish visual hierarchy ensuring users see the most important content first and can scan efficiently."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "competitive-analysis",
+      "title": "Competitive Analysis",
+      "lines": 26,
+      "headings": [
+        "What You Do",
+        "Analysis Framework",
+        "### 1. Competitor Identification",
+        "### 2. Evaluation Dimensions",
+        "### 3. Feature Comparison Matrix",
+        "### 4. Strengths, Weaknesses, Opportunities",
+        "Deliverable",
+        "Best Practices"
+      ],
+      "snippet": "You systematically analyze competitor products to identify UX patterns, feature gaps, design strengths, and strategic opportunities."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "design-brief",
+      "title": "Design Brief",
+      "lines": 22,
+      "headings": [
+        "What You Do",
+        "Brief Structure",
+        "Best Practices"
+      ],
+      "snippet": "You create briefs defining problem, audience, constraints, and success criteria."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "design-principles",
+      "title": "Design Principles",
+      "lines": 29,
+      "headings": [
+        "What You Do",
+        "Qualities of Strong Principles",
+        "Principle Structure",
+        "Process",
+        "Best Practices"
+      ],
+      "snippet": "You help teams articulate principles that are specific, actionable, and memorable."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "experience-map",
+      "title": "Experience Map",
+      "lines": 27,
+      "headings": [
+        "What You Do",
+        "Structure",
+        "### Horizontal Axis: Phases",
+        "### Vertical Layers",
+        "### Ecosystem Relationships",
+        "When to Use",
+        "Best Practices"
+      ],
+      "snippet": "You create experience maps showing the entire ecosystem of user interactions across touchpoints, channels, and time."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "metrics-definition",
+      "title": "Metrics Definition",
+      "lines": 27,
+      "headings": [
+        "What You Do",
+        "Metric Categories",
+        "HEART Framework",
+        "Metric Template",
+        "Best Practices"
+      ],
+      "snippet": "You help teams define metrics connecting design work to measurable outcomes."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "north-star-vision",
+      "title": "North Star Vision",
+      "lines": 24,
+      "headings": [
+        "What You Do",
+        "Vision Components",
+        "Time Horizons",
+        "Process",
+        "Best Practices"
+      ],
+      "snippet": "You help teams define a north-star vision \u2014 a compelling future state that inspires alignment and guides trade-offs."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "opportunity-framework",
+      "title": "Opportunity Framework",
+      "lines": 26,
+      "headings": [
+        "What You Do",
+        "Opportunity Sources",
+        "Evaluation Frameworks",
+        "### Impact-Effort Matrix",
+        "### RICE Scoring",
+        "### Kano Model",
+        "### Value vs Complexity",
+        "Output",
+        "Best Practices"
+      ],
+      "snippet": "You help teams move from possible improvements to a prioritized roadmap."
+    },
+    {
+      "plugin": "ux-strategy",
+      "skill": "stakeholder-alignment",
+      "title": "Stakeholder Alignment",
+      "lines": 22,
+      "headings": [
+        "What You Do",
+        "Alignment Artifacts",
+        "Common Challenges",
+        "Best Practices"
+      ],
+      "snippet": "You create artifacts helping teams align with stakeholders on roles, decisions, communication, and feedback."
+    }
+  ],
+  "v2_commands": [
+    {
+      "plugin": "design-ops",
+      "command": "handoff",
+      "lines": 16,
+      "snippet": "--- description: Generate a developer handoff package for a design. argument-hint: \"[screen, feature, or component to hand off]\" --- Generate a developer handoff package. 1. **Visual specs** \u2014 Document all measurements and tokens using `handoff-spec` skill. 2. **Interaction specs** \u2014 Define states and behaviors using `handoff-spec` skill. 3. **QA criteria** \u2014 Create implementation checklist using `design-qa-checklist` skill. 4. **Review readiness** \u2014 Verify against review criteria using `design-review-process` skill. 5. **Version** \u2014 Tag the design version being handed off using `version-contr",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "design-ops",
+      "command": "plan-sprint",
+      "lines": 16,
+      "snippet": "--- description: Plan a design sprint for a specific challenge. argument-hint: \"[challenge or problem area for the sprint]\" --- Plan a design sprint. 1. **Frame the challenge** \u2014 Define the sprint question and scope using `design-sprint-plan` skill. 2. **Assemble the team** \u2014 Identify roles and participants using `team-workflow` skill. 3. **Plan activities** \u2014 Structure each day's activities using `design-sprint-plan` skill. 4. **Prepare materials** \u2014 Define prototyping approach and testing plan. 5. **Recruit testers** \u2014 Plan user testing sessions for the final day. 6. **Set review criteria**",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "design-ops",
+      "command": "setup-workflow",
+      "lines": 16,
+      "snippet": "--- description: Set up a design team workflow and rituals. argument-hint: \"[team size and context, e.g., '4-person design team in a startup' or 'design system team']\" --- Set up a design team workflow. 1. **Team structure** \u2014 Define roles and responsibilities using `team-workflow` skill. 2. **Rituals** \u2014 Establish collaboration cadence using `team-workflow` skill. 3. **Critique process** \u2014 Set up design critique format using `design-critique` skill. 4. **Review gates** \u2014 Define quality checkpoints using `design-review-process` skill. 5. **Versioning** \u2014 Establish file and library versioning u",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "design-research",
+      "command": "discover",
+      "lines": 12,
+      "snippet": "--- description: Run a full user research cycle \u2014 persona creation, empathy mapping, and journey mapping for a product or feature. argument-hint: [product or feature to research] --- Run a full user research discovery cycle by chaining these steps: 1. Use the `user-persona` skill to create 2-4 user personas from available research data 2. Use the `empathy-map` skill to build empathy maps for the primary persona 3. Use the `journey-map` skill to map the end-to-end user journey for the primary persona 4. Synthesize findings into a research summary with key insights and design implications 5. Aft",
+      "headings": []
+    },
+    {
+      "plugin": "design-research",
+      "command": "interview",
+      "lines": 10,
+      "snippet": "--- description: Prepare an interview script or summarize an interview transcript into structured insights. argument-hint: [research goals for script, OR paste/attach transcript to summarize] --- Prepare for or synthesize user interviews: - If the user wants to **prepare**: Use the `interview-script` skill to create a structured interview script with warm-up, core exploration, and wrap-up sections. - If the user provides a **transcript**: Use the `summarize-interview` skill to extract themes, quotes, pain points, and action items. - After completion, suggest: \"Want me to `/synthesize` to build",
+      "headings": []
+    },
+    {
+      "plugin": "design-research",
+      "command": "synthesize",
+      "lines": 11,
+      "snippet": "--- description: Synthesize research data into affinity diagrams, themes, and actionable insights. argument-hint: [research data, interview notes, or observation notes to synthesize] --- Synthesize qualitative research data into structured insights: 1. Use the `affinity-diagram` skill to organize raw data into themed clusters with insight statements 2. Use the `jobs-to-be-done` skill to map user motivations and outcome expectations 3. Combine findings into a prioritized list of design implications and opportunities 4. After completion, suggest: \"Want me to `/discover` to create personas from t",
+      "headings": []
+    },
+    {
+      "plugin": "design-research",
+      "command": "test-plan",
+      "lines": 11,
+      "snippet": "--- description: Design a complete usability test plan with tasks, metrics, and facilitation guide. argument-hint: [product, feature, or prototype to test] --- Design a comprehensive usability test plan: 1. Use the `usability-test-plan` skill to create the full test plan including research questions, methodology, participant criteria, tasks, metrics, and facilitation guide. 2. If personas are available, align tasks to primary persona scenarios. 3. Include a pilot test checklist. 4. After completion, suggest: \"Want me to `/synthesize` to help analyze results after testing?\" or \"Want me to `/int",
+      "headings": []
+    },
+    {
+      "plugin": "design-systems",
+      "command": "audit-system",
+      "lines": 17,
+      "snippet": "--- description: Run a comprehensive audit of an existing design system for consistency, completeness, and accessibility. argument-hint: \"[design system name or description of what to audit]\" --- Audit the specified design system or component library. 1. **Inventory** \u2014 List all components, tokens, patterns using `component-spec` and `design-token` skills. 2. **Consistency** \u2014 Evaluate naming using `naming-convention` skill. 3. **Completeness** \u2014 Check for missing states/docs using `documentation-template` skill. 4. **Accessibility** \u2014 Review against WCAG 2.2 AA using `accessibility-audit` ski",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "design-systems",
+      "command": "create-component",
+      "lines": 18,
+      "snippet": "--- description: Scaffold a full component specification from a name or description. argument-hint: \"[component name, e.g., 'date picker' or 'notification banner']\" --- Generate a comprehensive component specification. 1. **Research** \u2014 Understand purpose and common implementations. 2. **Anatomy** \u2014 Break down parts using `component-spec` skill. 3. **Variants** \u2014 Define size, style, layout variants. 4. **States** \u2014 Map interactive states using `component-spec` skill. 5. **Tokens** \u2014 Identify consumed tokens using `design-token` skill. 6. **Accessibility** \u2014 Specify ARIA, keyboard, screen reade",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "design-systems",
+      "command": "tokenize",
+      "lines": 17,
+      "snippet": "--- description: Extract and organize design tokens from an existing design or stylesheet. argument-hint: \"[CSS file, design file, or description of values to tokenize]\" --- Extract hard-coded values and organize into a structured token system. 1. **Extract** \u2014 Scan for all visual values. 2. **Deduplicate** \u2014 Group similar values using `design-token` skill. 3. **Categorize** \u2014 Organize by category. 4. **Hierarchy** \u2014 Define global/semantic/component tiers using `design-token` skill. 5. **Naming** \u2014 Apply conventions using `naming-convention` skill. 6. **Themes** \u2014 Map variants using `theming-s",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "designer-toolkit",
+      "command": "build-presentation",
+      "lines": 16,
+      "snippet": "--- description: Structure a design presentation for a specific audience. argument-hint: \"[topic and audience, e.g., 'design system update for engineering leads']\" --- Structure a design presentation. 1. **Audience analysis** \u2014 Identify what the audience cares about and knows. 2. **Story arc** \u2014 Define the narrative structure using `presentation-deck` skill. 3. **Key messages** \u2014 Distill to 3-5 main takeaways. 4. **Slide outline** \u2014 Plan each slide's purpose and content using `presentation-deck` skill. 5. **Rationale slides** \u2014 Include decision rationale using `design-rationale` skill. 6. **Co",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "designer-toolkit",
+      "command": "write-case-study",
+      "lines": 16,
+      "snippet": "--- description: Create a portfolio case study from a project summary. argument-hint: \"[project name or brief description of the work]\" --- Create a portfolio case study. 1. **Outline** \u2014 Structure the case study narrative using `case-study` skill. 2. **Challenge** \u2014 Define the problem and context clearly. 3. **Process** \u2014 Highlight key moments of insight and decision using `design-rationale` skill. 4. **Solution** \u2014 Describe the final design and its key features. 5. **Impact** \u2014 Quantify and qualify the results. 6. **Polish copy** \u2014 Refine the writing using `ux-writing` skill. Complete case s",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "designer-toolkit",
+      "command": "write-rationale",
+      "lines": 16,
+      "snippet": "--- description: Write design rationale for a set of design decisions. argument-hint: \"[design decision or feature to write rationale for]\" --- Write design rationale for decisions. 1. **Identify decisions** \u2014 List the key design decisions that need rationale using `design-rationale` skill. 2. **Gather evidence** \u2014 Collect research, data, and principles supporting each decision. 3. **Document alternatives** \u2014 Note options considered and why they were rejected. 4. **Write rationale** \u2014 Structure each decision's rationale using `design-rationale` skill. 5. **Review copy** \u2014 Ensure rationale lang",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "interaction-design",
+      "command": "design-interaction",
+      "lines": 17,
+      "snippet": "--- description: Design a complete interaction flow for a feature or component. argument-hint: \"[feature or component, e.g., 'add to cart flow' or 'drag-to-reorder list']\" --- Design a complete interaction flow. 1. **States** \u2014 Model the interaction states using `state-machine` skill. 2. **Micro-interactions** \u2014 Specify each micro-interaction using `micro-interaction-spec` skill. 3. **Animation** \u2014 Define motion using `animation-principles` skill. 4. **Gestures** \u2014 Design touch/pointer interactions using `gesture-patterns` skill. 5. **Feedback** \u2014 Specify system feedback using `feedback-patter",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "interaction-design",
+      "command": "error-flow",
+      "lines": 16,
+      "snippet": "--- description: Design a complete error handling flow for a feature. argument-hint: \"[feature name, e.g., 'payment processing' or 'file upload']\" --- Design complete error handling for a feature. 1. **Identify errors** \u2014 List all possible error conditions using `error-handling-ux` skill. 2. **Prevention** \u2014 Design prevention measures using `error-handling-ux` skill. 3. **State modeling** \u2014 Map error states using `state-machine` skill. 4. **Feedback** \u2014 Design error communication using `feedback-patterns` skill. 5. **Recovery** \u2014 Design recovery paths using `error-handling-ux` skill. 6. **Load",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "interaction-design",
+      "command": "map-states",
+      "lines": 16,
+      "snippet": "--- description: Model the states and transitions for a complex UI component. argument-hint: \"[component name, e.g., 'media player' or 'multi-step checkout']\" --- Model states and transitions for a complex component. 1. **Identify states** \u2014 List all possible states using `state-machine` skill. 2. **Map transitions** \u2014 Define events and transitions using `state-machine` skill. 3. **Loading states** \u2014 Define loading behavior per state using `loading-states` skill. 4. **Error states** \u2014 Map error conditions using `error-handling-ux` skill. 5. **Feedback** \u2014 Define feedback per transition using `",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "prototyping-testing",
+      "command": "evaluate",
+      "lines": 16,
+      "snippet": "--- description: Run a heuristic evaluation of an existing design. argument-hint: \"[design, screen, or flow to evaluate]\" --- Run a heuristic evaluation of a design. 1. **Scope** \u2014 Define screens and flows to evaluate. 2. **Heuristic review** \u2014 Evaluate against Nielsen's heuristics using `heuristic-evaluation` skill. 3. **Flow analysis** \u2014 Review user flows for issues using `user-flow-diagram` skill. 4. **Accessibility check** \u2014 Evaluate accessibility using `accessibility-test-plan` skill. 5. **Severity rating** \u2014 Rate and prioritize all findings. 6. **Recommendations** \u2014 Provide specific impr",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "prototyping-testing",
+      "command": "experiment",
+      "lines": 16,
+      "snippet": "--- description: Design an A/B experiment for a design hypothesis. argument-hint: \"[hypothesis or design change to test, e.g., 'new checkout flow will increase conversion']\" --- Design an A/B experiment. 1. **Hypothesis** \u2014 Structure the hypothesis using `a-b-test-design` skill. 2. **Variants** \u2014 Define control and treatment designs. 3. **Metrics** \u2014 Define primary and guardrail metrics using `a-b-test-design` skill. 4. **Sample size** \u2014 Calculate required sample and duration using `a-b-test-design` skill. 5. **User flows** \u2014 Map variant flows using `user-flow-diagram` skill. 6. **Analysis pla",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "prototyping-testing",
+      "command": "prototype-plan",
+      "lines": 16,
+      "snippet": "--- description: Create a prototyping and testing plan for a design initiative. argument-hint: \"[feature or initiative to prototype and test]\" --- Create a prototyping and testing plan. 1. **Strategy** \u2014 Choose fidelity and method using `prototype-strategy` skill. 2. **Flows** \u2014 Map user flows to prototype using `user-flow-diagram` skill. 3. **Wireframes** \u2014 Specify wireframe layouts using `wireframe-spec` skill. 4. **Test scenarios** \u2014 Write usability tasks using `test-scenario` skill. 5. **Accessibility** \u2014 Plan accessibility testing using `accessibility-test-plan` skill. 6. **Timeline** \u2014 C",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "prototyping-testing",
+      "command": "test-plan",
+      "lines": 16,
+      "snippet": "--- description: Design a complete usability testing plan. argument-hint: \"[product, feature, or prototype to test]\" --- Design a complete usability testing plan. 1. **Objectives** \u2014 Define what you need to learn. 2. **Method** \u2014 Choose testing approach using `prototype-strategy` skill. 3. **Scenarios** \u2014 Write test tasks using `test-scenario` skill. 4. **Click tests** \u2014 Design findability tests using `click-test-plan` skill. 5. **Accessibility** \u2014 Include accessibility testing using `accessibility-test-plan` skill. 6. **Logistics** \u2014 Define participants, schedule, equipment, and facilitation",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ui-design",
+      "command": "color-palette",
+      "lines": 16,
+      "snippet": "--- description: Generate a full color palette with semantic mapping and accessibility checks. argument-hint: \"[brand colors, mood, or requirements, e.g., '#3B82F6 primary blue, modern tech feel']\" --- Generate a comprehensive color palette. 1. **Base palette** \u2014 Generate tonal scales from input colors using `color-system` skill. 2. **Semantic mapping** \u2014 Map colors to semantic roles (success, error, etc.) using `color-system` skill. 3. **Accessibility check** \u2014 Verify contrast ratios for all combinations using `color-system` skill. 4. **Dark mode** \u2014 Create dark mode color mappings using `dar",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ui-design",
+      "command": "design-screen",
+      "lines": 17,
+      "snippet": "--- description: Design a complete screen layout from a description or requirements. argument-hint: \"[screen description, e.g., 'user profile settings page' or 'e-commerce product listing']\" --- Design a complete screen layout from a description. 1. **Structure** \u2014 Define layout grid using `layout-grid` skill. 2. **Hierarchy** \u2014 Establish visual priority using `visual-hierarchy` skill. 3. **Typography** \u2014 Apply type styles using `typography-scale` skill. 4. **Color** \u2014 Apply color system using `color-system` skill. 5. **Spacing** \u2014 Apply consistent spacing using `spacing-system` skill. 6. **Re",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ui-design",
+      "command": "responsive-audit",
+      "lines": 17,
+      "snippet": "--- description: Audit a design for responsive behavior across breakpoints. argument-hint: \"[screen or feature name to audit]\" --- Audit a design for responsive behavior. 1. **Breakpoints** \u2014 Review behavior at each breakpoint using `responsive-design` skill. 2. **Grid** \u2014 Check layout grid compliance using `layout-grid` skill. 3. **Typography** \u2014 Verify type scaling using `typography-scale` skill. 4. **Spacing** \u2014 Check spacing consistency using `spacing-system` skill. 5. **Hierarchy** \u2014 Verify hierarchy holds at all sizes using `visual-hierarchy` skill. 6. **Touch targets** \u2014 Verify minimum",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ui-design",
+      "command": "type-system",
+      "lines": 16,
+      "snippet": "--- description: Create a complete typography system from brand fonts or requirements. argument-hint: \"[font names or requirements, e.g., 'Inter for UI, Merriweather for editorial']\" --- Create a complete typography system. 1. **Scale** \u2014 Build a modular type scale using `typography-scale` skill. 2. **Hierarchy** \u2014 Define hierarchy levels using `visual-hierarchy` skill. 3. **Responsive** \u2014 Adapt scale across breakpoints using `responsive-design` skill. 4. **Spacing** \u2014 Define text spacing relationships using `spacing-system` skill. 5. **Grid alignment** \u2014 Align to baseline grid using `layout-g",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ux-strategy",
+      "command": "benchmark",
+      "lines": 17,
+      "snippet": "--- description: Run a competitive benchmarking analysis across a set of products. argument-hint: \"[list of competitor products or market category]\" --- Run a structured competitive benchmarking analysis. 1. **Identify** \u2014 Define competitors using `competitive-analysis` skill. 2. **Criteria** \u2014 Establish evaluation dimensions using `metrics-definition` skill. 3. **Analyze** \u2014 Deep-dive each competitor using `competitive-analysis` skill. 4. **Compare journeys** \u2014 Map experiences using `experience-map` skill. 5. **Score and rank** \u2014 Create comparison matrix. 6. **Opportunities** \u2014 Find gaps usin",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ux-strategy",
+      "command": "frame-problem",
+      "lines": 17,
+      "snippet": "--- description: Structure an ambiguous design challenge into a clear problem definition with constraints and criteria. argument-hint: \"[description of the ambiguous design challenge]\" --- Structure an ambiguous challenge into a clear, actionable problem definition. 1. **Explore** \u2014 Unpack the challenge, identify assumptions and unknowns. 2. **Stakeholders** \u2014 Map affected parties using `stakeholder-alignment` skill. 3. **Define** \u2014 Write clear problem statement using `design-brief` skill. 4. **Constrain** \u2014 Identify technical, business, design constraints. 5. **Success criteria** \u2014 Define eva",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    },
+    {
+      "plugin": "ux-strategy",
+      "command": "strategize",
+      "lines": 17,
+      "snippet": "--- description: Develop a complete UX strategy for a product or feature area. argument-hint: \"[product name or feature area to strategize]\" --- Develop a comprehensive UX strategy. 1. **Vision** \u2014 Articulate the north-star using `north-star-vision` skill. 2. **Landscape** \u2014 Analyze competitors using `competitive-analysis` skill. 3. **Map** \u2014 Create experience map using `experience-map` skill. 4. **Principles** \u2014 Define guiding principles using `design-principles` skill. 5. **Opportunities** \u2014 Evaluate and prioritize using `opportunity-framework` skill. 6. **Metrics** \u2014 Define success measures",
+      "headings": [
+        "Steps",
+        "Output"
+      ]
+    }
+  ],
+  "ui_skills": [
+    {
+      "skill": "banner-design",
+      "lines": 192,
+      "headings": [
+        "When to Activate",
+        "Workflow",
+        "### Step 1: Gather Requirements (AskUserQuestion)",
+        "### Step 2: Research & Art Direction",
+        "### Step 3: Design & Generate Options",
+        "### Step 4: Export Banners to Images",
+        "### Step 5: Present Options & Iterate",
+        "Banner Size Quick Reference",
+        "Art Direction Styles (Top 10)",
+        "Design Rules",
+        "Security"
+      ],
+      "snippet": "- User requests banner, cover, or header design - Social media cover/header creation - Ad banner or display ad design - Website hero section visual design - Event/print banner design - Creative asset generation for campaigns"
+    },
+    {
+      "skill": "brand",
+      "lines": 97,
+      "headings": [
+        "When to Use",
+        "Quick Start",
+        "Brand Sync Workflow",
+        "Subcommands",
+        "References",
+        "Scripts",
+        "Templates",
+        "Routing"
+      ],
+      "snippet": "- Brand voice definition and content tone guidance - Visual identity standards and style guide development - Messaging framework creation - Brand consistency review and audit - Asset organization, naming, and approval - Color palette management and typography specs"
+    },
+    {
+      "skill": "design",
+      "lines": 302,
+      "headings": [
+        "When to Use",
+        "Sub-skill Routing",
+        "Logo Design (Built-in)",
+        "### Logo: Generate Design Brief",
+        "### Logo: Search Styles/Colors/Industries",
+        "### Logo: Generate with AI",
+        "CIP Design (Built-in)",
+        "### CIP: Generate Brief",
+        "### CIP: Search Domains",
+        "### CIP: Generate Mockups",
+        "### CIP: Render HTML Presentation",
+        "Slides (Built-in)",
+        "### Slides: Knowledge Base",
+        "Banner Design (Built-in)",
+        "### Banner: Workflow",
+        "### Banner: Quick Size Reference",
+        "### Banner: Top Art Styles",
+        "### Banner: Design Rules",
+        "Icon Design (Built-in)",
+        "### Icon: Generate Single Icon",
+        "### Icon: Generate Batch Variations",
+        "### Icon: Multi-size Export",
+        "### Icon: Top Styles",
+        "Social Photos (Built-in)",
+        "### Social Photos: Workflow",
+        "### Social Photos: Key Sizes",
+        "Workflows",
+        "### Complete Brand Package",
+        "### New Design System",
+        "References",
+        "Scripts",
+        "Setup",
+        "Integration"
+      ],
+      "snippet": "- Brand identity, voice, assets - Design system tokens and specs - UI styling with shadcn/ui + Tailwind - Logo design and AI generation - Corporate identity program (CIP) deliverables - Presentations and pitch decks - Banner design for social media, ads, web, print - Social photos for Instagram, Facebook, LinkedIn, Twitter, Pinterest, TikTok"
+    },
+    {
+      "skill": "design-system",
+      "lines": 244,
+      "headings": [
+        "When to Use",
+        "Token Architecture",
+        "### Three-Layer Structure",
+        "Quick Start",
+        "References",
+        "Component Spec Pattern",
+        "Scripts",
+        "Templates",
+        "Integration",
+        "Slide System",
+        "### Source of Truth",
+        "### Slide Search (BM25)",
+        "### Decision System CSVs",
+        "### Contextual Decision Flow",
+        "### Pattern Breaking (Duarte Sparkline)",
+        "### Slide Requirements",
+        "### Chart.js Integration",
+        "### Token Compliance",
+        "### Reference Implementation",
+        "### Command",
+        "Best Practices"
+      ],
+      "snippet": "- Design token creation - Component state definitions - CSS variable systems - Spacing/typography scales - Design-to-code handoff - Tailwind theme configuration - **Slide/presentation generation**"
+    },
+    {
+      "skill": "slides",
+      "lines": 42,
+      "headings": [
+        "When to Use",
+        "Subcommands",
+        "References (Knowledge Base)",
+        "Routing"
+      ],
+      "snippet": "- Marketing presentations and pitch decks - Data-driven slides with Chart.js - Strategic slide design with layout patterns - Copywriting-optimized presentation content"
+    },
+    {
+      "skill": "ui-styling",
+      "lines": 324,
+      "headings": [
+        "Reference",
+        "When to Use This Skill",
+        "Core Stack",
+        "### Component Layer: shadcn/ui",
+        "### Styling Layer: Tailwind CSS",
+        "### Visual Design Layer: Canvas",
+        "Quick Start",
+        "### Component + Styling Setup",
+        "### Alternative: Tailwind-Only Setup",
+        "Component Library Guide",
+        "Theme & Customization",
+        "Accessibility Patterns",
+        "Tailwind Utilities",
+        "Responsive Design",
+        "Tailwind Customization",
+        "Visual Design System",
+        "Utility Scripts",
+        "### shadcn_add.py",
+        "### tailwind_config_gen.py",
+        "Best Practices",
+        "Reference Navigation",
+        "Common Patterns",
+        "Resources"
+      ],
+      "snippet": "### Component + Styling Setup **Install shadcn/ui with Tailwind:** ```bash npx shadcn@latest init ``` CLI prompts for framework, TypeScript, paths, and theme preferences. This configures both shadcn/ui and Tailwind CSS. **Add components:** ```bash npx shadcn@latest add button card dialog form ``` **Use components with utility styling:** ```tsx import { Button } from \"@/components/ui/button\" import { Card, CardHeader, CardTitle, CardContent } from \"@/components/ui/card\" export function Dashboard() { return ( <div className=\"container mx-auto p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3\"> <Card className=\"hover:shadow-lg transition-shadow\"> <CardHeader> <CardTitle className=\"text-2xl font-bold"
+    },
+    {
+      "skill": "ui-ux-pro-max",
+      "lines": 659,
+      "headings": [
+        "When to Apply",
+        "### Must Use",
+        "### Recommended",
+        "### Skip",
+        "Rule Categories by Priority",
+        "Quick Reference",
+        "### 1. Accessibility (CRITICAL)",
+        "### 2. Touch & Interaction (CRITICAL)",
+        "### 3. Performance (HIGH)",
+        "### 4. Style Selection (HIGH)",
+        "### 5. Layout & Responsive (HIGH)",
+        "### 6. Typography & Color (MEDIUM)",
+        "### 7. Animation (MEDIUM)",
+        "### 8. Forms & Feedback (MEDIUM)",
+        "### 9. Navigation Patterns (HIGH)",
+        "### 10. Charts & Data (LOW)",
+        "How to Use",
+        "Prerequisites",
+        "How to Use This Skill",
+        "### Step 1: Analyze User Requirements",
+        "### Step 2: Generate Design System (REQUIRED)",
+        "### Step 2b: Persist Design System (Master + Overrides Pattern)",
+        "### Step 3: Supplement with Detailed Searches (as needed)",
+        "### Step 4: Stack Guidelines (React Native)",
+        "Search Reference",
+        "### Available Domains",
+        "### Available Stacks",
+        "Example Workflow",
+        "### Step 1: Analyze Requirements",
+        "### Step 2: Generate Design System (REQUIRED)",
+        "### Step 3: Supplement with Detailed Searches (as needed)",
+        "### Step 4: Stack Guidelines",
+        "Output Formats",
+        "Tips for Better Results",
+        "### Query Strategy",
+        "### Common Sticking Points",
+        "### Pre-Delivery Checklist",
+        "Common Rules for Professional UI",
+        "### Icons & Visual Elements",
+        "### Interaction (App)",
+        "### Light/Dark Mode Contrast",
+        "### Layout & Spacing",
+        "Pre-Delivery Checklist",
+        "### Visual Quality",
+        "### Interaction",
+        "### Light/Dark Mode",
+        "### Layout",
+        "### Accessibility"
+      ],
+      "snippet": ""
+    }
+  ]
+}

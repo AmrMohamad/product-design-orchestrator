@@ -1,0 +1,559 @@
+[
+  {
+    "id": "leonxlnx/design-taste-frontend",
+    "name": "design-taste-frontend",
+    "description": "Contextual anti-slop frontend direction for landing pages, portfolios, and redesigns; infers brief, design language, variance, motion, and density.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "design-taste-frontend",
+      "contextual",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "landing",
+      "pages",
+      "portfolios"
+    ],
+    "tags": [
+      "design-taste-frontend",
+      "contextual",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "landing",
+      "pages",
+      "portfolios",
+      "redesigns",
+      "infers",
+      "brief",
+      "language",
+      "variance",
+      "motion",
+      "density."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/design-taste-frontend-v1",
+    "name": "design-taste-frontend-v1",
+    "description": "Pinned original Taste Skill behavior for projects that depend on its prior rules.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "design-taste-frontend-v1",
+      "pinned",
+      "original",
+      "taste",
+      "behavior",
+      "projects",
+      "depend",
+      "its"
+    ],
+    "tags": [
+      "design-taste-frontend-v1",
+      "pinned",
+      "original",
+      "taste",
+      "behavior",
+      "projects",
+      "depend",
+      "its",
+      "prior",
+      "rules."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill-v1",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend-v1\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/gpt-taste",
+    "name": "gpt-taste",
+    "description": "Stricter GPT/Codex-oriented anti-slop frontend direction with stronger layout and motion enforcement.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "gpt-taste",
+      "stricter",
+      "gpt",
+      "codex-oriented",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "stronger"
+    ],
+    "tags": [
+      "gpt-taste",
+      "stricter",
+      "gpt",
+      "codex-oriented",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "stronger",
+      "layout",
+      "motion",
+      "enforcement."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"gpt-taste\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/image-to-code",
+    "name": "image-to-code",
+    "description": "Image-first workflow that creates reference frames, analyzes them, and implements the frontend to match.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "image-to-code",
+      "image-first",
+      "workflow",
+      "creates",
+      "reference",
+      "frames",
+      "analyzes",
+      "them"
+    ],
+    "tags": [
+      "image-to-code",
+      "image-first",
+      "workflow",
+      "creates",
+      "reference",
+      "frames",
+      "analyzes",
+      "them",
+      "implements",
+      "frontend",
+      "match."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/image-to-code-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"image-to-code\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/redesign-existing-projects",
+    "name": "redesign-existing-projects",
+    "description": "Audit-first workflow for improving an existing project while preserving its contracts and architecture.",
+    "category": "orchestration",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "redesign-existing-projects",
+      "audit-first",
+      "workflow",
+      "improving",
+      "existing",
+      "project",
+      "while",
+      "preserving"
+    ],
+    "tags": [
+      "redesign-existing-projects",
+      "audit-first",
+      "workflow",
+      "improving",
+      "existing",
+      "project",
+      "while",
+      "preserving",
+      "its",
+      "contracts",
+      "architecture."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/redesign-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"redesign-existing-projects\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/high-end-visual-design",
+    "name": "high-end-visual-design",
+    "description": "Calm, premium visual direction with restrained contrast, whitespace, typography, and motion.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "high-end-visual-design",
+      "calm",
+      "premium",
+      "visual",
+      "direction",
+      "restrained",
+      "contrast",
+      "whitespace"
+    ],
+    "tags": [
+      "high-end-visual-design",
+      "calm",
+      "premium",
+      "visual",
+      "direction",
+      "restrained",
+      "contrast",
+      "whitespace",
+      "typography",
+      "motion."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/soft-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"high-end-visual-design\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/full-output-enforcement",
+    "name": "full-output-enforcement",
+    "description": "Delivery guardrail for complete production output without placeholder omissions.",
+    "category": "orchestration",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "full-output-enforcement",
+      "delivery",
+      "guardrail",
+      "complete",
+      "production",
+      "output",
+      "without",
+      "placeholder"
+    ],
+    "tags": [
+      "full-output-enforcement",
+      "delivery",
+      "guardrail",
+      "complete",
+      "production",
+      "output",
+      "without",
+      "placeholder",
+      "omissions."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/output-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"full-output-enforcement\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/minimalist-ui",
+    "name": "minimalist-ui",
+    "description": "Editorial, restrained product UI with crisp hierarchy and a disciplined palette.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "minimalist-ui",
+      "editorial",
+      "restrained",
+      "product",
+      "crisp",
+      "hierarchy",
+      "disciplined",
+      "palette."
+    ],
+    "tags": [
+      "minimalist-ui",
+      "editorial",
+      "restrained",
+      "product",
+      "crisp",
+      "hierarchy",
+      "disciplined",
+      "palette."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/minimalist-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"minimalist-ui\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/industrial-brutalist-ui",
+    "name": "industrial-brutalist-ui",
+    "description": "High-contrast industrial and brutalist visual direction with experimental composition.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "industrial-brutalist-ui",
+      "high-contrast",
+      "industrial",
+      "brutalist",
+      "visual",
+      "direction",
+      "experimental",
+      "composition."
+    ],
+    "tags": [
+      "industrial-brutalist-ui",
+      "high-contrast",
+      "industrial",
+      "brutalist",
+      "visual",
+      "direction",
+      "experimental",
+      "composition."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/brutalist-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"industrial-brutalist-ui\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/stitch-design-taste",
+    "name": "stitch-design-taste",
+    "description": "Taste rules formatted for Google Stitch and optional DESIGN.md export workflows.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "stitch-design-taste",
+      "taste",
+      "rules",
+      "formatted",
+      "google",
+      "stitch",
+      "optional",
+      "design.md"
+    ],
+    "tags": [
+      "stitch-design-taste",
+      "taste",
+      "rules",
+      "formatted",
+      "google",
+      "stitch",
+      "optional",
+      "design.md",
+      "export",
+      "workflows."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/stitch-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"stitch-design-taste\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/imagegen-frontend-web",
+    "name": "imagegen-frontend-web",
+    "description": "Generate coherent web design reference images for later analysis and implementation.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "imagegen-frontend-web",
+      "generate",
+      "coherent",
+      "web",
+      "reference",
+      "images",
+      "later",
+      "analysis"
+    ],
+    "tags": [
+      "imagegen-frontend-web",
+      "generate",
+      "coherent",
+      "web",
+      "reference",
+      "images",
+      "later",
+      "analysis",
+      "implementation."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/imagegen-frontend-web",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"imagegen-frontend-web\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/imagegen-frontend-mobile",
+    "name": "imagegen-frontend-mobile",
+    "description": "Generate coherent mobile screen and flow reference images.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "imagegen-frontend-mobile",
+      "generate",
+      "coherent",
+      "mobile",
+      "screen",
+      "flow",
+      "reference",
+      "images."
+    ],
+    "tags": [
+      "imagegen-frontend-mobile",
+      "generate",
+      "coherent",
+      "mobile",
+      "screen",
+      "flow",
+      "reference",
+      "images."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/imagegen-frontend-mobile",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"imagegen-frontend-mobile\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/brandkit",
+    "name": "brandkit",
+    "description": "Generate brand-kit boards with identity, palette, typography, and applications.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "brandkit",
+      "generate",
+      "brand-kit",
+      "boards",
+      "identity",
+      "palette",
+      "typography",
+      "applications."
+    ],
+    "tags": [
+      "brandkit",
+      "generate",
+      "brand-kit",
+      "boards",
+      "identity",
+      "palette",
+      "typography",
+      "applications."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/brandkit",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"brandkit\"",
+    "updated": "2026-06-25"
+  }
+]

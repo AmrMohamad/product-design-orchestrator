@@ -1,0 +1,1266 @@
+[
+  {
+    "name": "product-design-orchestrator",
+    "description": "Coordinate a product-design effort from uncertain request through evidence, design, implementation, verification, and live learning without applying unnecessary ceremony.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "discover",
+      "define",
+      "explore",
+      "structure",
+      "systemize",
+      "validate",
+      "implement",
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "full product design",
+      "new feature",
+      "greenfield",
+      "redesign",
+      "multi-phase design and build"
+    ],
+    "path": "skills/orchestration/product-design-orchestrator/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "project-inspector",
+    "description": "Inspect an existing product and repository before UI changes so design decisions extend the real system instead of inventing a parallel one.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "redesign",
+      "implement"
+    ],
+    "triggers": [
+      "repository audit",
+      "existing product",
+      "redesign",
+      "before coding UI"
+    ],
+    "path": "skills/orchestration/project-inspector/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "skill-router",
+    "description": "Select the smallest useful bundled or external skill set by decision, lifecycle phase, risk, platform, and specificity.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "all"
+    ],
+    "triggers": [
+      "find skill",
+      "which skill",
+      "route UI task",
+      "skill recommendation"
+    ],
+    "path": "skills/orchestration/skill-router/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "decision-facilitation",
+    "description": "Turn design disagreement or ambiguity into explicit criteria, trade-offs, reversible decisions, and proportionate tests.",
+    "category": "orchestration",
+    "phases": [
+      "define",
+      "explore",
+      "validate"
+    ],
+    "triggers": [
+      "stakeholder disagreement",
+      "choose direction",
+      "design decision",
+      "trade-off"
+    ],
+    "path": "skills/orchestration/decision-facilitation/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-critique",
+    "description": "Critique a product experience by intent, user outcome, structure, interaction, system, and craft, then prioritize actionable corrections.",
+    "category": "orchestration",
+    "phases": [
+      "explore",
+      "redesign",
+      "verify"
+    ],
+    "triggers": [
+      "critique UI",
+      "design review",
+      "audit screen",
+      "why does this feel off"
+    ],
+    "path": "skills/orchestration/design-critique/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "product-discovery",
+    "description": "Understand the problem space, users, current journey, constraints, and opportunity before committing to a production solution.",
+    "category": "discovery-research",
+    "phases": [
+      "discover"
+    ],
+    "triggers": [
+      "discovery phase",
+      "understand users",
+      "new product problem",
+      "before solution"
+    ],
+    "path": "skills/discovery-research/product-discovery/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "robust-research",
+    "description": "Design and govern credible mixed-method product research with explicit evidence labels, bias controls, contradictions, ethics, and confidence.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "research rigor",
+      "robust research",
+      "evidence quality",
+      "AI research"
+    ],
+    "path": "skills/discovery-research/robust-research/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "desk-research",
+    "description": "Conduct current, source-grounded desk research for product, market, policy, standards, patterns, and technology decisions.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "define",
+      "implement"
+    ],
+    "triggers": [
+      "web research",
+      "competitive research",
+      "standards research",
+      "verify current information"
+    ],
+    "path": "skills/discovery-research/desk-research/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "research-planning",
+    "description": "Create a proportionate research plan that connects decisions and assumptions to participants, methods, logistics, analysis, and ethics.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "research plan",
+      "plan interviews",
+      "study design",
+      "research sprint"
+    ],
+    "path": "skills/discovery-research/research-planning/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "user-interviews",
+    "description": "Plan, moderate, and analyze user interviews that reveal context, behavior, motivations, constraints, and mental models without pitching the solution.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "live"
+    ],
+    "triggers": [
+      "interview users",
+      "discussion guide",
+      "generative interview",
+      "customer interview"
+    ],
+    "path": "skills/discovery-research/user-interviews/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "contextual-inquiry",
+    "description": "Observe people performing real work in context to uncover tacit behavior, environmental constraints, artifacts, interruptions, and workarounds.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "live"
+    ],
+    "triggers": [
+      "field research",
+      "contextual inquiry",
+      "observe workflow",
+      "shadow users"
+    ],
+    "path": "skills/discovery-research/contextual-inquiry/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "survey-quant",
+    "description": "Design surveys and quantitative studies that measure the right construct with honest sampling, analysis, and uncertainty.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "survey",
+      "quantitative UX research",
+      "measure prevalence",
+      "questionnaire"
+    ],
+    "path": "skills/discovery-research/survey-quant/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "research-synthesis",
+    "description": "Turn real qualitative and quantitative evidence into themes, models, opportunities, and decisions while preserving contradictions and traceability.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "synthesize research",
+      "affinity mapping",
+      "analyze interviews",
+      "research findings"
+    ],
+    "path": "skills/discovery-research/research-synthesis/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "inclusive-research",
+    "description": "Plan and conduct research that includes disabled people and participants facing language, literacy, device, bandwidth, confidence, or access barriers.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "inclusive research",
+      "research disabled users",
+      "accessibility research",
+      "hard to reach users"
+    ],
+    "path": "skills/discovery-research/inclusive-research/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "usability-testing",
+    "description": "Evaluate whether representative people can complete realistic tasks, understand system feedback, and recover from problems in an appropriate-fidelity prototype or product.",
+    "category": "discovery-research",
+    "phases": [
+      "validate",
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "usability test",
+      "test prototype",
+      "moderated test",
+      "task testing"
+    ],
+    "path": "skills/discovery-research/usability-testing/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "problem-framing",
+    "description": "Turn a feature request or diffuse opportunity into an evidence-aware problem statement, scope, principles, and assumption map.",
+    "category": "product-strategy",
+    "phases": [
+      "define"
+    ],
+    "triggers": [
+      "frame problem",
+      "design brief",
+      "feature request",
+      "scope product work"
+    ],
+    "path": "skills/product-strategy/problem-framing/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "outcomes-metrics",
+    "description": "Define user-centered success measures, product outcomes, quality and harm guardrails, instrumentation, and decision thresholds.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "success metrics",
+      "UX metrics",
+      "KPI",
+      "measure design"
+    ],
+    "path": "skills/product-strategy/outcomes-metrics/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "competitive-landscape",
+    "description": "Analyze competitors, substitutes, conventions, and whitespace to inform strategy and design without copying surface aesthetics.",
+    "category": "product-strategy",
+    "phases": [
+      "discover",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "competitive analysis",
+      "benchmark products",
+      "market UX research",
+      "reference competitors"
+    ],
+    "path": "skills/product-strategy/competitive-landscape/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "jobs-to-be-done",
+    "description": "Frame progress people seek, triggers, forces, desired outcomes, and competing solutions without reducing users to demographics or features.",
+    "category": "product-strategy",
+    "phases": [
+      "discover",
+      "define"
+    ],
+    "triggers": [
+      "JTBD",
+      "jobs to be done",
+      "user motivation",
+      "outcome statement"
+    ],
+    "path": "skills/product-strategy/jobs-to-be-done/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "journey-service-blueprint",
+    "description": "Map the end-to-end user journey and backstage service system across time, channels, actors, evidence, handoffs, failures, and opportunities.",
+    "category": "product-strategy",
+    "phases": [
+      "discover",
+      "define",
+      "structure"
+    ],
+    "triggers": [
+      "journey map",
+      "service blueprint",
+      "end to end experience",
+      "cross channel flow"
+    ],
+    "path": "skills/product-strategy/journey-service-blueprint/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "experiment-design",
+    "description": "Design ethical product experiments that test a causal hypothesis with valid metrics, guardrails, assignment, analysis, and stopping rules.",
+    "category": "product-strategy",
+    "phases": [
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "A/B test",
+      "product experiment",
+      "hypothesis test",
+      "evaluate change"
+    ],
+    "path": "skills/product-strategy/experiment-design/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "trust-privacy-safety",
+    "description": "Design user agency, privacy, security communication, reversible control, and harm prevention into sensitive or high-consequence experiences.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "trust",
+      "privacy UX",
+      "safety critical UI",
+      "consent",
+      "dangerous action"
+    ],
+    "path": "skills/product-strategy/trust-privacy-safety/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "information-architecture",
+    "description": "Design coherent concepts, taxonomy, navigation, labeling, content models, and retrieval paths based on user mental models and growth needs.",
+    "category": "experience-design",
+    "phases": [
+      "structure"
+    ],
+    "triggers": [
+      "information architecture",
+      "navigation",
+      "taxonomy",
+      "sitemap",
+      "content model"
+    ],
+    "path": "skills/experience-design/information-architecture/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "user-flows",
+    "description": "Model complete user and system flows with decisions, states, alternate paths, permissions, recovery, and cross-channel handoffs.",
+    "category": "experience-design",
+    "phases": [
+      "structure"
+    ],
+    "triggers": [
+      "user flow",
+      "task flow",
+      "screen flow",
+      "state diagram"
+    ],
+    "path": "skills/experience-design/user-flows/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "interaction-design",
+    "description": "Define how controls, feedback, state transitions, direct manipulation, keyboard/touch input, and recovery behave over time.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "systemize"
+    ],
+    "triggers": [
+      "interaction design",
+      "microinteraction",
+      "state behavior",
+      "feedback pattern"
+    ],
+    "path": "skills/experience-design/interaction-design/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "content-design",
+    "description": "Design interface language, hierarchy, help, errors, confirmations, and content models so people can understand and act.",
+    "category": "experience-design",
+    "phases": [
+      "define",
+      "structure",
+      "systemize"
+    ],
+    "triggers": [
+      "UX writing",
+      "microcopy",
+      "content design",
+      "error messages",
+      "labels"
+    ],
+    "path": "skills/experience-design/content-design/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "forms-validation",
+    "description": "Design forms, data entry, validation, review, submission, and recovery for clarity, efficiency, accessibility, and data integrity.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "form design",
+      "validation",
+      "checkout form",
+      "data entry"
+    ],
+    "path": "skills/experience-design/forms-validation/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "onboarding",
+    "description": "Design first-use, setup, education, activation, and progressive learning around real user value rather than product tours.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate",
+      "live"
+    ],
+    "triggers": [
+      "onboarding",
+      "first run",
+      "activation",
+      "setup flow"
+    ],
+    "path": "skills/experience-design/onboarding/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "search-filtering",
+    "description": "Design search, query, autocomplete, filters, facets, sorting, result interpretation, and no-result recovery for realistic information spaces.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "search UX",
+      "filters",
+      "faceted navigation",
+      "results page"
+    ],
+    "path": "skills/experience-design/search-filtering/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "data-dense-interfaces",
+    "description": "Design dashboards, tables, admin, monitoring, and operational tools for scanning, comparison, action, exception handling, and scale.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "dashboard",
+      "data table",
+      "admin UI",
+      "analytics interface",
+      "dense product UI"
+    ],
+    "path": "skills/experience-design/data-dense-interfaces/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "ai-experience",
+    "description": "Design AI-assisted and generative product experiences with clear capability, provenance, uncertainty, control, review, recovery, and evaluation.",
+    "category": "experience-design",
+    "phases": [
+      "define",
+      "structure",
+      "validate",
+      "verify"
+    ],
+    "triggers": [
+      "AI UX",
+      "copilot",
+      "chat interface",
+      "generative AI product",
+      "agent UI"
+    ],
+    "path": "skills/experience-design/ai-experience/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "collaboration-permissions",
+    "description": "Design multi-user roles, sharing, permissions, presence, comments, approvals, conflicts, history, and accountability.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "collaboration UX",
+      "permissions",
+      "roles",
+      "sharing",
+      "approval workflow"
+    ],
+    "path": "skills/experience-design/collaboration-permissions/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "creative-direction",
+    "description": "Translate audience, product, brand, and strategic intent into a coherent visual thesis, creative tension, system grammar, and signature move.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize"
+    ],
+    "triggers": [
+      "visual direction",
+      "art direction",
+      "design style",
+      "make it distinctive"
+    ],
+    "path": "skills/visual-design/creative-direction/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-lab",
+    "description": "Explore and compare meaningful design variants through focused questions, controlled changes, rendered options, and iterative feedback.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize"
+    ],
+    "triggers": [
+      "explore variants",
+      "design lab",
+      "show directions",
+      "iterate visual design"
+    ],
+    "path": "skills/visual-design/design-lab/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "reference-analysis",
+    "description": "Analyze screenshots, products, brand systems, and visual references into transferable principles without copying their surface identity.",
+    "category": "visual-design",
+    "phases": [
+      "orient",
+      "explore",
+      "reference rebuild"
+    ],
+    "triggers": [
+      "analyze reference",
+      "inspiration",
+      "screenshot design analysis",
+      "style decomposition"
+    ],
+    "path": "skills/visual-design/reference-analysis/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "anti-slop-taste",
+    "description": "Detect and remove generic AI-made visual patterns while preserving context, usability, brand, and deliberate familiar conventions.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "anti slop",
+      "make UI feel human",
+      "generic AI UI",
+      "polish visual design"
+    ],
+    "path": "skills/visual-design/anti-slop-taste/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "typography",
+    "description": "Design and implement a readable, expressive, responsive type system with intentional hierarchy, rhythm, content fit, and language support.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "typography",
+      "font pairing",
+      "type scale",
+      "text hierarchy"
+    ],
+    "path": "skills/visual-design/typography/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "color",
+    "description": "Build a perceptually coherent, accessible color system for brand, hierarchy, interaction, status, data, themes, and real display conditions.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "color palette",
+      "OKLCH",
+      "dark mode colors",
+      "accessible color system"
+    ],
+    "path": "skills/visual-design/color/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "layout-composition",
+    "description": "Design responsive spatial systems, grids, hierarchy, rhythm, and optical balance from content and task rather than template geometry.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "layout",
+      "grid",
+      "spacing",
+      "composition",
+      "visual hierarchy"
+    ],
+    "path": "skills/visual-design/layout-composition/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "imagery-iconography",
+    "description": "Direct photography, illustration, diagrams, texture, icons, and media as a coherent semantic and brand system with accessible alternatives.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "images",
+      "icons",
+      "illustration system",
+      "art direction",
+      "visual assets"
+    ],
+    "path": "skills/visual-design/imagery-iconography/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "motion",
+    "description": "Design purposeful, interruptible, performant motion that explains continuity, causality, hierarchy, feedback, or spatial relationships and respects user preferences.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "animation",
+      "motion design",
+      "transitions",
+      "microinteractions"
+    ],
+    "path": "skills/visual-design/motion/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "responsive-design",
+    "description": "Design adaptive experiences across viewport, device, orientation, input, content, and platform constraints rather than treating mobile as a scaled desktop.",
+    "category": "visual-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "responsive UI",
+      "mobile adaptation",
+      "breakpoints",
+      "container queries"
+    ],
+    "path": "skills/visual-design/responsive-design/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "data-visualization",
+    "description": "Select, design, annotate, and implement charts and visual explanations that support accurate comparison, trend, distribution, relationship, and decision making.",
+    "category": "visual-design",
+    "phases": [
+      "structure",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "charts",
+      "data visualization",
+      "dashboard graphs",
+      "visualize data"
+    ],
+    "path": "skills/visual-design/data-visualization/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-tokens",
+    "description": "Define platform-agnostic primitive, semantic, and component design tokens with themes, aliases, descriptions, governance, and code translation.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "design tokens",
+      "token architecture",
+      "CSS variables",
+      "DTCG tokens"
+    ],
+    "path": "skills/design-systems/design-tokens/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "component-system",
+    "description": "Specify reusable components with purpose, anatomy, variants, states, accessibility, content, tokens, API boundaries, tests, and misuse guidance.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "component spec",
+      "design system component",
+      "UI library",
+      "component states"
+    ],
+    "path": "skills/design-systems/component-system/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "accessibility-by-design",
+    "description": "Translate accessibility and inclusive user needs into flow, component, content, token, and acceptance requirements before implementation.",
+    "category": "design-systems",
+    "phases": [
+      "define",
+      "structure",
+      "systemize"
+    ],
+    "triggers": [
+      "accessible design",
+      "WCAG design requirements",
+      "inclusive UI",
+      "keyboard spec"
+    ],
+    "path": "skills/design-systems/accessibility-by-design/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "theming",
+    "description": "Design semantic theme architecture for light/dark, high contrast, brand, density, and platform modes with predictable inheritance and asset behavior.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "dark mode",
+      "theme system",
+      "multi brand",
+      "design system modes"
+    ],
+    "path": "skills/design-systems/theming/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "documentation-governance",
+    "description": "Document, govern, evolve, and measure adoption of a design system through clear ownership, contribution, review, versioning, migration, and deprecation.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "live"
+    ],
+    "triggers": [
+      "design system docs",
+      "governance",
+      "component documentation",
+      "design ops"
+    ],
+    "path": "skills/design-systems/documentation-governance/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-system-migration",
+    "description": "Plan and execute migration from fragmented or legacy UI to a coherent system without breaking product behavior or freezing delivery.",
+    "category": "design-systems",
+    "phases": [
+      "orient",
+      "systemize",
+      "implement",
+      "live"
+    ],
+    "triggers": [
+      "migrate design system",
+      "legacy UI refactor",
+      "component consolidation",
+      "token migration"
+    ],
+    "path": "skills/design-systems/design-system-migration/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "stack-inspector",
+    "description": "Detect a project’s platform, framework, versions, rendering, styling, state, data, component, test, and deployment conventions before UI implementation.",
+    "category": "implementation",
+    "phases": [
+      "orient",
+      "implement"
+    ],
+    "triggers": [
+      "detect stack",
+      "inspect frontend project",
+      "before implementation",
+      "framework audit"
+    ],
+    "path": "skills/implementation/stack-inspector/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "technology-adapter",
+    "description": "Translate approved design behavior into the conventions and capabilities of any detected technology stack using current official documentation.",
+    "category": "implementation",
+    "phases": [
+      "implement"
+    ],
+    "triggers": [
+      "unknown stack",
+      "adapt design to framework",
+      "any technology",
+      "platform adapter"
+    ],
+    "path": "skills/implementation/technology-adapter/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-to-code",
+    "description": "Translate approved flows, screen contracts, tokens, components, content, and states into maintainable production code in vertical slices.",
+    "category": "implementation",
+    "phases": [
+      "implement"
+    ],
+    "triggers": [
+      "implement design",
+      "frontend build",
+      "design handoff",
+      "code UI"
+    ],
+    "path": "skills/implementation/design-to-code/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "web-ui-engineering",
+    "description": "Implement semantic, responsive, accessible, performant web UI with robust browser behavior, intrinsic layout, and maintainable component boundaries.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "web frontend",
+      "HTML CSS UI",
+      "responsive web implementation",
+      "design engineering"
+    ],
+    "path": "skills/implementation/web-ui-engineering/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "native-ui-engineering",
+    "description": "Implement faithful, accessible, performant native or cross-platform mobile/desktop UI using platform navigation, layout, input, lifecycle, and accessibility conventions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "mobile UI implementation",
+      "native app design",
+      "React Native",
+      "Flutter",
+      "SwiftUI",
+      "Compose"
+    ],
+    "path": "skills/implementation/native-ui-engineering/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "design-system-integration",
+    "description": "Integrate new UI into an existing design system by reusing primitives, adding justified tokens/components, and preventing local drift.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "systemize"
+    ],
+    "triggers": [
+      "use design system",
+      "integrate components",
+      "extend UI library",
+      "avoid one off CSS"
+    ],
+    "path": "skills/implementation/design-system-integration/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "pixel-perfect-implementation",
+    "description": "Recreate an approved visual reference with measured, maintainable, responsive implementation and a deterministic screenshot comparison loop.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify",
+      "reference rebuild"
+    ],
+    "triggers": [
+      "pixel perfect",
+      "image to code",
+      "match Figma",
+      "screenshot recreation"
+    ],
+    "path": "skills/implementation/pixel-perfect-implementation/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "i18n-content-resilience",
+    "description": "Harden UI for localization, RTL, text expansion, locale formats, input methods, pluralization, and extreme/missing content.",
+    "category": "implementation",
+    "phases": [
+      "structure",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "internationalization",
+      "localization UI",
+      "RTL",
+      "long text",
+      "content resilience"
+    ],
+    "path": "skills/implementation/i18n-content-resilience/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "performance",
+    "description": "Design, implement, and verify UI performance for loading, responsiveness, visual stability, animation, memory, and realistic low-end conditions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "UI performance",
+      "Core Web Vitals",
+      "jank",
+      "slow interface",
+      "optimize frontend"
+    ],
+    "path": "skills/implementation/performance/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "metadata-discoverability",
+    "description": "Implement accurate page/app metadata, structured sharing, indexing controls, deep links, titles, and install/discovery surfaces without misleading users or crawlers.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "metadata",
+      "SEO",
+      "Open Graph",
+      "social preview",
+      "deep links"
+    ],
+    "path": "skills/implementation/metadata-discoverability/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "visual-qa",
+    "description": "Review rendered UI across approved references, viewports, states, themes, content extremes, and platforms; classify and correct visual/system defects.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify"
+    ],
+    "triggers": [
+      "visual QA",
+      "screenshot review",
+      "UI polish",
+      "visual regression"
+    ],
+    "path": "skills/quality-assurance/visual-qa/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "browser-automation",
+    "description": "Use browser automation to exercise journeys, capture deterministic screenshots, inspect accessibility and console/network behavior, and preserve reproducible QA evidence.",
+    "category": "quality-assurance",
+    "phases": [
+      "validate",
+      "verify"
+    ],
+    "triggers": [
+      "Playwright",
+      "browser test",
+      "automate screenshots",
+      "E2E UI test"
+    ],
+    "path": "skills/quality-assurance/browser-automation/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "accessibility-audit",
+    "description": "Audit a complete user journey against applicable accessibility standards using automated checks, manual inspection, keyboard, zoom/reflow, and assistive technology as warranted.",
+    "category": "quality-assurance",
+    "phases": [
+      "validate",
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accessibility audit",
+      "WCAG 2.2",
+      "screen reader test",
+      "fix accessibility"
+    ],
+    "path": "skills/quality-assurance/accessibility-audit/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "interaction-state-audit",
+    "description": "Audit components and flows for complete, correct, accessible state transitions, feedback, concurrency, interruption, persistence, and recovery.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify"
+    ],
+    "triggers": [
+      "state audit",
+      "loading errors empty states",
+      "interaction QA",
+      "microinteraction audit"
+    ],
+    "path": "skills/quality-assurance/interaction-state-audit/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "edge-case-hardening",
+    "description": "Make a product production-ready across empty, slow, error, partial, stale, offline, permission, lifecycle, content, volume, and abuse edge cases.",
+    "category": "quality-assurance",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "harden UI",
+      "edge cases",
+      "production readiness",
+      "empty error loading states"
+    ],
+    "path": "skills/quality-assurance/edge-case-hardening/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "test-strategy",
+    "description": "Define a risk-based UI test strategy across unit, component, interaction, accessibility, visual, integration, end-to-end, performance, and exploratory testing.",
+    "category": "quality-assurance",
+    "phases": [
+      "systemize",
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "UI testing strategy",
+      "component tests",
+      "E2E plan",
+      "visual tests"
+    ],
+    "path": "skills/quality-assurance/test-strategy/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "release-readiness",
+    "description": "Run a final cross-functional release gate covering user outcome, behavior, content, accessibility, visual fidelity, performance, resilience, privacy, observability, rollback, and ownership.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "release checklist",
+      "launch UI",
+      "design QA before release",
+      "definition of done"
+    ],
+    "path": "skills/quality-assurance/release-readiness/SKILL.md",
+    "source": "bundled",
+    "install": null
+  },
+  {
+    "name": "live-optimization",
+    "description": "Improve a live product through outcome monitoring, field evidence, support/operational signals, research, experiments, and system updates.",
+    "category": "quality-assurance",
+    "phases": [
+      "live"
+    ],
+    "triggers": [
+      "improve live product",
+      "post launch UX",
+      "continuous optimization",
+      "analytics design"
+    ],
+    "path": "skills/quality-assurance/live-optimization/SKILL.md",
+    "source": "bundled",
+    "install": null
+  }
+]

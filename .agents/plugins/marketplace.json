@@ -1,0 +1,20 @@
+{
+  "name": "product-design-orchestrator-local",
+  "interface": {
+    "displayName": "Product Design Orchestrator Local"
+  },
+  "plugins": [
+    {
+      "name": "product-design-orchestrator",
+      "source": {
+        "source": "local",
+        "path": "./integrations/product-design-orchestrator-plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Product Design Orchestrator 4.1
+
+This package contains original orchestration, product-design, research, implementation, validation, installation, and registry material plus preserved third-party reference skills under their respective licenses.
+
+See:
+- LICENSE
+- resources/LICENSING.md
+- resources/UPSTREAM_SKILLS.md
+- each skills/vendor/*/LICENSE and SOURCE.md
+
+OpenAI, Codex, Anthropic, and Claude are trademarks of their respective owners. The included adapters follow publicly documented extension conventions and do not imply endorsement or affiliation.

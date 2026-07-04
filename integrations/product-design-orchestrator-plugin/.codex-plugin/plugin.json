@@ -1,0 +1,33 @@
+{
+  "name": "product-design-orchestrator",
+  "version": "4.1.0",
+  "description": "Research, design, implement, and verify professional UI/UX with a routed product-design skill system.",
+  "author": {
+    "name": "Product Design Orchestrator contributors"
+  },
+  "keywords": [
+    "product-design",
+    "ux",
+    "ui",
+    "design-systems",
+    "design-to-code",
+    "accessibility"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Product Design Orchestrator",
+    "shortDescription": "Professional product design and design-to-code workflows",
+    "longDescription": "A self-contained product-design operating system with routed research, strategy, experience, visual, implementation, and QA skills.",
+    "developerName": "Product Design Orchestrator contributors",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use the Product Design Orchestrator to inspect, design, implement, and verify this UI.",
+      "Run pdo-start and route the right product-design skills for this task."
+    ],
+    "brandColor": "#1457C5"
+  }
+}

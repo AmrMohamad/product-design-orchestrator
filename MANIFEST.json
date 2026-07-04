@@ -1,0 +1,1483 @@
+{
+  "name": "Product Design Orchestrator",
+  "version": "4.1.0",
+  "built": "2026-06-25",
+  "file_count": 295,
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "bytes": 462,
+      "sha256": "4809b7b175b0a3cac56381673f294095f54177d7b119cb0e1689d0bc788b981a"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "bytes": 689,
+      "sha256": "68129abc90882670110cd48f5921df0ac88213382d7a4559e0aa8d38013526d2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 53,
+      "sha256": "a26483e5c95c8a8075f193985a77f9890d46af827f7726a94efc1f96f342597a"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 8345,
+      "sha256": "83052c1400a9ab8bcd1a9badd5eb7b7bd559142dc90020a980de0a800ef22b69"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2340,
+      "sha256": "267533b9285aeefb56fbd5783a2d7915c8674ddb7c102d781eceab42fd01836e"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 772,
+      "sha256": "06566cc5ed4151eaaa80242b2f2a91f02f66ed96df0d55744e29a930f80a86fa"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 41939,
+      "sha256": "d2cd88d20a40d658e199e25932a625e95568969d0abe3f2e510add52c4e5d25f"
+    },
+    {
+      "path": "FIND_A_SKILL.md",
+      "bytes": 1111,
+      "sha256": "425e69db2546f567eaab141759d8cd95db59f2a473dbb4e56ac62da965d9ee88"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1223,
+      "sha256": "22d4a2b3b959a7b8a927f07ad04a1ff24b0e38f53ef5e3e6ffa17ef5fe9c0213"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 560,
+      "sha256": "eb694eab92545b74a0112a5fcb6efa950191f82cb228215d35bfc217c7971eaa"
+    },
+    {
+      "path": "QUICKSTART.md",
+      "bytes": 1256,
+      "sha256": "0ef8e0d2e934c895c113cfaf5f72eaa879ec6fe409fc038424614cccc5b3f82a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4436,
+      "sha256": "7339be0ebbc4d38b12121994bd8bf4dbf73d1483b069d1290e4dd12250eb6e39"
+    },
+    {
+      "path": "SELF_INSTALL.md",
+      "bytes": 5641,
+      "sha256": "52c4da9661206eda5ce83f9d633420c402416d913f2f84de92cdbc1b50593970"
+    },
+    {
+      "path": "SKILLS.md",
+      "bytes": 5107,
+      "sha256": "b1ce28501d1480fb86e586555436787f1dbe98f1e7966e892ac1bc5647f6174c"
+    },
+    {
+      "path": "SOUL.md",
+      "bytes": 6608,
+      "sha256": "9b4b6aa0bef5c7a4b37cb83fef7c1efc5b5276947377080172e22a7e2139835a"
+    },
+    {
+      "path": "VALIDATION_REPORT.md",
+      "bytes": 4877,
+      "sha256": "19c81074f4c95f2ad769b2d74e3c6b27a663bd90317212c34c060d15aaa3b68a"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "3b10b6ad566eadbcacadb33c591f1ec629593d6adf47442e56e0f61996829ef7"
+    },
+    {
+      "path": "integrations/README.md",
+      "bytes": 731,
+      "sha256": "7c7d58d15f3f1b1a7a1ae5096e71814e8fb9b175574a0ad706a577d59ffb1d5c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/.claude-plugin/plugin.json",
+      "bytes": 452,
+      "sha256": "abfc031df2a1966e351a012a5721a9b1aa83e4db2c7404a8298d238a6df6c6a6"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/.codex-plugin/plugin.json",
+      "bytes": 1115,
+      "sha256": "ea03a5082773c55532292eba90afc138d4a077b84b3e336164f1c3687afbed5e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/.pdo-managed.json",
+      "bytes": 151,
+      "sha256": "56c5c0ff6dfcc6f72adf911c4db8f464ea937970b5aa500c227fbb64e2dda653"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/AGENTS.md",
+      "bytes": 8174,
+      "sha256": "981db389152bfb1ae5d9d355e1a81dd19a3d0c4b81d8b9349c2f967c7a5d34a2"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/CHANGELOG.md",
+      "bytes": 2340,
+      "sha256": "267533b9285aeefb56fbd5783a2d7915c8674ddb7c102d781eceab42fd01836e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/CLAUDE.md",
+      "bytes": 197,
+      "sha256": "ccf4091a7f0f17571b9efe0e00bbbfd175c58f773c8f47e60be825d4a43c0e3e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/CLAUDE_CONTEXT.md",
+      "bytes": 602,
+      "sha256": "af9aa208ddd306038a9bd66007a384c314a9b95c5e26d2f38aa39e3108244aad"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/DESIGN.md",
+      "bytes": 41939,
+      "sha256": "d2cd88d20a40d658e199e25932a625e95568969d0abe3f2e510add52c4e5d25f"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/FIND_A_SKILL.md",
+      "bytes": 1111,
+      "sha256": "425e69db2546f567eaab141759d8cd95db59f2a473dbb4e56ac62da965d9ee88"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/LICENSE",
+      "bytes": 1223,
+      "sha256": "22d4a2b3b959a7b8a927f07ad04a1ff24b0e38f53ef5e3e6ffa17ef5fe9c0213"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/NOTICE",
+      "bytes": 560,
+      "sha256": "eb694eab92545b74a0112a5fcb6efa950191f82cb228215d35bfc217c7971eaa"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/QUICKSTART.md",
+      "bytes": 1256,
+      "sha256": "0ef8e0d2e934c895c113cfaf5f72eaa879ec6fe409fc038424614cccc5b3f82a"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/README.md",
+      "bytes": 556,
+      "sha256": "8dcbfa6b43ac8049f7691aff070cacce12cb7399395426c83b6fcf302c9348e2"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/SKILLS.md",
+      "bytes": 5107,
+      "sha256": "b1ce28501d1480fb86e586555436787f1dbe98f1e7966e892ac1bc5647f6174c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/SKILL_INDEX.json",
+      "bytes": 1808,
+      "sha256": "87a5269e724bd2c1e77a818f4654a07b8a14122c8f4aca596298c7103422fd98"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/SOUL.md",
+      "bytes": 6608,
+      "sha256": "9b4b6aa0bef5c7a4b37cb83fef7c1efc5b5276947377080172e22a7e2139835a"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/VERSION",
+      "bytes": 6,
+      "sha256": "3b10b6ad566eadbcacadb33c591f1ec629593d6adf47442e56e0f61996829ef7"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/README.md",
+      "bytes": 250,
+      "sha256": "3c6f9ec7a1757d7ec880cc8cad303827d338db3c5c925eb9f4db70875b33de24"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/design-system.md",
+      "bytes": 1115,
+      "sha256": "1d712285f5ffbe190488a67edaf0da18505adc8373900ef6d7fe4c53629ea863"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/existing-product-redesign.md",
+      "bytes": 1305,
+      "sha256": "a2554febe7a62055b86f47762368832770b04c4a681949ffb849e0b054522283"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/fast-ui-polish.md",
+      "bytes": 978,
+      "sha256": "2fe7d20cb56ff7388945c3d55929f315692f8a3cbcb3e07b985785fcf8bed1ad"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/feature-delivery.md",
+      "bytes": 1034,
+      "sha256": "aeb29948359e030a446641038e19824ec6e143d4afde65d03d2e230b90ff7d42"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/greenfield-product.md",
+      "bytes": 1715,
+      "sha256": "248499e59af69ccaca103c64e0006b02fa2c125d09061695523c8d60f26d4253"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/high-risk-service.md",
+      "bytes": 1284,
+      "sha256": "075b8fc902b319726ee021d583c93a5ad177da1c5f477aefda6ff0e2d2d31393"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/live-optimization.md",
+      "bytes": 984,
+      "sha256": "7c9f5efa48141a0dd38433d9afb6d96028a47e94a5405eb6e9b1d7b0dcf55f5e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/reference-to-code.md",
+      "bytes": 1275,
+      "sha256": "97038f300a850753f288f4d3f7df3bd022d7a9b066d854f67b4e68f34884cb49"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/playbooks/research-only.md",
+      "bytes": 1090,
+      "sha256": "ef2198b8c2e514f010bb287ce5a77de2ca0be50ab0821379264d1aba8ae491e6"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/registry/README.md",
+      "bytes": 695,
+      "sha256": "329690b9d2f95a44dae2c2aaace26db79ff08be169f46100f3917c5b57cc4ecf"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/registry/all-skills.json",
+      "bytes": 179558,
+      "sha256": "ba7503a37ce2a57d13be2a8ec52a7c7d5f333edead6de178611e2adf56a8f88d"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/registry/bundled-skills.json",
+      "bytes": 36627,
+      "sha256": "0f06300fb0fa28b9f05e7a6e1ce21bb0faa71c0350ed945103c31b133f322423"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/registry/taste-skills.json",
+      "bytes": 13880,
+      "sha256": "603eab237b5654dc526f22ccea30c28f74a00673c567d29c275b0101414a0c14"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/registry/ui-skills-registry.tsv",
+      "bytes": 25203,
+      "sha256": "ae4b85957ae1e02d9d304227e1ebc4814c2a5f6bc4862979a24b693a8287acd7"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/AGENT_PLATFORM_RESEARCH.md",
+      "bytes": 3872,
+      "sha256": "575f9d231cbda6d3e90f7123d5cad21cf5c0043772653d38f2af51775dd5844b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/BOOKSHELF.md",
+      "bytes": 2613,
+      "sha256": "3a1c1c04780d3efba92fc971cea9be6eb1fd2d5b1bd3b2c799a50e6807ae8c0d"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/LICENSING.md",
+      "bytes": 1182,
+      "sha256": "9c82ec318499ada216f9082c338f8a0d1656c14b4a55cc496fb3ed7e95a14b77"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/PRIOR_SKILL_CROSSWALK.md",
+      "bytes": 8253,
+      "sha256": "987aa09ebe9d54891b7af37c465fcf179bab84ea48bf5a518c2dc383921d09f6"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/README.md",
+      "bytes": 665,
+      "sha256": "2e0fff01fd6a17716820dd61cc453ed2f1c859a0e521aa1ab8a827c99ff58e5d"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/RESEARCH_SYNTHESIS.md",
+      "bytes": 6201,
+      "sha256": "777d29df0707f6a25f7840f80dd567d7e50365126c43b0ea68c53596b73578fe"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/SOURCES.md",
+      "bytes": 2280,
+      "sha256": "c0908651fee9fde470b08b46fb5fdb5e5ab3c6eb9972932a65b40a72f12d7d27"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/STACK_ADAPTERS.md",
+      "bytes": 2159,
+      "sha256": "acb4a2553e0c1b606c141234b6abb198e36a19ad8ed1831d05c15e6149a9b312"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/UPSTREAM_SKILLS.md",
+      "bytes": 38474,
+      "sha256": "023daa3c00131d47d6c95f2ed7da5b0b9fbbf8f13e3e53c1746bde26a0cf8dc9"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/prior-analysis/README.md",
+      "bytes": 236,
+      "sha256": "fa093281d95e6f339f8c9070c80a1839a8ee9c4128a5f3f887056388c92087b1"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/prior-analysis/skill_analysis_report.md",
+      "bytes": 52785,
+      "sha256": "56b4b8cd9836a960ff362d07fc62d66cd3b27e8e3522aa3d1f73ba3fec286bb1"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/resources/prior-analysis/skill_structured_summaries.json",
+      "bytes": 74887,
+      "sha256": "5378d04a3b62de004eec3cd535c7b06964949f38b4e0bbf0442e8298db4e03a4"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/scripts/new_design_project.py",
+      "bytes": 3157,
+      "sha256": "3626fad4eddce55764b525c1c54d0e915c4cf8479cfb3707c5e5bee0b0b24fb0"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/scripts/skill.py",
+      "bytes": 11973,
+      "sha256": "4abfc695edfa55f5b69bc3d55591be4658e123ec08e7ee43e69ab1dfc83ddd82"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/accessibility-audit/SKILL.md",
+      "bytes": 2285,
+      "sha256": "7300a31db64e653007ebc4e6604de17b1fac31632dcbdfa43602e3f0adfd29cb"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/accessibility-by-design/SKILL.md",
+      "bytes": 2170,
+      "sha256": "ddd11a9233bc98101cab8d4293d5cd70aa18eb15c84296d72b99be176d2b6a32"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/ai-experience/SKILL.md",
+      "bytes": 2371,
+      "sha256": "2dbcf7f045a4988664c0e6efd50da0f631f60c3435b31cb2a25dfe3c1a987701"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/anti-slop-taste/SKILL.md",
+      "bytes": 2146,
+      "sha256": "3f74eedc2849a4c009ef770517a36fe92832ec5d221e7cccad1f65c27a690878"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/browser-automation/SKILL.md",
+      "bytes": 2185,
+      "sha256": "65d04e1a3a2246bd849236a260a6a6bced4c4d8e11e8a97477acd5412d7bee8e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/collaboration-permissions/SKILL.md",
+      "bytes": 2143,
+      "sha256": "4f5676abe22895a9366212f6f457ff4722711ec7cedaf2455a55cc93f814ad13"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/color/SKILL.md",
+      "bytes": 2032,
+      "sha256": "0ba8e7f64d4d32a0cc1fbab726718118d4e0d9f2c75d93e73d5e92c62670810b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/competitive-landscape/SKILL.md",
+      "bytes": 2062,
+      "sha256": "ef0cacc5e1f2668bbcff99eaa759f4a0ec9c8b05382f43598dc35676e2f56c03"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/component-system/SKILL.md",
+      "bytes": 2107,
+      "sha256": "f88edaaf2073766f08ca9002ad2c6fbdb5d56d43bf903cd92bbbf521e7ca86ef"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/content-design/SKILL.md",
+      "bytes": 2063,
+      "sha256": "64d94553da30c0d885698daec2227113f13a9a1a0bd0db208e9ca305430b733a"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/contextual-inquiry/SKILL.md",
+      "bytes": 2089,
+      "sha256": "614726064ff422ec24c73e3a8edd0e8f0d26016a18985288d9ae3bca2547507e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/creative-direction/SKILL.md",
+      "bytes": 2080,
+      "sha256": "66acc8a12aa86ceb2fd3f5c0439dcee0bca7143a3bd6e4613a60946d43babebe"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/data-dense-interfaces/SKILL.md",
+      "bytes": 2317,
+      "sha256": "674aefa0c9d3623952feeff56c1d3709604d5686def47ff329a2a8d3d069659d"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/data-visualization/SKILL.md",
+      "bytes": 2071,
+      "sha256": "436276686f6e175e3734ca90f7f3e43f9b4324696a4fb834a6275fb5f8aee748"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/decision-facilitation/SKILL.md",
+      "bytes": 2011,
+      "sha256": "01b23e46b4b24349f86a68bf89b3f33692fef6288333f2abe594d0d85219b991"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-critique/SKILL.md",
+      "bytes": 1973,
+      "sha256": "82ee823a4868d93d1ab25a2f7df3e18f8996513a41bed14718ac78a670c784f4"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-lab/SKILL.md",
+      "bytes": 1998,
+      "sha256": "1b805e833c5d05c47f58cf7e92c5c03ee8c1707312cd833f91ee2d5b4d2c0826"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-system-integration/SKILL.md",
+      "bytes": 2063,
+      "sha256": "557ebf8ad5aa27a42cdc65d0276da154124858b98ff0734899ff6cf508590a49"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-system-migration/SKILL.md",
+      "bytes": 2188,
+      "sha256": "e77b7dc3492a8cbebd150e2a5d43d0d6e3e28a3182b3ce72746e012affa4de79"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-taste-frontend/LICENSE",
+      "bytes": 1065,
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-taste-frontend/SKILL.md",
+      "bytes": 87253,
+      "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-taste-frontend/SOURCE.md",
+      "bytes": 759,
+      "sha256": "1955cb006da5342472a48fa60ca7ba469aea506512349f679c75fac06ed4f06b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-to-code/SKILL.md",
+      "bytes": 2072,
+      "sha256": "7dfccb76487263bd7913a766703d5e82b889683df9739e9414d7a0e3854fa04f"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/design-tokens/SKILL.md",
+      "bytes": 2143,
+      "sha256": "a644b54e286e8a8913a1171ef516f6be8caf2de9243cfa60069eb80c5b205414"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/desk-research/SKILL.md",
+      "bytes": 2072,
+      "sha256": "0e718b5fc64040c44550761a1a02bd59dcca51023a4ff5bc6b45a1fefe83b3b3"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/documentation-governance/SKILL.md",
+      "bytes": 2061,
+      "sha256": "3d480c2b6b45f89fa08805772b5a13fae0c29924378bb5d0de0f3006466bc19e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/edge-case-hardening/SKILL.md",
+      "bytes": 2150,
+      "sha256": "a87e438dfe473134eeb772c5ee261ea2aa1fddc3c84510518f861e19c8b25311"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/experiment-design/SKILL.md",
+      "bytes": 2164,
+      "sha256": "9b4ff71cf26b2aa94be375dcaeda73588d1b3746eb9891896ab92be6225b2358"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/forms-validation/SKILL.md",
+      "bytes": 2163,
+      "sha256": "d5fcebe34c254f41c492b102d965160f3f2f1888a00527a1caf388de48f10d11"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/i18n-content-resilience/SKILL.md",
+      "bytes": 2149,
+      "sha256": "a74fa1aff1c85fd72762f4fb8a24de1787450f39348758f65fcd0dd3f737d343"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/imagery-iconography/SKILL.md",
+      "bytes": 2135,
+      "sha256": "b4b0ae1ebdb03f49453658b14200bb4e3255e7e83b75600db375bcba4e017f98"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/inclusive-research/SKILL.md",
+      "bytes": 2244,
+      "sha256": "1d36ef4723c75f525d0a823668d7327bcacb83933910d9b70f298803afc73def"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/information-architecture/SKILL.md",
+      "bytes": 2041,
+      "sha256": "152edb5e4ab3d227c45e7aff6c1d82b84506031e138c61d426810e5c16e12757"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/interaction-design/SKILL.md",
+      "bytes": 2122,
+      "sha256": "02844d8af8d0145249ec99c8bf194f34363468ac5ecba71189cbb7845157c49e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/interaction-state-audit/SKILL.md",
+      "bytes": 2178,
+      "sha256": "41ea6b16c0bed455322d9315acaa99a97a0eaa5fa4f065338bce0a2ad08788a0"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/jobs-to-be-done/SKILL.md",
+      "bytes": 1875,
+      "sha256": "bc6a2bde06fda6474e142a9f743425e3315a7ef21147aa255095a29729f40527"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/journey-service-blueprint/SKILL.md",
+      "bytes": 2020,
+      "sha256": "3e2b0df82a9897f30264eae70330591dbfc4c51ec14072d9e1cf31480c01114b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/layout-composition/SKILL.md",
+      "bytes": 2101,
+      "sha256": "f801a351571f934fe37599d1f892f7ce540a4b6f8cc3915efcda22b3804a03cd"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/live-optimization/SKILL.md",
+      "bytes": 2196,
+      "sha256": "cfb985e443ebb623d2879357dcd3af89c062e5e671913ae6fec38e6a3830d2ae"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/metadata-discoverability/SKILL.md",
+      "bytes": 2034,
+      "sha256": "c6bc68128fdf8fe40e0f10210a08fce0f61f549dc6e2f0b9111c645e81554b92"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/motion/SKILL.md",
+      "bytes": 2071,
+      "sha256": "8e41ac148081a27952d1dfea3c1d86b4ecc05c0a1a5c5e2920cd0e7047a55f42"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/native-ui-engineering/SKILL.md",
+      "bytes": 2332,
+      "sha256": "6eb0e4419fdf00917406d4d3368d6d6dce10732224d6ccc946d3f748a7eec97b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/onboarding/SKILL.md",
+      "bytes": 2035,
+      "sha256": "10bed101304b98dcb9b87c469106540aa0ac8532541f033cc4d37bf944d3842a"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/outcomes-metrics/SKILL.md",
+      "bytes": 1995,
+      "sha256": "6a4aadb6f75545cd05b691b698aa8fd0bef85440afcc33a2f838042f2db66593"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/pdo-start/SKILL.md",
+      "bytes": 2385,
+      "sha256": "fa645f6dd4fd82d69e8154c2dbe64a3f5dcbc4e289864c6da58c9346d5610fcf"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/performance/SKILL.md",
+      "bytes": 2195,
+      "sha256": "f96602578cf8581ecdede00b5d86631b21678a07053c3737050a854e5875aff9"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/pixel-perfect-implementation/SKILL.md",
+      "bytes": 2313,
+      "sha256": "0ac263358cbc2a7cf7a5b16cd1ee5d22cb54d8c4f92beec9cd413434d28a609f"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/problem-framing/SKILL.md",
+      "bytes": 1862,
+      "sha256": "f86037a2b303446b864cb9d6603636b8f958b46a782d9b6abc915ec522005cd1"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/product-design-orchestrator/SKILL.md",
+      "bytes": 2544,
+      "sha256": "6d0221bfffd3f8e09b850f78072fe00fdf6cd8548b57c6c9ff3c9985b540fa39"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/product-discovery/SKILL.md",
+      "bytes": 2029,
+      "sha256": "9e743a03b1cc3d30948a79bdd68de5518703a06a18083e281773722bbcaee360"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/project-inspector/SKILL.md",
+      "bytes": 2265,
+      "sha256": "7b6f406543fc2f4887aaecfd40604f366a02a879573127de5449179410ed54c4"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/reference-analysis/SKILL.md",
+      "bytes": 2095,
+      "sha256": "29b400a19b402a9fc3bd1e4b431e6b5f8e801757d7fe9d1a01a5d5120a354b2b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/release-readiness/SKILL.md",
+      "bytes": 2040,
+      "sha256": "e332c24de95ba6a8692a8760ed6f3bce8c2e88fd4adfd79bc2257d7246e07e1c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/research-planning/SKILL.md",
+      "bytes": 2105,
+      "sha256": "80186afdec6d565c1eb277f7ca0d8520de2c5895dcd327114d36a58df50fea18"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/research-synthesis/SKILL.md",
+      "bytes": 2189,
+      "sha256": "9ec85eb27a0e645e54526784e6c3339a30d2523300c4695e496af2c226594523"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/responsive-design/SKILL.md",
+      "bytes": 2237,
+      "sha256": "51b4c2438f4e816c6e20e3a38ba8896e862263280d3bf436a6c8327531072609"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/robust-research/SKILL.md",
+      "bytes": 2481,
+      "sha256": "c8969ec60c09a81048f7edc003c8addb9ac22ed1ac5eedd47ef3abcfe4bc86cc"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/search-filtering/SKILL.md",
+      "bytes": 2115,
+      "sha256": "f3896156ea0419ffad0b3c4738580ee85272f9ca4f1193b3cf610c0b27092d4f"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/skill-router/SKILL.md",
+      "bytes": 2022,
+      "sha256": "8daf150136ee2edeaa75ecfdbe2f5608b737affe9c288e0573d7c0227fbc9f1d"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/stack-inspector/SKILL.md",
+      "bytes": 2105,
+      "sha256": "a8b38a2aefbc7b90fdb9c58314fbe18fcbb0fcc61ee4da8871b940d700d240b9"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/survey-quant/SKILL.md",
+      "bytes": 2130,
+      "sha256": "050fe8cbc769faeca95f9a5c41c9cc84abf21dc7970c5615c9f81538dab1bf10"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/technology-adapter/SKILL.md",
+      "bytes": 2041,
+      "sha256": "50da63372df4187cd8b15e31e55c959c3c251d30b83a2c3c38fc11ef7cddae6b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/test-strategy/SKILL.md",
+      "bytes": 2183,
+      "sha256": "e3e908d141bd0c336a471a16131385a3e3c1b2539d1c32c6c3906ed8f5fff271"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/theming/SKILL.md",
+      "bytes": 2008,
+      "sha256": "3091c0a230861b14055b549b0a40e30683bb16cfb105cb849849689fbadf4e22"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/trust-privacy-safety/SKILL.md",
+      "bytes": 2219,
+      "sha256": "b6f90709e0d145a6788404b438ffaaa37026851314fbaa67726ab5d01cd3f12c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/typography/SKILL.md",
+      "bytes": 2115,
+      "sha256": "e9d0b17185ad0a2e1f18732c805ed94b77533846e41628c5fb96cd53b4f27f5e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/ui-skills-root/LICENSE",
+      "bytes": 1072,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/ui-skills-root/SKILL.md",
+      "bytes": 1448,
+      "sha256": "d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/ui-skills-root/SOURCE.md",
+      "bytes": 695,
+      "sha256": "59dd014e55e78c5eed4c083c0963f2bcc7bad33125498c69f630e9d222a74d38"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/usability-testing/SKILL.md",
+      "bytes": 2204,
+      "sha256": "2e96f57184f023a588660414d91959aec83dab9d13c65e246c5dc2e058e1e267"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/user-flows/SKILL.md",
+      "bytes": 1883,
+      "sha256": "54b450a0b0b06dec0334aa4686d5ed673d5912ee3045a8447fec2e03cfab4bd9"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/user-interviews/SKILL.md",
+      "bytes": 2024,
+      "sha256": "fffe71890122be29493b057890f007dfb944d41d5009d05d80ea7807ec7ea1e5"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/visual-qa/SKILL.md",
+      "bytes": 2006,
+      "sha256": "d31f29414befcf22f91e07dae14660bd3335b607522bbe242ad61111bca7efa2"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/skills/web-ui-engineering/SKILL.md",
+      "bytes": 2279,
+      "sha256": "7e2d1188e0d7085cfbc034384c2c3af6274e1e5c3274e62d05dbbddd93296817"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/ASSUMPTIONS.md",
+      "bytes": 413,
+      "sha256": "000706051961c97e0e3dc6530000c1cac157feca08bd79256fe789f7747ed24e"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/COMPONENT_CONTRACTS.md",
+      "bytes": 722,
+      "sha256": "28483fcba6c1b8528fc0819caf44bb57590361bc7754d85c4532980d203231aa"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/DECISIONS.md",
+      "bytes": 328,
+      "sha256": "f7411c76c8bc47ada397ad7235fcc1a3999ab3ec5a8175f6087607d813f82f4b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/DESIGN_BRIEF.md",
+      "bytes": 1184,
+      "sha256": "94a64ec6fc8e5773c74303148cf3f659d4b3f17b494ce87fa31bdd4e0a73cc35"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/DESIGN_SYSTEM.md",
+      "bytes": 1039,
+      "sha256": "c1c8a0348e35530716d5b6a73d4787137852b8907ea3301e0a27f63afa3e8891"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/DIRECTIONS.md",
+      "bytes": 746,
+      "sha256": "4ad706b4289628e88b7e1ff167266bdd98712cc9d604cad70a9d619918813487"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/EVIDENCE_LEDGER.md",
+      "bytes": 496,
+      "sha256": "466abba71c430137db64fde8b66068e7572fc78dcd1cb1e8804dca61973dc42c"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/IA_AND_FLOWS.md",
+      "bytes": 958,
+      "sha256": "8c93dc06ebaf259376205cb23808bd39f00ec7ca8335cc251ceee7fd04489099"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/IMPLEMENTATION_PLAN.md",
+      "bytes": 882,
+      "sha256": "c897e485f451e988eca63674f6031fed5795dd07976ec5e745bbd04a34d35499"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/LIVE_LEARNING.md",
+      "bytes": 753,
+      "sha256": "b52d02cded4f6c2c714a78e5a130c76ae296245cde9852431c59cd066489a961"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/PROJECT_CONTEXT.md",
+      "bytes": 975,
+      "sha256": "315577acd451ccd45e3aa1e3ed7f558ef45317c55147d8ab163cbfef5e877373"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/README.md",
+      "bytes": 276,
+      "sha256": "911b10b05966da9747f523bc207f7722637e011151021b25f3664ea96d0c6edc"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/RELEASE_REVIEW.md",
+      "bytes": 990,
+      "sha256": "54291143bd22b48d207f4f55ec94617dbbe885d28e5525da4da6674527cebaf6"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/RESEARCH_PLAN.md",
+      "bytes": 1057,
+      "sha256": "a299fcf366fcc77a1f6e53f67433d81b4854402784de4acb93e53268678f9bbe"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/RESEARCH_SYNTHESIS.md",
+      "bytes": 808,
+      "sha256": "e808b55269d02363107cb0e1e26cb336dc2e1ec8180da41e79126ac4118bf14b"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/SCREEN_CONTRACTS.md",
+      "bytes": 901,
+      "sha256": "b71a57a31a483e709ea80e8fb2ab1aedf35764cef12a02b1ebe704489b2ba2ea"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/SKILL_LEDGER.md",
+      "bytes": 387,
+      "sha256": "11b6dee7ef43366c496f3d25bc98e6c573eafe61ea58af0fcea9482c669be553"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/VISUAL_QA.md",
+      "bytes": 810,
+      "sha256": "608a741de44566535bd481137671cfd0efd77650a6c2ab91cab07f805f6161a6"
+    },
+    {
+      "path": "integrations/product-design-orchestrator-plugin/templates/tokens.example.tokens.json",
+      "bytes": 1037,
+      "sha256": "adc799ab12387fb28b883bdc62fe7cb6d917acb62a3aed46c1dad2ac19850ccb"
+    },
+    {
+      "path": "playbooks/README.md",
+      "bytes": 250,
+      "sha256": "3c6f9ec7a1757d7ec880cc8cad303827d338db3c5c925eb9f4db70875b33de24"
+    },
+    {
+      "path": "playbooks/design-system.md",
+      "bytes": 1115,
+      "sha256": "1d712285f5ffbe190488a67edaf0da18505adc8373900ef6d7fe4c53629ea863"
+    },
+    {
+      "path": "playbooks/existing-product-redesign.md",
+      "bytes": 1305,
+      "sha256": "a2554febe7a62055b86f47762368832770b04c4a681949ffb849e0b054522283"
+    },
+    {
+      "path": "playbooks/fast-ui-polish.md",
+      "bytes": 978,
+      "sha256": "2fe7d20cb56ff7388945c3d55929f315692f8a3cbcb3e07b985785fcf8bed1ad"
+    },
+    {
+      "path": "playbooks/feature-delivery.md",
+      "bytes": 1034,
+      "sha256": "aeb29948359e030a446641038e19824ec6e143d4afde65d03d2e230b90ff7d42"
+    },
+    {
+      "path": "playbooks/greenfield-product.md",
+      "bytes": 1715,
+      "sha256": "248499e59af69ccaca103c64e0006b02fa2c125d09061695523c8d60f26d4253"
+    },
+    {
+      "path": "playbooks/high-risk-service.md",
+      "bytes": 1284,
+      "sha256": "075b8fc902b319726ee021d583c93a5ad177da1c5f477aefda6ff0e2d2d31393"
+    },
+    {
+      "path": "playbooks/live-optimization.md",
+      "bytes": 984,
+      "sha256": "7c9f5efa48141a0dd38433d9afb6d96028a47e94a5405eb6e9b1d7b0dcf55f5e"
+    },
+    {
+      "path": "playbooks/reference-to-code.md",
+      "bytes": 1275,
+      "sha256": "97038f300a850753f288f4d3f7df3bd022d7a9b066d854f67b4e68f34884cb49"
+    },
+    {
+      "path": "playbooks/research-only.md",
+      "bytes": 1090,
+      "sha256": "ef2198b8c2e514f010bb287ce5a77de2ca0be50ab0821379264d1aba8ae491e6"
+    },
+    {
+      "path": "registry/README.md",
+      "bytes": 695,
+      "sha256": "329690b9d2f95a44dae2c2aaace26db79ff08be169f46100f3917c5b57cc4ecf"
+    },
+    {
+      "path": "registry/all-skills.json",
+      "bytes": 179558,
+      "sha256": "ba7503a37ce2a57d13be2a8ec52a7c7d5f333edead6de178611e2adf56a8f88d"
+    },
+    {
+      "path": "registry/bundled-skills.json",
+      "bytes": 36627,
+      "sha256": "0f06300fb0fa28b9f05e7a6e1ce21bb0faa71c0350ed945103c31b133f322423"
+    },
+    {
+      "path": "registry/taste-skills.json",
+      "bytes": 13880,
+      "sha256": "603eab237b5654dc526f22ccea30c28f74a00673c567d29c275b0101414a0c14"
+    },
+    {
+      "path": "registry/ui-skills-registry.tsv",
+      "bytes": 25203,
+      "sha256": "ae4b85957ae1e02d9d304227e1ebc4814c2a5f6bc4862979a24b693a8287acd7"
+    },
+    {
+      "path": "resources/AGENT_PLATFORM_RESEARCH.md",
+      "bytes": 3872,
+      "sha256": "575f9d231cbda6d3e90f7123d5cad21cf5c0043772653d38f2af51775dd5844b"
+    },
+    {
+      "path": "resources/BOOKSHELF.md",
+      "bytes": 2613,
+      "sha256": "3a1c1c04780d3efba92fc971cea9be6eb1fd2d5b1bd3b2c799a50e6807ae8c0d"
+    },
+    {
+      "path": "resources/LICENSING.md",
+      "bytes": 1182,
+      "sha256": "9c82ec318499ada216f9082c338f8a0d1656c14b4a55cc496fb3ed7e95a14b77"
+    },
+    {
+      "path": "resources/PRIOR_SKILL_CROSSWALK.md",
+      "bytes": 8253,
+      "sha256": "987aa09ebe9d54891b7af37c465fcf179bab84ea48bf5a518c2dc383921d09f6"
+    },
+    {
+      "path": "resources/README.md",
+      "bytes": 665,
+      "sha256": "2e0fff01fd6a17716820dd61cc453ed2f1c859a0e521aa1ab8a827c99ff58e5d"
+    },
+    {
+      "path": "resources/RESEARCH_SYNTHESIS.md",
+      "bytes": 6201,
+      "sha256": "777d29df0707f6a25f7840f80dd567d7e50365126c43b0ea68c53596b73578fe"
+    },
+    {
+      "path": "resources/SOURCES.md",
+      "bytes": 2280,
+      "sha256": "c0908651fee9fde470b08b46fb5fdb5e5ab3c6eb9972932a65b40a72f12d7d27"
+    },
+    {
+      "path": "resources/STACK_ADAPTERS.md",
+      "bytes": 2159,
+      "sha256": "acb4a2553e0c1b606c141234b6abb198e36a19ad8ed1831d05c15e6149a9b312"
+    },
+    {
+      "path": "resources/UPSTREAM_SKILLS.md",
+      "bytes": 38474,
+      "sha256": "023daa3c00131d47d6c95f2ed7da5b0b9fbbf8f13e3e53c1746bde26a0cf8dc9"
+    },
+    {
+      "path": "resources/prior-analysis/README.md",
+      "bytes": 236,
+      "sha256": "fa093281d95e6f339f8c9070c80a1839a8ee9c4128a5f3f887056388c92087b1"
+    },
+    {
+      "path": "resources/prior-analysis/skill_analysis_report.md",
+      "bytes": 52785,
+      "sha256": "56b4b8cd9836a960ff362d07fc62d66cd3b27e8e3522aa3d1f73ba3fec286bb1"
+    },
+    {
+      "path": "resources/prior-analysis/skill_structured_summaries.json",
+      "bytes": 74887,
+      "sha256": "5378d04a3b62de004eec3cd535c7b06964949f38b4e0bbf0442e8298db4e03a4"
+    },
+    {
+      "path": "scripts/agent_install.py",
+      "bytes": 30284,
+      "sha256": "eb54f3ec36712a169777437ccc0f03ec7fabb077585065c0d0795f8b0b8d10cc"
+    },
+    {
+      "path": "scripts/build_agent_bundle.py",
+      "bytes": 11685,
+      "sha256": "18d50f882883f7534458187c0aa4895edd0b2cf65757275a76d1650dac56ae5e"
+    },
+    {
+      "path": "scripts/new_design_project.py",
+      "bytes": 3157,
+      "sha256": "3626fad4eddce55764b525c1c54d0e915c4cf8479cfb3707c5e5bee0b0b24fb0"
+    },
+    {
+      "path": "scripts/skill.py",
+      "bytes": 11973,
+      "sha256": "4abfc695edfa55f5b69bc3d55591be4658e123ec08e7ee43e69ab1dfc83ddd82"
+    },
+    {
+      "path": "scripts/test_agent_install.py",
+      "bytes": 8400,
+      "sha256": "ffbfd10756373dcbe0dbd4acc9f8282b1fe45947a107a9365f85b32ba11cf9f5"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "bytes": 14987,
+      "sha256": "8be745ad25863b13a081b7c590200d9771d96c7dbf0ace0fa52a094969f9e868"
+    },
+    {
+      "path": "self-install.cmd",
+      "bytes": 308,
+      "sha256": "0cb01d64a1a30dcb5d11b9262c3863801c4caf04b7ee60a8b3705ea63bcb1686"
+    },
+    {
+      "path": "self-install.ps1",
+      "bytes": 1054,
+      "sha256": "e47cbebf8240f7e9538c155f256aa9171d168d299f91139d008c11df5a481c3b"
+    },
+    {
+      "path": "self-install.sh",
+      "bytes": 325,
+      "sha256": "75ef496a02602d3ba56742f60e8f3e05865d5b8f883f24ad8d132ed965c34212"
+    },
+    {
+      "path": "skills/README.md",
+      "bytes": 14779,
+      "sha256": "22454e346f1b43f7b19edb45b3a30386cd5eb5ad4d047994d2d0ad09421fc294"
+    },
+    {
+      "path": "skills/design-systems/README.md",
+      "bytes": 1060,
+      "sha256": "47357bc3ee7faf9a47225e6740551693a71a7134b08e5d658ba276c0506bf7a5"
+    },
+    {
+      "path": "skills/design-systems/accessibility-by-design/SKILL.md",
+      "bytes": 2170,
+      "sha256": "ddd11a9233bc98101cab8d4293d5cd70aa18eb15c84296d72b99be176d2b6a32"
+    },
+    {
+      "path": "skills/design-systems/component-system/SKILL.md",
+      "bytes": 2107,
+      "sha256": "f88edaaf2073766f08ca9002ad2c6fbdb5d56d43bf903cd92bbbf521e7ca86ef"
+    },
+    {
+      "path": "skills/design-systems/design-system-migration/SKILL.md",
+      "bytes": 2188,
+      "sha256": "e77b7dc3492a8cbebd150e2a5d43d0d6e3e28a3182b3ce72746e012affa4de79"
+    },
+    {
+      "path": "skills/design-systems/design-tokens/SKILL.md",
+      "bytes": 2143,
+      "sha256": "a644b54e286e8a8913a1171ef516f6be8caf2de9243cfa60069eb80c5b205414"
+    },
+    {
+      "path": "skills/design-systems/documentation-governance/SKILL.md",
+      "bytes": 2061,
+      "sha256": "3d480c2b6b45f89fa08805772b5a13fae0c29924378bb5d0de0f3006466bc19e"
+    },
+    {
+      "path": "skills/design-systems/theming/SKILL.md",
+      "bytes": 2008,
+      "sha256": "3091c0a230861b14055b549b0a40e30683bb16cfb105cb849849689fbadf4e22"
+    },
+    {
+      "path": "skills/discovery-research/README.md",
+      "bytes": 1704,
+      "sha256": "86a0b9840ec23e17fac078947120f45797c31c0fc71adaaab2866a3cdd6d52b8"
+    },
+    {
+      "path": "skills/discovery-research/contextual-inquiry/SKILL.md",
+      "bytes": 2089,
+      "sha256": "614726064ff422ec24c73e3a8edd0e8f0d26016a18985288d9ae3bca2547507e"
+    },
+    {
+      "path": "skills/discovery-research/desk-research/SKILL.md",
+      "bytes": 2072,
+      "sha256": "0e718b5fc64040c44550761a1a02bd59dcca51023a4ff5bc6b45a1fefe83b3b3"
+    },
+    {
+      "path": "skills/discovery-research/inclusive-research/SKILL.md",
+      "bytes": 2244,
+      "sha256": "1d36ef4723c75f525d0a823668d7327bcacb83933910d9b70f298803afc73def"
+    },
+    {
+      "path": "skills/discovery-research/product-discovery/SKILL.md",
+      "bytes": 2029,
+      "sha256": "9e743a03b1cc3d30948a79bdd68de5518703a06a18083e281773722bbcaee360"
+    },
+    {
+      "path": "skills/discovery-research/research-planning/SKILL.md",
+      "bytes": 2105,
+      "sha256": "80186afdec6d565c1eb277f7ca0d8520de2c5895dcd327114d36a58df50fea18"
+    },
+    {
+      "path": "skills/discovery-research/research-synthesis/SKILL.md",
+      "bytes": 2189,
+      "sha256": "9ec85eb27a0e645e54526784e6c3339a30d2523300c4695e496af2c226594523"
+    },
+    {
+      "path": "skills/discovery-research/robust-research/SKILL.md",
+      "bytes": 2481,
+      "sha256": "c8969ec60c09a81048f7edc003c8addb9ac22ed1ac5eedd47ef3abcfe4bc86cc"
+    },
+    {
+      "path": "skills/discovery-research/survey-quant/SKILL.md",
+      "bytes": 2130,
+      "sha256": "050fe8cbc769faeca95f9a5c41c9cc84abf21dc7970c5615c9f81538dab1bf10"
+    },
+    {
+      "path": "skills/discovery-research/usability-testing/SKILL.md",
+      "bytes": 2204,
+      "sha256": "2e96f57184f023a588660414d91959aec83dab9d13c65e246c5dc2e058e1e267"
+    },
+    {
+      "path": "skills/discovery-research/user-interviews/SKILL.md",
+      "bytes": 2024,
+      "sha256": "fffe71890122be29493b057890f007dfb944d41d5009d05d80ea7807ec7ea1e5"
+    },
+    {
+      "path": "skills/experience-design/README.md",
+      "bytes": 1599,
+      "sha256": "bc02ea8c8b52515d4248d8457fbe2be80060a039bd76262cea57aaf59739fea7"
+    },
+    {
+      "path": "skills/experience-design/ai-experience/SKILL.md",
+      "bytes": 2371,
+      "sha256": "2dbcf7f045a4988664c0e6efd50da0f631f60c3435b31cb2a25dfe3c1a987701"
+    },
+    {
+      "path": "skills/experience-design/collaboration-permissions/SKILL.md",
+      "bytes": 2143,
+      "sha256": "4f5676abe22895a9366212f6f457ff4722711ec7cedaf2455a55cc93f814ad13"
+    },
+    {
+      "path": "skills/experience-design/content-design/SKILL.md",
+      "bytes": 2063,
+      "sha256": "64d94553da30c0d885698daec2227113f13a9a1a0bd0db208e9ca305430b733a"
+    },
+    {
+      "path": "skills/experience-design/data-dense-interfaces/SKILL.md",
+      "bytes": 2317,
+      "sha256": "674aefa0c9d3623952feeff56c1d3709604d5686def47ff329a2a8d3d069659d"
+    },
+    {
+      "path": "skills/experience-design/forms-validation/SKILL.md",
+      "bytes": 2163,
+      "sha256": "d5fcebe34c254f41c492b102d965160f3f2f1888a00527a1caf388de48f10d11"
+    },
+    {
+      "path": "skills/experience-design/information-architecture/SKILL.md",
+      "bytes": 2041,
+      "sha256": "152edb5e4ab3d227c45e7aff6c1d82b84506031e138c61d426810e5c16e12757"
+    },
+    {
+      "path": "skills/experience-design/interaction-design/SKILL.md",
+      "bytes": 2122,
+      "sha256": "02844d8af8d0145249ec99c8bf194f34363468ac5ecba71189cbb7845157c49e"
+    },
+    {
+      "path": "skills/experience-design/onboarding/SKILL.md",
+      "bytes": 2035,
+      "sha256": "10bed101304b98dcb9b87c469106540aa0ac8532541f033cc4d37bf944d3842a"
+    },
+    {
+      "path": "skills/experience-design/search-filtering/SKILL.md",
+      "bytes": 2115,
+      "sha256": "f3896156ea0419ffad0b3c4738580ee85272f9ca4f1193b3cf610c0b27092d4f"
+    },
+    {
+      "path": "skills/experience-design/user-flows/SKILL.md",
+      "bytes": 1883,
+      "sha256": "54b450a0b0b06dec0334aa4686d5ed673d5912ee3045a8447fec2e03cfab4bd9"
+    },
+    {
+      "path": "skills/implementation/README.md",
+      "bytes": 1788,
+      "sha256": "495666076d10cabae41f57177a6264bbc7009abceb3fb88746e9da0154b354f4"
+    },
+    {
+      "path": "skills/implementation/design-system-integration/SKILL.md",
+      "bytes": 2063,
+      "sha256": "557ebf8ad5aa27a42cdc65d0276da154124858b98ff0734899ff6cf508590a49"
+    },
+    {
+      "path": "skills/implementation/design-to-code/SKILL.md",
+      "bytes": 2072,
+      "sha256": "7dfccb76487263bd7913a766703d5e82b889683df9739e9414d7a0e3854fa04f"
+    },
+    {
+      "path": "skills/implementation/i18n-content-resilience/SKILL.md",
+      "bytes": 2149,
+      "sha256": "a74fa1aff1c85fd72762f4fb8a24de1787450f39348758f65fcd0dd3f737d343"
+    },
+    {
+      "path": "skills/implementation/metadata-discoverability/SKILL.md",
+      "bytes": 2034,
+      "sha256": "c6bc68128fdf8fe40e0f10210a08fce0f61f549dc6e2f0b9111c645e81554b92"
+    },
+    {
+      "path": "skills/implementation/native-ui-engineering/SKILL.md",
+      "bytes": 2332,
+      "sha256": "6eb0e4419fdf00917406d4d3368d6d6dce10732224d6ccc946d3f748a7eec97b"
+    },
+    {
+      "path": "skills/implementation/performance/SKILL.md",
+      "bytes": 2195,
+      "sha256": "f96602578cf8581ecdede00b5d86631b21678a07053c3737050a854e5875aff9"
+    },
+    {
+      "path": "skills/implementation/pixel-perfect-implementation/SKILL.md",
+      "bytes": 2313,
+      "sha256": "0ac263358cbc2a7cf7a5b16cd1ee5d22cb54d8c4f92beec9cd413434d28a609f"
+    },
+    {
+      "path": "skills/implementation/stack-inspector/SKILL.md",
+      "bytes": 2105,
+      "sha256": "a8b38a2aefbc7b90fdb9c58314fbe18fcbb0fcc61ee4da8871b940d700d240b9"
+    },
+    {
+      "path": "skills/implementation/technology-adapter/SKILL.md",
+      "bytes": 2041,
+      "sha256": "50da63372df4187cd8b15e31e55c959c3c251d30b83a2c3c38fc11ef7cddae6b"
+    },
+    {
+      "path": "skills/implementation/web-ui-engineering/SKILL.md",
+      "bytes": 2279,
+      "sha256": "7e2d1188e0d7085cfbc034384c2c3af6274e1e5c3274e62d05dbbddd93296817"
+    },
+    {
+      "path": "skills/orchestration/README.md",
+      "bytes": 865,
+      "sha256": "e71a15221a9b9d109b1e8234a45093d1c1870baccfa269a17ab133f1d298389a"
+    },
+    {
+      "path": "skills/orchestration/decision-facilitation/SKILL.md",
+      "bytes": 2011,
+      "sha256": "01b23e46b4b24349f86a68bf89b3f33692fef6288333f2abe594d0d85219b991"
+    },
+    {
+      "path": "skills/orchestration/design-critique/SKILL.md",
+      "bytes": 1973,
+      "sha256": "82ee823a4868d93d1ab25a2f7df3e18f8996513a41bed14718ac78a670c784f4"
+    },
+    {
+      "path": "skills/orchestration/product-design-orchestrator/SKILL.md",
+      "bytes": 2544,
+      "sha256": "6d0221bfffd3f8e09b850f78072fe00fdf6cd8548b57c6c9ff3c9985b540fa39"
+    },
+    {
+      "path": "skills/orchestration/project-inspector/SKILL.md",
+      "bytes": 2265,
+      "sha256": "7b6f406543fc2f4887aaecfd40604f366a02a879573127de5449179410ed54c4"
+    },
+    {
+      "path": "skills/orchestration/skill-router/SKILL.md",
+      "bytes": 2022,
+      "sha256": "8daf150136ee2edeaa75ecfdbe2f5608b737affe9c288e0573d7c0227fbc9f1d"
+    },
+    {
+      "path": "skills/product-strategy/README.md",
+      "bytes": 1174,
+      "sha256": "c1125e0aa57afef69e6c741f58218735a01cdc9ac3ebd1786ce9e8dcbea600f5"
+    },
+    {
+      "path": "skills/product-strategy/competitive-landscape/SKILL.md",
+      "bytes": 2062,
+      "sha256": "ef0cacc5e1f2668bbcff99eaa759f4a0ec9c8b05382f43598dc35676e2f56c03"
+    },
+    {
+      "path": "skills/product-strategy/experiment-design/SKILL.md",
+      "bytes": 2164,
+      "sha256": "9b4ff71cf26b2aa94be375dcaeda73588d1b3746eb9891896ab92be6225b2358"
+    },
+    {
+      "path": "skills/product-strategy/jobs-to-be-done/SKILL.md",
+      "bytes": 1875,
+      "sha256": "bc6a2bde06fda6474e142a9f743425e3315a7ef21147aa255095a29729f40527"
+    },
+    {
+      "path": "skills/product-strategy/journey-service-blueprint/SKILL.md",
+      "bytes": 2020,
+      "sha256": "3e2b0df82a9897f30264eae70330591dbfc4c51ec14072d9e1cf31480c01114b"
+    },
+    {
+      "path": "skills/product-strategy/outcomes-metrics/SKILL.md",
+      "bytes": 1995,
+      "sha256": "6a4aadb6f75545cd05b691b698aa8fd0bef85440afcc33a2f838042f2db66593"
+    },
+    {
+      "path": "skills/product-strategy/problem-framing/SKILL.md",
+      "bytes": 1862,
+      "sha256": "f86037a2b303446b864cb9d6603636b8f958b46a782d9b6abc915ec522005cd1"
+    },
+    {
+      "path": "skills/product-strategy/trust-privacy-safety/SKILL.md",
+      "bytes": 2219,
+      "sha256": "b6f90709e0d145a6788404b438ffaaa37026851314fbaa67726ab5d01cd3f12c"
+    },
+    {
+      "path": "skills/quality-assurance/README.md",
+      "bytes": 1524,
+      "sha256": "591afa2ec14a19abeb22edde23d437b8de5cdda10ff61e6b7f4c5bac0ea54526"
+    },
+    {
+      "path": "skills/quality-assurance/accessibility-audit/SKILL.md",
+      "bytes": 2285,
+      "sha256": "7300a31db64e653007ebc4e6604de17b1fac31632dcbdfa43602e3f0adfd29cb"
+    },
+    {
+      "path": "skills/quality-assurance/browser-automation/SKILL.md",
+      "bytes": 2185,
+      "sha256": "65d04e1a3a2246bd849236a260a6a6bced4c4d8e11e8a97477acd5412d7bee8e"
+    },
+    {
+      "path": "skills/quality-assurance/edge-case-hardening/SKILL.md",
+      "bytes": 2150,
+      "sha256": "a87e438dfe473134eeb772c5ee261ea2aa1fddc3c84510518f861e19c8b25311"
+    },
+    {
+      "path": "skills/quality-assurance/interaction-state-audit/SKILL.md",
+      "bytes": 2178,
+      "sha256": "41ea6b16c0bed455322d9315acaa99a97a0eaa5fa4f065338bce0a2ad08788a0"
+    },
+    {
+      "path": "skills/quality-assurance/live-optimization/SKILL.md",
+      "bytes": 2196,
+      "sha256": "cfb985e443ebb623d2879357dcd3af89c062e5e671913ae6fec38e6a3830d2ae"
+    },
+    {
+      "path": "skills/quality-assurance/release-readiness/SKILL.md",
+      "bytes": 2040,
+      "sha256": "e332c24de95ba6a8692a8760ed6f3bce8c2e88fd4adfd79bc2257d7246e07e1c"
+    },
+    {
+      "path": "skills/quality-assurance/test-strategy/SKILL.md",
+      "bytes": 2183,
+      "sha256": "e3e908d141bd0c336a471a16131385a3e3c1b2539d1c32c6c3906ed8f5fff271"
+    },
+    {
+      "path": "skills/quality-assurance/visual-qa/SKILL.md",
+      "bytes": 2006,
+      "sha256": "d31f29414befcf22f91e07dae14660bd3335b607522bbe242ad61111bca7efa2"
+    },
+    {
+      "path": "skills/vendor/README.md",
+      "bytes": 501,
+      "sha256": "e2f3d288351f372e9020ac00673012026cdd5e3ff5c8458c8b98cdf21df19abd"
+    },
+    {
+      "path": "skills/vendor/design-taste-frontend/LICENSE",
+      "bytes": 1065,
+      "sha256": "4575a543ab88dad12ccea7d97e563d0bce5b448b06072e65d3264497dad326df"
+    },
+    {
+      "path": "skills/vendor/design-taste-frontend/SKILL.md",
+      "bytes": 87253,
+      "sha256": "aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+    },
+    {
+      "path": "skills/vendor/design-taste-frontend/SOURCE.md",
+      "bytes": 759,
+      "sha256": "1955cb006da5342472a48fa60ca7ba469aea506512349f679c75fac06ed4f06b"
+    },
+    {
+      "path": "skills/vendor/ui-skills-root/LICENSE",
+      "bytes": 1072,
+      "sha256": "c615621c4cc1676ccde194e7a01b6469ba477780251bd71e007fc473a49c2c2b"
+    },
+    {
+      "path": "skills/vendor/ui-skills-root/SKILL.md",
+      "bytes": 1448,
+      "sha256": "d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c"
+    },
+    {
+      "path": "skills/vendor/ui-skills-root/SOURCE.md",
+      "bytes": 695,
+      "sha256": "59dd014e55e78c5eed4c083c0963f2bcc7bad33125498c69f630e9d222a74d38"
+    },
+    {
+      "path": "skills/visual-design/README.md",
+      "bytes": 1868,
+      "sha256": "73d97d80ef1d4832f0bc60ed2518dff3ea9666b5b79aa681737c30a3d384eace"
+    },
+    {
+      "path": "skills/visual-design/anti-slop-taste/SKILL.md",
+      "bytes": 2146,
+      "sha256": "3f74eedc2849a4c009ef770517a36fe92832ec5d221e7cccad1f65c27a690878"
+    },
+    {
+      "path": "skills/visual-design/color/SKILL.md",
+      "bytes": 2032,
+      "sha256": "0ba8e7f64d4d32a0cc1fbab726718118d4e0d9f2c75d93e73d5e92c62670810b"
+    },
+    {
+      "path": "skills/visual-design/creative-direction/SKILL.md",
+      "bytes": 2080,
+      "sha256": "66acc8a12aa86ceb2fd3f5c0439dcee0bca7143a3bd6e4613a60946d43babebe"
+    },
+    {
+      "path": "skills/visual-design/data-visualization/SKILL.md",
+      "bytes": 2071,
+      "sha256": "436276686f6e175e3734ca90f7f3e43f9b4324696a4fb834a6275fb5f8aee748"
+    },
+    {
+      "path": "skills/visual-design/design-lab/SKILL.md",
+      "bytes": 1998,
+      "sha256": "1b805e833c5d05c47f58cf7e92c5c03ee8c1707312cd833f91ee2d5b4d2c0826"
+    },
+    {
+      "path": "skills/visual-design/imagery-iconography/SKILL.md",
+      "bytes": 2135,
+      "sha256": "b4b0ae1ebdb03f49453658b14200bb4e3255e7e83b75600db375bcba4e017f98"
+    },
+    {
+      "path": "skills/visual-design/layout-composition/SKILL.md",
+      "bytes": 2101,
+      "sha256": "f801a351571f934fe37599d1f892f7ce540a4b6f8cc3915efcda22b3804a03cd"
+    },
+    {
+      "path": "skills/visual-design/motion/SKILL.md",
+      "bytes": 2071,
+      "sha256": "8e41ac148081a27952d1dfea3c1d86b4ecc05c0a1a5c5e2920cd0e7047a55f42"
+    },
+    {
+      "path": "skills/visual-design/reference-analysis/SKILL.md",
+      "bytes": 2095,
+      "sha256": "29b400a19b402a9fc3bd1e4b431e6b5f8e801757d7fe9d1a01a5d5120a354b2b"
+    },
+    {
+      "path": "skills/visual-design/responsive-design/SKILL.md",
+      "bytes": 2237,
+      "sha256": "51b4c2438f4e816c6e20e3a38ba8896e862263280d3bf436a6c8327531072609"
+    },
+    {
+      "path": "skills/visual-design/typography/SKILL.md",
+      "bytes": 2115,
+      "sha256": "e9d0b17185ad0a2e1f18732c805ed94b77533846e41628c5fb96cd53b4f27f5e"
+    },
+    {
+      "path": "templates/ASSUMPTIONS.md",
+      "bytes": 413,
+      "sha256": "000706051961c97e0e3dc6530000c1cac157feca08bd79256fe789f7747ed24e"
+    },
+    {
+      "path": "templates/COMPONENT_CONTRACTS.md",
+      "bytes": 722,
+      "sha256": "28483fcba6c1b8528fc0819caf44bb57590361bc7754d85c4532980d203231aa"
+    },
+    {
+      "path": "templates/DECISIONS.md",
+      "bytes": 328,
+      "sha256": "f7411c76c8bc47ada397ad7235fcc1a3999ab3ec5a8175f6087607d813f82f4b"
+    },
+    {
+      "path": "templates/DESIGN_BRIEF.md",
+      "bytes": 1184,
+      "sha256": "94a64ec6fc8e5773c74303148cf3f659d4b3f17b494ce87fa31bdd4e0a73cc35"
+    },
+    {
+      "path": "templates/DESIGN_SYSTEM.md",
+      "bytes": 1039,
+      "sha256": "c1c8a0348e35530716d5b6a73d4787137852b8907ea3301e0a27f63afa3e8891"
+    },
+    {
+      "path": "templates/DIRECTIONS.md",
+      "bytes": 746,
+      "sha256": "4ad706b4289628e88b7e1ff167266bdd98712cc9d604cad70a9d619918813487"
+    },
+    {
+      "path": "templates/EVIDENCE_LEDGER.md",
+      "bytes": 496,
+      "sha256": "466abba71c430137db64fde8b66068e7572fc78dcd1cb1e8804dca61973dc42c"
+    },
+    {
+      "path": "templates/IA_AND_FLOWS.md",
+      "bytes": 958,
+      "sha256": "8c93dc06ebaf259376205cb23808bd39f00ec7ca8335cc251ceee7fd04489099"
+    },
+    {
+      "path": "templates/IMPLEMENTATION_PLAN.md",
+      "bytes": 882,
+      "sha256": "c897e485f451e988eca63674f6031fed5795dd07976ec5e745bbd04a34d35499"
+    },
+    {
+      "path": "templates/LIVE_LEARNING.md",
+      "bytes": 753,
+      "sha256": "b52d02cded4f6c2c714a78e5a130c76ae296245cde9852431c59cd066489a961"
+    },
+    {
+      "path": "templates/PROJECT_CONTEXT.md",
+      "bytes": 975,
+      "sha256": "315577acd451ccd45e3aa1e3ed7f558ef45317c55147d8ab163cbfef5e877373"
+    },
+    {
+      "path": "templates/README.md",
+      "bytes": 276,
+      "sha256": "911b10b05966da9747f523bc207f7722637e011151021b25f3664ea96d0c6edc"
+    },
+    {
+      "path": "templates/RELEASE_REVIEW.md",
+      "bytes": 990,
+      "sha256": "54291143bd22b48d207f4f55ec94617dbbe885d28e5525da4da6674527cebaf6"
+    },
+    {
+      "path": "templates/RESEARCH_PLAN.md",
+      "bytes": 1057,
+      "sha256": "a299fcf366fcc77a1f6e53f67433d81b4854402784de4acb93e53268678f9bbe"
+    },
+    {
+      "path": "templates/RESEARCH_SYNTHESIS.md",
+      "bytes": 808,
+      "sha256": "e808b55269d02363107cb0e1e26cb336dc2e1ec8180da41e79126ac4118bf14b"
+    },
+    {
+      "path": "templates/SCREEN_CONTRACTS.md",
+      "bytes": 901,
+      "sha256": "b71a57a31a483e709ea80e8fb2ab1aedf35764cef12a02b1ebe704489b2ba2ea"
+    },
+    {
+      "path": "templates/SKILL_LEDGER.md",
+      "bytes": 387,
+      "sha256": "11b6dee7ef43366c496f3d25bc98e6c573eafe61ea58af0fcea9482c669be553"
+    },
+    {
+      "path": "templates/VISUAL_QA.md",
+      "bytes": 810,
+      "sha256": "608a741de44566535bd481137671cfd0efd77650a6c2ab91cab07f805f6161a6"
+    },
+    {
+      "path": "templates/tokens.example.tokens.json",
+      "bytes": 1037,
+      "sha256": "adc799ab12387fb28b883bdc62fe7cb6d917acb62a3aed46c1dad2ac19850ccb"
+    }
+  ]
+}

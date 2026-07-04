@@ -1,0 +1,25 @@
+{
+  "name": "product-design-orchestrator-local",
+  "owner": {
+    "name": "Product Design Orchestrator contributors"
+  },
+  "description": "Local offline marketplace for the Product Design Orchestrator plugin.",
+  "version": "4.1.0",
+  "plugins": [
+    {
+      "name": "product-design-orchestrator",
+      "displayName": "Product Design Orchestrator",
+      "source": "./integrations/product-design-orchestrator-plugin",
+      "description": "Professional product-design and design-to-code orchestration.",
+      "version": "4.1.0",
+      "category": "design",
+      "tags": [
+        "ui",
+        "ux",
+        "research",
+        "frontend",
+        "accessibility"
+      ]
+    }
+  ]
+}

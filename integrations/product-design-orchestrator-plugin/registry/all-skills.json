@@ -1,0 +1,7073 @@
+[
+  {
+    "name": "accessibility-by-design",
+    "description": "Translate accessibility and inclusive user needs into flow, component, content, token, and acceptance requirements before implementation.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "accessible design",
+      "WCAG design requirements",
+      "inclusive UI",
+      "keyboard spec"
+    ],
+    "path": "skills/design-systems/accessibility-by-design/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/accessibility-by-design",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "component-system",
+    "description": "Specify reusable components with purpose, anatomy, variants, states, accessibility, content, tokens, API boundaries, tests, and misuse guidance.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "component spec",
+      "design system component",
+      "UI library",
+      "component states"
+    ],
+    "path": "skills/design-systems/component-system/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/component-system",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-system-migration",
+    "description": "Plan and execute migration from fragmented or legacy UI to a coherent system without breaking product behavior or freezing delivery.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "migrate design system",
+      "legacy UI refactor",
+      "component consolidation",
+      "token migration"
+    ],
+    "path": "skills/design-systems/design-system-migration/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-system-migration",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-tokens",
+    "description": "Define platform-agnostic primitive, semantic, and component design tokens with themes, aliases, descriptions, governance, and code translation.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "design tokens",
+      "token architecture",
+      "CSS variables",
+      "DTCG tokens"
+    ],
+    "path": "skills/design-systems/design-tokens/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-tokens",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "documentation-governance",
+    "description": "Document, govern, evolve, and measure adoption of a design system through clear ownership, contribution, review, versioning, migration, and deprecation.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "design system docs",
+      "governance",
+      "component documentation",
+      "design ops"
+    ],
+    "path": "skills/design-systems/documentation-governance/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/documentation-governance",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "theming",
+    "description": "Design semantic theme architecture for light/dark, high contrast, brand, density, and platform modes with predictable inheritance and asset behavior.",
+    "category": "design-systems",
+    "phases": [
+      "systemize",
+      "implement"
+    ],
+    "triggers": [
+      "dark mode",
+      "theme system",
+      "multi brand",
+      "design system modes"
+    ],
+    "path": "skills/design-systems/theming/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/theming",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "contextual-inquiry",
+    "description": "Observe people performing real work in context to uncover tacit behavior, environmental constraints, artifacts, interruptions, and workarounds.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "field research",
+      "contextual inquiry",
+      "observe workflow",
+      "shadow users"
+    ],
+    "path": "skills/discovery-research/contextual-inquiry/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/contextual-inquiry",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "desk-research",
+    "description": "Conduct current, source-grounded desk research for product, market, policy, standards, patterns, and technology decisions.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "web research",
+      "competitive research",
+      "standards research",
+      "verify current information"
+    ],
+    "path": "skills/discovery-research/desk-research/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/desk-research",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "inclusive-research",
+    "description": "Plan and conduct research that includes disabled people and participants facing language, literacy, device, bandwidth, confidence, or access barriers.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "inclusive research",
+      "research disabled users",
+      "accessibility research",
+      "hard to reach users"
+    ],
+    "path": "skills/discovery-research/inclusive-research/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/inclusive-research",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "product-discovery",
+    "description": "Understand the problem space, users, current journey, constraints, and opportunity before committing to a production solution.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "discovery phase",
+      "understand users",
+      "new product problem",
+      "before solution"
+    ],
+    "path": "skills/discovery-research/product-discovery/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/product-discovery",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "research-planning",
+    "description": "Create a proportionate research plan that connects decisions and assumptions to participants, methods, logistics, analysis, and ethics.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "research plan",
+      "plan interviews",
+      "study design",
+      "research sprint"
+    ],
+    "path": "skills/discovery-research/research-planning/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/research-planning",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "research-synthesis",
+    "description": "Turn real qualitative and quantitative evidence into themes, models, opportunities, and decisions while preserving contradictions and traceability.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "synthesize research",
+      "affinity mapping",
+      "analyze interviews",
+      "research findings"
+    ],
+    "path": "skills/discovery-research/research-synthesis/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/research-synthesis",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "robust-research",
+    "description": "Design and govern credible mixed-method product research with explicit evidence labels, bias controls, contradictions, ethics, and confidence.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "research rigor",
+      "robust research",
+      "evidence quality",
+      "AI research"
+    ],
+    "path": "skills/discovery-research/robust-research/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/robust-research",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "survey-quant",
+    "description": "Design surveys and quantitative studies that measure the right construct with honest sampling, analysis, and uncertainty.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "survey",
+      "quantitative UX research",
+      "measure prevalence",
+      "questionnaire"
+    ],
+    "path": "skills/discovery-research/survey-quant/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/survey-quant",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "usability-testing",
+    "description": "Evaluate whether representative people can complete realistic tasks, understand system feedback, and recover from problems in an appropriate-fidelity prototype or product.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "usability test",
+      "test prototype",
+      "moderated test",
+      "task testing"
+    ],
+    "path": "skills/discovery-research/usability-testing/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/usability-testing",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "user-interviews",
+    "description": "Plan, moderate, and analyze user interviews that reveal context, behavior, motivations, constraints, and mental models without pitching the solution.",
+    "category": "discovery-research",
+    "phases": [
+      "discover",
+      "validate"
+    ],
+    "triggers": [
+      "interview users",
+      "discussion guide",
+      "generative interview",
+      "customer interview"
+    ],
+    "path": "skills/discovery-research/user-interviews/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/user-interviews",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "ai-experience",
+    "description": "Design AI-assisted and generative product experiences with clear capability, provenance, uncertainty, control, review, recovery, and evaluation.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "AI UX",
+      "copilot",
+      "chat interface",
+      "generative AI product",
+      "agent UI"
+    ],
+    "path": "skills/experience-design/ai-experience/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/ai-experience",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "collaboration-permissions",
+    "description": "Design multi-user roles, sharing, permissions, presence, comments, approvals, conflicts, history, and accountability.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "collaboration UX",
+      "permissions",
+      "roles",
+      "sharing",
+      "approval workflow"
+    ],
+    "path": "skills/experience-design/collaboration-permissions/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/collaboration-permissions",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "content-design",
+    "description": "Design interface language, hierarchy, help, errors, confirmations, and content models so people can understand and act.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "UX writing",
+      "microcopy",
+      "content design",
+      "error messages",
+      "labels"
+    ],
+    "path": "skills/experience-design/content-design/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/content-design",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "data-dense-interfaces",
+    "description": "Design dashboards, tables, admin, monitoring, and operational tools for scanning, comparison, action, exception handling, and scale.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "dashboard",
+      "data table",
+      "admin UI",
+      "analytics interface",
+      "dense product UI"
+    ],
+    "path": "skills/experience-design/data-dense-interfaces/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/data-dense-interfaces",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "forms-validation",
+    "description": "Design forms, data entry, validation, review, submission, and recovery for clarity, efficiency, accessibility, and data integrity.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "form design",
+      "validation",
+      "checkout form",
+      "data entry"
+    ],
+    "path": "skills/experience-design/forms-validation/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/forms-validation",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "information-architecture",
+    "description": "Design coherent concepts, taxonomy, navigation, labeling, content models, and retrieval paths based on user mental models and growth needs.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "information architecture",
+      "navigation",
+      "taxonomy",
+      "sitemap",
+      "content model"
+    ],
+    "path": "skills/experience-design/information-architecture/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/information-architecture",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "interaction-design",
+    "description": "Define how controls, feedback, state transitions, direct manipulation, keyboard/touch input, and recovery behave over time.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "interaction design",
+      "microinteraction",
+      "state behavior",
+      "feedback pattern"
+    ],
+    "path": "skills/experience-design/interaction-design/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/interaction-design",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "onboarding",
+    "description": "Design first-use, setup, education, activation, and progressive learning around real user value rather than product tours.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "onboarding",
+      "first run",
+      "activation",
+      "setup flow"
+    ],
+    "path": "skills/experience-design/onboarding/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/onboarding",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "search-filtering",
+    "description": "Design search, query, autocomplete, filters, facets, sorting, result interpretation, and no-result recovery for realistic information spaces.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "search UX",
+      "filters",
+      "faceted navigation",
+      "results page"
+    ],
+    "path": "skills/experience-design/search-filtering/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/search-filtering",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "user-flows",
+    "description": "Model complete user and system flows with decisions, states, alternate paths, permissions, recovery, and cross-channel handoffs.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "user flow",
+      "task flow",
+      "screen flow",
+      "state diagram"
+    ],
+    "path": "skills/experience-design/user-flows/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/user-flows",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-system-integration",
+    "description": "Integrate new UI into an existing design system by reusing primitives, adding justified tokens/components, and preventing local drift.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "use design system",
+      "integrate components",
+      "extend UI library",
+      "avoid one off CSS"
+    ],
+    "path": "skills/implementation/design-system-integration/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-system-integration",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-to-code",
+    "description": "Translate approved flows, screen contracts, tokens, components, content, and states into maintainable production code in vertical slices.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "implement design",
+      "frontend build",
+      "design handoff",
+      "code UI"
+    ],
+    "path": "skills/implementation/design-to-code/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-to-code",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "i18n-content-resilience",
+    "description": "Harden UI for localization, RTL, text expansion, locale formats, input methods, pluralization, and extreme/missing content.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "internationalization",
+      "localization UI",
+      "RTL",
+      "long text",
+      "content resilience"
+    ],
+    "path": "skills/implementation/i18n-content-resilience/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/i18n-content-resilience",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "metadata-discoverability",
+    "description": "Implement accurate page/app metadata, structured sharing, indexing controls, deep links, titles, and install/discovery surfaces without misleading users or crawlers.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "metadata",
+      "SEO",
+      "Open Graph",
+      "social preview",
+      "deep links"
+    ],
+    "path": "skills/implementation/metadata-discoverability/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/metadata-discoverability",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [
+      "web"
+    ],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "native-ui-engineering",
+    "description": "Implement faithful, accessible, performant native or cross-platform mobile/desktop UI using platform navigation, layout, input, lifecycle, and accessibility conventions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "mobile UI implementation",
+      "native app design",
+      "React Native",
+      "Flutter",
+      "SwiftUI",
+      "Compose"
+    ],
+    "path": "skills/implementation/native-ui-engineering/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/native-ui-engineering",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [
+      "ios",
+      "android",
+      "react-native"
+    ],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "performance",
+    "description": "Design, implement, and verify UI performance for loading, responsiveness, visual stability, animation, memory, and realistic low-end conditions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "UI performance",
+      "Core Web Vitals",
+      "jank",
+      "slow interface",
+      "optimize frontend"
+    ],
+    "path": "skills/implementation/performance/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/performance",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "pixel-perfect-implementation",
+    "description": "Recreate an approved visual reference with measured, maintainable, responsive implementation and a deterministic screenshot comparison loop.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "pixel perfect",
+      "image to code",
+      "match Figma",
+      "screenshot recreation"
+    ],
+    "path": "skills/implementation/pixel-perfect-implementation/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/pixel-perfect-implementation",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "stack-inspector",
+    "description": "Detect a project’s platform, framework, versions, rendering, styling, state, data, component, test, and deployment conventions before UI implementation.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "detect stack",
+      "inspect frontend project",
+      "before implementation",
+      "framework audit"
+    ],
+    "path": "skills/implementation/stack-inspector/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/stack-inspector",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "technology-adapter",
+    "description": "Translate approved design behavior into the conventions and capabilities of any detected technology stack using current official documentation.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "unknown stack",
+      "adapt design to framework",
+      "any technology",
+      "platform adapter"
+    ],
+    "path": "skills/implementation/technology-adapter/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/technology-adapter",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [
+      "web",
+      "ios",
+      "android",
+      "react-native"
+    ],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "web-ui-engineering",
+    "description": "Implement semantic, responsive, accessible, performant web UI with robust browser behavior, intrinsic layout, and maintainable component boundaries.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "web frontend",
+      "HTML CSS UI",
+      "responsive web implementation",
+      "design engineering"
+    ],
+    "path": "skills/implementation/web-ui-engineering/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/web-ui-engineering",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [
+      "web"
+    ],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "decision-facilitation",
+    "description": "Turn design disagreement or ambiguity into explicit criteria, trade-offs, reversible decisions, and proportionate tests.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "stakeholder disagreement",
+      "choose direction",
+      "design decision",
+      "trade-off"
+    ],
+    "path": "skills/orchestration/decision-facilitation/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/decision-facilitation",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-critique",
+    "description": "Critique a product experience by intent, user outcome, structure, interaction, system, and craft, then prioritize actionable corrections.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "critique UI",
+      "design review",
+      "audit screen",
+      "why does this feel off"
+    ],
+    "path": "skills/orchestration/design-critique/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-critique",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "product-design-orchestrator",
+    "description": "Coordinate a product-design effort from uncertain request through evidence, design, implementation, verification, and live learning without applying unnecessary ceremony.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "full product design",
+      "new feature",
+      "greenfield",
+      "redesign",
+      "multi-phase design and build"
+    ],
+    "path": "skills/orchestration/product-design-orchestrator/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/product-design-orchestrator",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "project-inspector",
+    "description": "Inspect an existing product and repository before UI changes so design decisions extend the real system instead of inventing a parallel one.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "repository audit",
+      "existing product",
+      "redesign",
+      "before coding UI"
+    ],
+    "path": "skills/orchestration/project-inspector/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/project-inspector",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "skill-router",
+    "description": "Select the smallest useful bundled or external skill set by decision, lifecycle phase, risk, platform, and specificity.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "find skill",
+      "which skill",
+      "route UI task",
+      "skill recommendation"
+    ],
+    "path": "skills/orchestration/skill-router/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/skill-router",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "competitive-landscape",
+    "description": "Analyze competitors, substitutes, conventions, and whitespace to inform strategy and design without copying surface aesthetics.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "competitive analysis",
+      "benchmark products",
+      "market UX research",
+      "reference competitors"
+    ],
+    "path": "skills/product-strategy/competitive-landscape/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/competitive-landscape",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "experiment-design",
+    "description": "Design ethical product experiments that test a causal hypothesis with valid metrics, guardrails, assignment, analysis, and stopping rules.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "A/B test",
+      "product experiment",
+      "hypothesis test",
+      "evaluate change"
+    ],
+    "path": "skills/product-strategy/experiment-design/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/experiment-design",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "jobs-to-be-done",
+    "description": "Frame progress people seek, triggers, forces, desired outcomes, and competing solutions without reducing users to demographics or features.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "JTBD",
+      "jobs to be done",
+      "user motivation",
+      "outcome statement"
+    ],
+    "path": "skills/product-strategy/jobs-to-be-done/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/jobs-to-be-done",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "journey-service-blueprint",
+    "description": "Map the end-to-end user journey and backstage service system across time, channels, actors, evidence, handoffs, failures, and opportunities.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "journey map",
+      "service blueprint",
+      "end to end experience",
+      "cross channel flow"
+    ],
+    "path": "skills/product-strategy/journey-service-blueprint/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/journey-service-blueprint",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "outcomes-metrics",
+    "description": "Define user-centered success measures, product outcomes, quality and harm guardrails, instrumentation, and decision thresholds.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "success metrics",
+      "UX metrics",
+      "KPI",
+      "measure design"
+    ],
+    "path": "skills/product-strategy/outcomes-metrics/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/outcomes-metrics",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "problem-framing",
+    "description": "Turn a feature request or diffuse opportunity into an evidence-aware problem statement, scope, principles, and assumption map.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "frame problem",
+      "design brief",
+      "feature request",
+      "scope product work"
+    ],
+    "path": "skills/product-strategy/problem-framing/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/problem-framing",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "trust-privacy-safety",
+    "description": "Design user agency, privacy, security communication, reversible control, and harm prevention into sensitive or high-consequence experiences.",
+    "category": "product-strategy",
+    "phases": [
+      "define",
+      "live"
+    ],
+    "triggers": [
+      "trust",
+      "privacy UX",
+      "safety critical UI",
+      "consent",
+      "dangerous action"
+    ],
+    "path": "skills/product-strategy/trust-privacy-safety/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/trust-privacy-safety",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "accessibility-audit",
+    "description": "Audit a complete user journey against applicable accessibility standards using automated checks, manual inspection, keyboard, zoom/reflow, and assistive technology as warranted.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accessibility audit",
+      "WCAG 2.2",
+      "screen reader test",
+      "fix accessibility"
+    ],
+    "path": "skills/quality-assurance/accessibility-audit/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/accessibility-audit",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "browser-automation",
+    "description": "Use browser automation to exercise journeys, capture deterministic screenshots, inspect accessibility and console/network behavior, and preserve reproducible QA evidence.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "Playwright",
+      "browser test",
+      "automate screenshots",
+      "E2E UI test"
+    ],
+    "path": "skills/quality-assurance/browser-automation/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/browser-automation",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [
+      "web",
+      "playwright"
+    ],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "edge-case-hardening",
+    "description": "Make a product production-ready across empty, slow, error, partial, stale, offline, permission, lifecycle, content, volume, and abuse edge cases.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "harden UI",
+      "edge cases",
+      "production readiness",
+      "empty error loading states"
+    ],
+    "path": "skills/quality-assurance/edge-case-hardening/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/edge-case-hardening",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "interaction-state-audit",
+    "description": "Audit components and flows for complete, correct, accessible state transitions, feedback, concurrency, interruption, persistence, and recovery.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "state audit",
+      "loading errors empty states",
+      "interaction QA",
+      "microinteraction audit"
+    ],
+    "path": "skills/quality-assurance/interaction-state-audit/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/interaction-state-audit",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "live-optimization",
+    "description": "Improve a live product through outcome monitoring, field evidence, support/operational signals, research, experiments, and system updates.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "improve live product",
+      "post launch UX",
+      "continuous optimization",
+      "analytics design"
+    ],
+    "path": "skills/quality-assurance/live-optimization/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/live-optimization",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "release-readiness",
+    "description": "Run a final cross-functional release gate covering user outcome, behavior, content, accessibility, visual fidelity, performance, resilience, privacy, observability, rollback, and ownership.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "release checklist",
+      "launch UI",
+      "design QA before release",
+      "definition of done"
+    ],
+    "path": "skills/quality-assurance/release-readiness/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/release-readiness",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "test-strategy",
+    "description": "Define a risk-based UI test strategy across unit, component, interaction, accessibility, visual, integration, end-to-end, performance, and exploratory testing.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "UI testing strategy",
+      "component tests",
+      "E2E plan",
+      "visual tests"
+    ],
+    "path": "skills/quality-assurance/test-strategy/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/test-strategy",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "visual-qa",
+    "description": "Review rendered UI across approved references, viewports, states, themes, content extremes, and platforms; classify and correct visual/system defects.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "visual QA",
+      "screenshot review",
+      "UI polish",
+      "visual regression"
+    ],
+    "path": "skills/quality-assurance/visual-qa/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/visual-qa",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "anti-slop-taste",
+    "description": "Detect and remove generic AI-made visual patterns while preserving context, usability, brand, and deliberate familiar conventions.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "anti slop",
+      "make UI feel human",
+      "generic AI UI",
+      "polish visual design"
+    ],
+    "path": "skills/visual-design/anti-slop-taste/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/anti-slop-taste",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "color",
+    "description": "Build a perceptually coherent, accessible color system for brand, hierarchy, interaction, status, data, themes, and real display conditions.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "color palette",
+      "OKLCH",
+      "dark mode colors",
+      "accessible color system"
+    ],
+    "path": "skills/visual-design/color/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/color",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "creative-direction",
+    "description": "Translate audience, product, brand, and strategic intent into a coherent visual thesis, creative tension, system grammar, and signature move.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "visual direction",
+      "art direction",
+      "design style",
+      "make it distinctive"
+    ],
+    "path": "skills/visual-design/creative-direction/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/creative-direction",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "data-visualization",
+    "description": "Select, design, annotate, and implement charts and visual explanations that support accurate comparison, trend, distribution, relationship, and decision making.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "charts",
+      "data visualization",
+      "dashboard graphs",
+      "visualize data"
+    ],
+    "path": "skills/visual-design/data-visualization/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/data-visualization",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "design-lab",
+    "description": "Explore and compare meaningful design variants through focused questions, controlled changes, rendered options, and iterative feedback.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "explore variants",
+      "design lab",
+      "show directions",
+      "iterate visual design"
+    ],
+    "path": "skills/visual-design/design-lab/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/design-lab",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "imagery-iconography",
+    "description": "Direct photography, illustration, diagrams, texture, icons, and media as a coherent semantic and brand system with accessible alternatives.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "images",
+      "icons",
+      "illustration system",
+      "art direction",
+      "visual assets"
+    ],
+    "path": "skills/visual-design/imagery-iconography/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/imagery-iconography",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "layout-composition",
+    "description": "Design responsive spatial systems, grids, hierarchy, rhythm, and optical balance from content and task rather than template geometry.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "layout",
+      "grid",
+      "spacing",
+      "composition",
+      "visual hierarchy"
+    ],
+    "path": "skills/visual-design/layout-composition/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/layout-composition",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "motion",
+    "description": "Design purposeful, interruptible, performant motion that explains continuity, causality, hierarchy, feedback, or spatial relationships and respects user preferences.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "animation",
+      "motion design",
+      "transitions",
+      "microinteractions"
+    ],
+    "path": "skills/visual-design/motion/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/motion",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "reference-analysis",
+    "description": "Analyze screenshots, products, brand systems, and visual references into transferable principles without copying their surface identity.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "analyze reference",
+      "inspiration",
+      "screenshot design analysis",
+      "style decomposition"
+    ],
+    "path": "skills/visual-design/reference-analysis/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/reference-analysis",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "responsive-design",
+    "description": "Design adaptive experiences across viewport, device, orientation, input, content, and platform constraints rather than treating mobile as a scaled desktop.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "responsive UI",
+      "mobile adaptation",
+      "breakpoints",
+      "container queries"
+    ],
+    "path": "skills/visual-design/responsive-design/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/responsive-design",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "name": "typography",
+    "description": "Design and implement a readable, expressive, responsive type system with intentional hierarchy, rhythm, content fit, and language support.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "typography",
+      "font pairing",
+      "type scale",
+      "text hierarchy"
+    ],
+    "path": "skills/visual-design/typography/SKILL.md",
+    "source": "bundled",
+    "install": null,
+    "id": "bundled/typography",
+    "license": "MIT",
+    "trust": "local-original",
+    "stacks": [],
+    "url": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/full-output-enforcement",
+    "name": "full-output-enforcement",
+    "description": "Delivery guardrail for complete production output without placeholder omissions.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "full-output-enforcement",
+      "delivery",
+      "guardrail",
+      "complete",
+      "production",
+      "output",
+      "without",
+      "placeholder"
+    ],
+    "tags": [
+      "full-output-enforcement",
+      "delivery",
+      "guardrail",
+      "complete",
+      "production",
+      "output",
+      "without",
+      "placeholder",
+      "omissions."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/output-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"full-output-enforcement\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/redesign-existing-projects",
+    "name": "redesign-existing-projects",
+    "description": "Audit-first workflow for improving an existing project while preserving its contracts and architecture.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "redesign-existing-projects",
+      "audit-first",
+      "workflow",
+      "improving",
+      "existing",
+      "project",
+      "while",
+      "preserving"
+    ],
+    "tags": [
+      "redesign-existing-projects",
+      "audit-first",
+      "workflow",
+      "improving",
+      "existing",
+      "project",
+      "while",
+      "preserving",
+      "its",
+      "contracts",
+      "architecture."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/redesign-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"redesign-existing-projects\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/brandkit",
+    "name": "brandkit",
+    "description": "Generate brand-kit boards with identity, palette, typography, and applications.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "brandkit",
+      "generate",
+      "brand-kit",
+      "boards",
+      "identity",
+      "palette",
+      "typography",
+      "applications."
+    ],
+    "tags": [
+      "brandkit",
+      "generate",
+      "brand-kit",
+      "boards",
+      "identity",
+      "palette",
+      "typography",
+      "applications."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/brandkit",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"brandkit\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/design-taste-frontend",
+    "name": "design-taste-frontend",
+    "description": "Contextual anti-slop frontend direction for landing pages, portfolios, and redesigns; infers brief, design language, variance, motion, and density.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "design-taste-frontend",
+      "contextual",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "landing",
+      "pages",
+      "portfolios"
+    ],
+    "tags": [
+      "design-taste-frontend",
+      "contextual",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "landing",
+      "pages",
+      "portfolios",
+      "redesigns",
+      "infers",
+      "brief",
+      "language",
+      "variance",
+      "motion",
+      "density."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/design-taste-frontend-v1",
+    "name": "design-taste-frontend-v1",
+    "description": "Pinned original Taste Skill behavior for projects that depend on its prior rules.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "design-taste-frontend-v1",
+      "pinned",
+      "original",
+      "taste",
+      "behavior",
+      "projects",
+      "depend",
+      "its"
+    ],
+    "tags": [
+      "design-taste-frontend-v1",
+      "pinned",
+      "original",
+      "taste",
+      "behavior",
+      "projects",
+      "depend",
+      "its",
+      "prior",
+      "rules."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill-v1",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"design-taste-frontend-v1\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/gpt-taste",
+    "name": "gpt-taste",
+    "description": "Stricter GPT/Codex-oriented anti-slop frontend direction with stronger layout and motion enforcement.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "gpt-taste",
+      "stricter",
+      "gpt",
+      "codex-oriented",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "stronger"
+    ],
+    "tags": [
+      "gpt-taste",
+      "stricter",
+      "gpt",
+      "codex-oriented",
+      "anti-slop",
+      "frontend",
+      "direction",
+      "stronger",
+      "layout",
+      "motion",
+      "enforcement."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/gpt-tasteskill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"gpt-taste\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/high-end-visual-design",
+    "name": "high-end-visual-design",
+    "description": "Calm, premium visual direction with restrained contrast, whitespace, typography, and motion.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "high-end-visual-design",
+      "calm",
+      "premium",
+      "visual",
+      "direction",
+      "restrained",
+      "contrast",
+      "whitespace"
+    ],
+    "tags": [
+      "high-end-visual-design",
+      "calm",
+      "premium",
+      "visual",
+      "direction",
+      "restrained",
+      "contrast",
+      "whitespace",
+      "typography",
+      "motion."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/soft-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"high-end-visual-design\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/image-to-code",
+    "name": "image-to-code",
+    "description": "Image-first workflow that creates reference frames, analyzes them, and implements the frontend to match.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "image-to-code",
+      "image-first",
+      "workflow",
+      "creates",
+      "reference",
+      "frames",
+      "analyzes",
+      "them"
+    ],
+    "tags": [
+      "image-to-code",
+      "image-first",
+      "workflow",
+      "creates",
+      "reference",
+      "frames",
+      "analyzes",
+      "them",
+      "implements",
+      "frontend",
+      "match."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/image-to-code-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"image-to-code\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/imagegen-frontend-mobile",
+    "name": "imagegen-frontend-mobile",
+    "description": "Generate coherent mobile screen and flow reference images.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "imagegen-frontend-mobile",
+      "generate",
+      "coherent",
+      "mobile",
+      "screen",
+      "flow",
+      "reference",
+      "images."
+    ],
+    "tags": [
+      "imagegen-frontend-mobile",
+      "generate",
+      "coherent",
+      "mobile",
+      "screen",
+      "flow",
+      "reference",
+      "images."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/imagegen-frontend-mobile",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"imagegen-frontend-mobile\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/imagegen-frontend-web",
+    "name": "imagegen-frontend-web",
+    "description": "Generate coherent web design reference images for later analysis and implementation.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "imagegen-frontend-web",
+      "generate",
+      "coherent",
+      "web",
+      "reference",
+      "images",
+      "later",
+      "analysis"
+    ],
+    "tags": [
+      "imagegen-frontend-web",
+      "generate",
+      "coherent",
+      "web",
+      "reference",
+      "images",
+      "later",
+      "analysis",
+      "implementation."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/imagegen-frontend-web",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"imagegen-frontend-web\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/industrial-brutalist-ui",
+    "name": "industrial-brutalist-ui",
+    "description": "High-contrast industrial and brutalist visual direction with experimental composition.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "industrial-brutalist-ui",
+      "high-contrast",
+      "industrial",
+      "brutalist",
+      "visual",
+      "direction",
+      "experimental",
+      "composition."
+    ],
+    "tags": [
+      "industrial-brutalist-ui",
+      "high-contrast",
+      "industrial",
+      "brutalist",
+      "visual",
+      "direction",
+      "experimental",
+      "composition."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/brutalist-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"industrial-brutalist-ui\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/minimalist-ui",
+    "name": "minimalist-ui",
+    "description": "Editorial, restrained product UI with crisp hierarchy and a disciplined palette.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "minimalist-ui",
+      "editorial",
+      "restrained",
+      "product",
+      "crisp",
+      "hierarchy",
+      "disciplined",
+      "palette."
+    ],
+    "tags": [
+      "minimalist-ui",
+      "editorial",
+      "restrained",
+      "product",
+      "crisp",
+      "hierarchy",
+      "disciplined",
+      "palette."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/minimalist-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"minimalist-ui\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/stitch-design-taste",
+    "name": "stitch-design-taste",
+    "description": "Taste rules formatted for Google Stitch and optional DESIGN.md export workflows.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "stitch-design-taste",
+      "taste",
+      "rules",
+      "formatted",
+      "google",
+      "stitch",
+      "optional",
+      "design.md"
+    ],
+    "tags": [
+      "stitch-design-taste",
+      "taste",
+      "rules",
+      "formatted",
+      "google",
+      "stitch",
+      "optional",
+      "design.md",
+      "export",
+      "workflows."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/stitch-skill",
+    "source": "taste-skill-repository",
+    "trust": "external-review-required",
+    "license": "MIT",
+    "install": "npx skills add https://github.com/Leonxlnx/taste-skill --skill \"stitch-design-taste\"",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "zeke/swiss-design",
+    "name": "swiss-design",
+    "description": "Swiss design system skill focused on grid discipline, typography hierarchy, and clean editorial interface composition.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "zeke",
+      "swiss-design",
+      "swiss",
+      "system",
+      "focused",
+      "grid",
+      "discipline",
+      "typography"
+    ],
+    "tags": [
+      "zeke",
+      "swiss-design",
+      "swiss",
+      "system",
+      "focused",
+      "grid",
+      "discipline",
+      "typography",
+      "hierarchy",
+      "clean",
+      "editorial",
+      "interface",
+      "composition."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/zeke/swiss-design-skill/main/swiss-design/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get swiss-design",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "0xdesign/design-lab",
+    "name": "design-lab",
+    "description": "Interactive design exploration workflow: conduct interviews, generate variants, and refine UI designs through feedback.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "0xdesign",
+      "design-lab",
+      "interactive",
+      "exploration",
+      "workflow",
+      "conduct",
+      "interviews",
+      "generate"
+    ],
+    "tags": [
+      "0xdesign",
+      "design-lab",
+      "interactive",
+      "exploration",
+      "workflow",
+      "conduct",
+      "interviews",
+      "generate",
+      "variants",
+      "refine",
+      "designs",
+      "through",
+      "feedback."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/0xdesign/design-plugin/main/design-and-refine/skills/design-lab/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get design-lab",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/animate",
+    "name": "animate",
+    "description": "Enhance UX with purposeful animation and micro-interactions that support usability and delight.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "animate",
+      "enhance",
+      "purposeful",
+      "animation",
+      "micro-interactions",
+      "support",
+      "usability"
+    ],
+    "tags": [
+      "pbakaus",
+      "animate",
+      "enhance",
+      "purposeful",
+      "animation",
+      "micro-interactions",
+      "support",
+      "usability",
+      "delight."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/animate.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get animate",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/shape",
+    "name": "shape",
+    "description": "Plan feature UX before coding via a structured design interview that produces an actionable design brief.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "pbakaus",
+      "shape",
+      "plan",
+      "feature",
+      "before",
+      "coding",
+      "via",
+      "structured"
+    ],
+    "tags": [
+      "pbakaus",
+      "shape",
+      "plan",
+      "feature",
+      "before",
+      "coding",
+      "via",
+      "structured",
+      "interview",
+      "produces",
+      "actionable",
+      "brief."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/shape.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get shape",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/tsdown",
+    "name": "tsdown",
+    "description": "Bundle TypeScript and JavaScript libraries with tsdown, including declarations and multi-format builds.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "tsdown",
+      "bundle",
+      "typescript",
+      "javascript",
+      "libraries",
+      "declarations",
+      "multi-format"
+    ],
+    "tags": [
+      "antfu",
+      "tsdown",
+      "bundle",
+      "typescript",
+      "javascript",
+      "libraries",
+      "declarations",
+      "multi-format",
+      "builds."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/tsdown/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get tsdown",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/turborepo",
+    "name": "turborepo",
+    "description": "Turborepo monorepo build system guidance for pipelines, caching, filtering, CI, and package boundaries.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "turborepo",
+      "monorepo",
+      "build",
+      "system",
+      "pipelines",
+      "caching",
+      "filtering"
+    ],
+    "tags": [
+      "antfu",
+      "turborepo",
+      "monorepo",
+      "build",
+      "system",
+      "pipelines",
+      "caching",
+      "filtering",
+      "package",
+      "boundaries."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/turborepo/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get turborepo",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "anthropics/canvas-design",
+    "name": "canvas-design",
+    "description": "Create original visual designs and art on digital canvases using design philosophy, focusing on form, space, and color.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "anthropics",
+      "canvas-design",
+      "create",
+      "original",
+      "visual",
+      "designs",
+      "art",
+      "digital"
+    ],
+    "tags": [
+      "anthropics",
+      "canvas-design",
+      "create",
+      "original",
+      "visual",
+      "designs",
+      "art",
+      "digital",
+      "canvases",
+      "philosophy",
+      "focusing",
+      "form",
+      "space",
+      "color."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/canvas-design/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get canvas-design",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/clarify",
+    "name": "clarify",
+    "description": "Improve labels, microcopy, and UX messaging so interface text is clearer and easier to act on.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "pbakaus",
+      "clarify",
+      "improve",
+      "labels",
+      "microcopy",
+      "messaging",
+      "interface",
+      "text"
+    ],
+    "tags": [
+      "pbakaus",
+      "clarify",
+      "improve",
+      "labels",
+      "microcopy",
+      "messaging",
+      "interface",
+      "text",
+      "clearer",
+      "easier",
+      "act",
+      "on."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/clarify.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get clarify",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/delight",
+    "name": "delight",
+    "description": "Add personality and memorable moments through thoughtful interaction details and emotional UX touches.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "delight",
+      "add",
+      "personality",
+      "memorable",
+      "moments",
+      "through",
+      "thoughtful"
+    ],
+    "tags": [
+      "pbakaus",
+      "delight",
+      "add",
+      "personality",
+      "memorable",
+      "moments",
+      "through",
+      "thoughtful",
+      "interaction",
+      "details",
+      "emotional",
+      "touches."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/delight.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get delight",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/overdrive",
+    "name": "overdrive",
+    "description": "Push interfaces into high-impact territory with advanced animation, shaders, and ambitious interaction systems.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "overdrive",
+      "push",
+      "interfaces",
+      "high-impact",
+      "territory",
+      "advanced",
+      "animation"
+    ],
+    "tags": [
+      "pbakaus",
+      "overdrive",
+      "push",
+      "interfaces",
+      "high-impact",
+      "territory",
+      "advanced",
+      "animation",
+      "shaders",
+      "ambitious",
+      "interaction",
+      "systems."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/overdrive.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get overdrive",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/morphing-icons",
+    "name": "morphing-icons",
+    "description": "Build icon components that morph between SVG shapes with smooth, line-based transformation.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "morphing-icons",
+      "build",
+      "icon",
+      "components",
+      "morph",
+      "between",
+      "svg"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "morphing-icons",
+      "build",
+      "icon",
+      "components",
+      "morph",
+      "between",
+      "svg",
+      "shapes",
+      "smooth",
+      "line-based",
+      "transformation."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/morphing-icons/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get morphing-icons",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "shadcn-ui/shadcn",
+    "name": "shadcn",
+    "description": "Project-aware shadcn/ui workflow for searching, adding, composing, and fixing components with correct patterns.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "shadcn-ui",
+      "shadcn",
+      "project-aware",
+      "workflow",
+      "searching",
+      "adding",
+      "composing",
+      "fixing"
+    ],
+    "tags": [
+      "shadcn-ui",
+      "shadcn",
+      "project-aware",
+      "workflow",
+      "searching",
+      "adding",
+      "composing",
+      "fixing",
+      "components",
+      "correct",
+      "patterns."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/shadcn-ui/ui/main/skills/shadcn/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get shadcn",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/nuxt",
+    "name": "nuxt",
+    "description": "Nuxt full-stack Vue framework guidance for SSR, auto-imports, file-based routing, and server routes.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "nuxt",
+      "full-stack",
+      "vue",
+      "framework",
+      "ssr",
+      "auto-imports",
+      "file-based"
+    ],
+    "tags": [
+      "antfu",
+      "nuxt",
+      "full-stack",
+      "vue",
+      "framework",
+      "ssr",
+      "auto-imports",
+      "file-based",
+      "routing",
+      "server",
+      "routes."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/nuxt/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get nuxt",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/pinia",
+    "name": "pinia",
+    "description": "Pinia state management best practices for type-safe Vue stores, getters, and actions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "pinia",
+      "state",
+      "management",
+      "practices",
+      "type-safe",
+      "vue",
+      "stores"
+    ],
+    "tags": [
+      "antfu",
+      "pinia",
+      "state",
+      "management",
+      "practices",
+      "type-safe",
+      "vue",
+      "stores",
+      "getters",
+      "actions."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/pinia/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get pinia",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/slidev",
+    "name": "slidev",
+    "description": "Create developer slide decks with Slidev using Markdown, Vue components, code highlighting, and animations.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "slidev",
+      "create",
+      "developer",
+      "slide",
+      "decks",
+      "markdown",
+      "vue"
+    ],
+    "tags": [
+      "antfu",
+      "slidev",
+      "create",
+      "developer",
+      "slide",
+      "decks",
+      "markdown",
+      "vue",
+      "components",
+      "code",
+      "highlighting",
+      "animations."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/slidev/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get slidev",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vitepress",
+    "name": "vitepress",
+    "description": "VitePress documentation site guidance for configuration, theming, and Markdown plus Vue content.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vitepress",
+      "documentation",
+      "site",
+      "configuration",
+      "theming",
+      "markdown",
+      "plus"
+    ],
+    "tags": [
+      "antfu",
+      "vitepress",
+      "documentation",
+      "site",
+      "configuration",
+      "theming",
+      "markdown",
+      "plus",
+      "vue",
+      "content."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vitepress/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vitepress",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vue",
+    "name": "vue",
+    "description": "Vue 3 Composition API and reactivity guidance for SFCs, script setup macros, and built-in components.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vue",
+      "composition",
+      "api",
+      "reactivity",
+      "sfcs",
+      "script",
+      "setup"
+    ],
+    "tags": [
+      "antfu",
+      "vue",
+      "composition",
+      "api",
+      "reactivity",
+      "sfcs",
+      "script",
+      "setup",
+      "macros",
+      "built-in",
+      "components."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vue/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vue-best-practices",
+    "name": "vue-best-practices",
+    "description": "Vue.js best practices emphasizing Composition API with script setup and TypeScript.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vue-best-practices",
+      "vue.js",
+      "practices",
+      "emphasizing",
+      "composition",
+      "api",
+      "script"
+    ],
+    "tags": [
+      "antfu",
+      "vue-best-practices",
+      "vue.js",
+      "practices",
+      "emphasizing",
+      "composition",
+      "api",
+      "script",
+      "setup",
+      "typescript."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vue-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vue-router-best-practices",
+    "name": "vue-router-best-practices",
+    "description": "Vue Router 4 patterns covering navigation guards, route params, and route lifecycle interactions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vue-router-best-practices",
+      "vue",
+      "router",
+      "patterns",
+      "covering",
+      "navigation",
+      "guards"
+    ],
+    "tags": [
+      "antfu",
+      "vue-router-best-practices",
+      "vue",
+      "router",
+      "patterns",
+      "covering",
+      "navigation",
+      "guards",
+      "route",
+      "params",
+      "lifecycle",
+      "interactions."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vue-router-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-router-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vueuse-functions",
+    "name": "vueuse-functions",
+    "description": "Apply VueUse composables to build concise, maintainable Vue and Nuxt features.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vueuse-functions",
+      "apply",
+      "vueuse",
+      "composables",
+      "build",
+      "concise",
+      "maintainable"
+    ],
+    "tags": [
+      "antfu",
+      "vueuse-functions",
+      "apply",
+      "vueuse",
+      "composables",
+      "build",
+      "concise",
+      "maintainable",
+      "vue",
+      "nuxt",
+      "features."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vueuse-functions/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vueuse-functions",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "callstackincubator/react-native-best-practices",
+    "name": "react-native-best-practices",
+    "description": "React Native performance optimization guidelines for FPS, TTI, bundle size, memory leaks, re-renders, and animations.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "callstackincubator",
+      "react-native-best-practices",
+      "react",
+      "native",
+      "performance",
+      "optimization",
+      "guidelines",
+      "fps"
+    ],
+    "tags": [
+      "callstackincubator",
+      "react-native-best-practices",
+      "react",
+      "native",
+      "performance",
+      "optimization",
+      "guidelines",
+      "fps",
+      "tti",
+      "bundle",
+      "size",
+      "memory",
+      "leaks",
+      "re-renders",
+      "animations."
+    ],
+    "stacks": [
+      "react-native",
+      "react",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/callstackincubator/agent-skills/main/skills/react-native-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get react-native-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-animation",
+    "name": "threejs-animation",
+    "description": "Three.js animation guidance for keyframes, skeletal animation, morph targets, and animation blending.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-animation",
+      "three.js",
+      "animation",
+      "keyframes",
+      "skeletal",
+      "morph",
+      "targets"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-animation",
+      "three.js",
+      "animation",
+      "keyframes",
+      "skeletal",
+      "morph",
+      "targets",
+      "blending."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-animation/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-animation",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-fundamentals",
+    "name": "threejs-fundamentals",
+    "description": "Three.js scene setup guidance for cameras, renderer configuration, object hierarchy, and transforms.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-fundamentals",
+      "three.js",
+      "scene",
+      "setup",
+      "cameras",
+      "renderer",
+      "configuration"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-fundamentals",
+      "three.js",
+      "scene",
+      "setup",
+      "cameras",
+      "renderer",
+      "configuration",
+      "object",
+      "hierarchy",
+      "transforms."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-fundamentals/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-fundamentals",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-geometry",
+    "name": "threejs-geometry",
+    "description": "Three.js geometry patterns for built-in shapes, BufferGeometry, custom meshes, and instancing.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-geometry",
+      "three.js",
+      "geometry",
+      "patterns",
+      "built-in",
+      "shapes",
+      "buffergeometry"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-geometry",
+      "three.js",
+      "geometry",
+      "patterns",
+      "built-in",
+      "shapes",
+      "buffergeometry",
+      "custom",
+      "meshes",
+      "instancing."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-geometry/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-geometry",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-interaction",
+    "name": "threejs-interaction",
+    "description": "Three.js interaction patterns for raycasting, controls, pointer input, and object selection.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-interaction",
+      "three.js",
+      "interaction",
+      "patterns",
+      "raycasting",
+      "controls",
+      "pointer"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-interaction",
+      "three.js",
+      "interaction",
+      "patterns",
+      "raycasting",
+      "controls",
+      "pointer",
+      "input",
+      "object",
+      "selection."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-interaction/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-interaction",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-lighting",
+    "name": "threejs-lighting",
+    "description": "Three.js lighting guidance for light types, shadows, environment lighting, and performance tuning.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-lighting",
+      "three.js",
+      "lighting",
+      "light",
+      "types",
+      "shadows",
+      "environment"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-lighting",
+      "three.js",
+      "lighting",
+      "light",
+      "types",
+      "shadows",
+      "environment",
+      "performance",
+      "tuning."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-lighting/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-lighting",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-loaders",
+    "name": "threejs-loaders",
+    "description": "Three.js asset loading patterns for GLTF, textures, HDR assets, async loading, and progress handling.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-loaders",
+      "three.js",
+      "asset",
+      "loading",
+      "patterns",
+      "gltf",
+      "textures"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-loaders",
+      "three.js",
+      "asset",
+      "loading",
+      "patterns",
+      "gltf",
+      "textures",
+      "hdr",
+      "assets",
+      "async",
+      "progress",
+      "handling."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-loaders/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-loaders",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-materials",
+    "name": "threejs-materials",
+    "description": "Three.js material guidance for PBR, classic materials, shader materials, and material optimization.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-materials",
+      "three.js",
+      "material",
+      "pbr",
+      "classic",
+      "materials",
+      "shader"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-materials",
+      "three.js",
+      "material",
+      "pbr",
+      "classic",
+      "materials",
+      "shader",
+      "optimization."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-materials/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-materials",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-postprocessing",
+    "name": "threejs-postprocessing",
+    "description": "Three.js post-processing techniques with EffectComposer, bloom, depth of field, and screen-space effects.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-postprocessing",
+      "three.js",
+      "post-processing",
+      "techniques",
+      "effectcomposer",
+      "bloom",
+      "depth"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-postprocessing",
+      "three.js",
+      "post-processing",
+      "techniques",
+      "effectcomposer",
+      "bloom",
+      "depth",
+      "field",
+      "screen-space",
+      "effects."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-postprocessing/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-postprocessing",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-shaders",
+    "name": "threejs-shaders",
+    "description": "Three.js shader guidance for GLSL, ShaderMaterial, uniforms, and custom vertex and fragment effects.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-shaders",
+      "three.js",
+      "shader",
+      "glsl",
+      "shadermaterial",
+      "uniforms",
+      "custom"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-shaders",
+      "three.js",
+      "shader",
+      "glsl",
+      "shadermaterial",
+      "uniforms",
+      "custom",
+      "vertex",
+      "fragment",
+      "effects."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-shaders/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-shaders",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "cloudai-x/threejs-textures",
+    "name": "threejs-textures",
+    "description": "Three.js texture workflows for maps, UV mapping, environment maps, and texture configuration.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "cloudai-x",
+      "threejs-textures",
+      "three.js",
+      "texture",
+      "workflows",
+      "maps",
+      "mapping",
+      "environment"
+    ],
+    "tags": [
+      "cloudai-x",
+      "threejs-textures",
+      "three.js",
+      "texture",
+      "workflows",
+      "maps",
+      "mapping",
+      "environment",
+      "configuration."
+    ],
+    "stacks": [
+      "threejs"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/CloudAI-X/threejs-skills/main/skills/threejs-textures/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get threejs-textures",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "emilkowalski/emil-design-eng",
+    "name": "emil-design-eng",
+    "description": "Emil Kowalski's design-engineering philosophy for UI polish, components, animation, and production-ready frontend craft.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "emilkowalski",
+      "emil-design-eng",
+      "emil",
+      "kowalski",
+      "design-engineering",
+      "philosophy",
+      "polish",
+      "components"
+    ],
+    "tags": [
+      "emilkowalski",
+      "emil-design-eng",
+      "emil",
+      "kowalski",
+      "design-engineering",
+      "philosophy",
+      "polish",
+      "components",
+      "animation",
+      "production-ready",
+      "frontend",
+      "craft."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/emilkowalski/skill/main/skills/emil-design-eng/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get emil-design-eng",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "ibelick/baseline-ui",
+    "name": "baseline-ui",
+    "description": "Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "ibelick",
+      "baseline-ui",
+      "quickly",
+      "deslop",
+      "code",
+      "fixing",
+      "spacing",
+      "hierarchy"
+    ],
+    "tags": [
+      "ibelick",
+      "baseline-ui",
+      "quickly",
+      "deslop",
+      "code",
+      "fixing",
+      "spacing",
+      "hierarchy",
+      "typography",
+      "small",
+      "layout",
+      "issues.",
+      "interface",
+      "needs",
+      "fast",
+      "cleanup",
+      "polish",
+      "pass."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/baseline-ui/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get baseline-ui",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "jakubantalik/transitions-dev",
+    "name": "transitions-dev",
+    "description": "Production-ready CSS transition patterns for web apps, with drop-in snippets for cards, modals, dropdowns, panels, and page transitions.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "jakubantalik",
+      "transitions-dev",
+      "production-ready",
+      "css",
+      "transition",
+      "patterns",
+      "web",
+      "apps"
+    ],
+    "tags": [
+      "jakubantalik",
+      "transitions-dev",
+      "production-ready",
+      "css",
+      "transition",
+      "patterns",
+      "web",
+      "apps",
+      "drop-in",
+      "snippets",
+      "cards",
+      "modals",
+      "dropdowns",
+      "panels",
+      "page",
+      "transitions."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Jakubantalik/transitions-dev/main/skills/transitions-dev/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get transitions-dev",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "jakubkrehel/make-interfaces-feel-better",
+    "name": "make-interfaces-feel-better",
+    "description": "Design engineering principles for making interfaces feel polished, with focus on micro-interactions, typography, and visual details.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "jakubkrehel",
+      "make-interfaces-feel-better",
+      "engineering",
+      "principles",
+      "making",
+      "interfaces",
+      "feel",
+      "polished"
+    ],
+    "tags": [
+      "jakubkrehel",
+      "make-interfaces-feel-better",
+      "engineering",
+      "principles",
+      "making",
+      "interfaces",
+      "feel",
+      "polished",
+      "focus",
+      "micro-interactions",
+      "typography",
+      "visual",
+      "details."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/jakubkrehel/make-interfaces-feel-better/main/skills/make-interfaces-feel-better/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get make-interfaces-feel-better",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/gpt-tasteskill",
+    "name": "gpt-tasteskill",
+    "description": "High-agency UX/UI skill with strict layout variance, typography, and GSAP motion engineering constraints.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "gpt-tasteskill",
+      "high-agency",
+      "strict",
+      "layout",
+      "variance",
+      "typography",
+      "gsap"
+    ],
+    "tags": [
+      "leonxlnx",
+      "gpt-tasteskill",
+      "high-agency",
+      "strict",
+      "layout",
+      "variance",
+      "typography",
+      "gsap",
+      "motion",
+      "engineering",
+      "constraints."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/gpt-tasteskill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get gpt-tasteskill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/output-skill",
+    "name": "output-skill",
+    "description": "Enforces complete, non-truncated code output and blocks placeholder or half-finished responses.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "output-skill",
+      "enforces",
+      "complete",
+      "non-truncated",
+      "code",
+      "output",
+      "blocks"
+    ],
+    "tags": [
+      "leonxlnx",
+      "output-skill",
+      "enforces",
+      "complete",
+      "non-truncated",
+      "code",
+      "output",
+      "blocks",
+      "placeholder",
+      "half-finished",
+      "responses."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/output-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get output-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "millionco/budge",
+    "name": "budge",
+    "description": "Use when making single-property CSS or Tailwind visual changes in Next.js App Router projects. Presents a floating control widget for live tuning before persisting.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "millionco",
+      "budge",
+      "making",
+      "single-property",
+      "css",
+      "tailwind",
+      "visual",
+      "changes"
+    ],
+    "tags": [
+      "millionco",
+      "budge",
+      "making",
+      "single-property",
+      "css",
+      "tailwind",
+      "visual",
+      "changes",
+      "next.js",
+      "app",
+      "router",
+      "projects.",
+      "presents",
+      "floating",
+      "control",
+      "widget",
+      "live",
+      "tuning"
+    ],
+    "stacks": [
+      "nextjs",
+      "tailwind",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/millionco/skills/main/skills/budge/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get budge",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "nextlevelbuilder/ui-ux-pro-max",
+    "name": "ui-ux-pro-max",
+    "description": "Comprehensive UI/UX design intelligence with 50+ styles, 97 palettes, and 9 technology stacks for building professional interfaces.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "nextlevelbuilder",
+      "ui-ux-pro-max",
+      "comprehensive",
+      "intelligence",
+      "50+",
+      "styles",
+      "palettes",
+      "technology"
+    ],
+    "tags": [
+      "nextlevelbuilder",
+      "ui-ux-pro-max",
+      "comprehensive",
+      "intelligence",
+      "50+",
+      "styles",
+      "palettes",
+      "technology",
+      "stacks",
+      "building",
+      "professional",
+      "interfaces."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/nextlevelbuilder/ui-ux-pro-max-skill/main/.claude/skills/ui-ux-pro-max/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get ui-ux-pro-max",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/impeccable",
+    "name": "impeccable",
+    "description": "Flagship design skill for production-grade, anti-generic frontend interfaces with strong craft and consistency.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "impeccable",
+      "flagship",
+      "production-grade",
+      "anti-generic",
+      "frontend",
+      "interfaces",
+      "strong"
+    ],
+    "tags": [
+      "pbakaus",
+      "impeccable",
+      "flagship",
+      "production-grade",
+      "anti-generic",
+      "frontend",
+      "interfaces",
+      "strong",
+      "craft",
+      "consistency."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/SKILL.src.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get impeccable",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/optimize",
+    "name": "optimize",
+    "description": "Diagnose and improve interface performance across rendering, motion smoothness, assets, and load speed.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "pbakaus",
+      "optimize",
+      "diagnose",
+      "improve",
+      "interface",
+      "performance",
+      "across",
+      "rendering"
+    ],
+    "tags": [
+      "pbakaus",
+      "optimize",
+      "diagnose",
+      "improve",
+      "interface",
+      "performance",
+      "across",
+      "rendering",
+      "motion",
+      "smoothness",
+      "assets",
+      "load",
+      "speed."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/optimize.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get optimize",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "remix-run/react-router-framework-mode",
+    "name": "react-router-framework-mode",
+    "description": "React Router framework-mode patterns for loaders, actions, middleware, route modules, and full-stack rendering flows.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "remix-run",
+      "react-router-framework-mode",
+      "react",
+      "router",
+      "framework-mode",
+      "patterns",
+      "loaders",
+      "actions"
+    ],
+    "tags": [
+      "remix-run",
+      "react-router-framework-mode",
+      "react",
+      "router",
+      "framework-mode",
+      "patterns",
+      "loaders",
+      "actions",
+      "middleware",
+      "route",
+      "modules",
+      "full-stack",
+      "rendering",
+      "flows."
+    ],
+    "stacks": [
+      "react",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/remix-run/agent-skills/main/skills/react-router-framework-mode/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get react-router-framework-mode",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "remotion-dev/remotion-best-practices",
+    "name": "remotion-best-practices",
+    "description": "Domain-specific knowledge base for building videos with Remotion and React.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "remotion-dev",
+      "remotion-best-practices",
+      "domain-specific",
+      "knowledge",
+      "base",
+      "building",
+      "videos",
+      "remotion"
+    ],
+    "tags": [
+      "remotion-dev",
+      "remotion-best-practices",
+      "domain-specific",
+      "knowledge",
+      "base",
+      "building",
+      "videos",
+      "remotion",
+      "react."
+    ],
+    "stacks": [
+      "react",
+      "remotion",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/remotion-dev/skills/main/skills/remotion/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get remotion-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "sveltejs/svelte-code-writer",
+    "name": "svelte-code-writer",
+    "description": "Official Svelte code-writing skill focused on modern Svelte patterns, component composition, and production-ready implementations.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "sveltejs",
+      "svelte-code-writer",
+      "official",
+      "svelte",
+      "code-writing",
+      "focused",
+      "modern",
+      "patterns"
+    ],
+    "tags": [
+      "sveltejs",
+      "svelte-code-writer",
+      "official",
+      "svelte",
+      "code-writing",
+      "focused",
+      "modern",
+      "patterns",
+      "component",
+      "composition",
+      "production-ready",
+      "implementations."
+    ],
+    "stacks": [
+      "svelte",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/sveltejs/ai-tools/main/plugins/claude/svelte/skills/svelte-code-writer/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get svelte-code-writer",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/next-best-practices",
+    "name": "next-best-practices",
+    "description": "Next.js best practices: file conventions, RSC boundaries, data patterns, async APIs, metadata, error handling, and optimization.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "next-best-practices",
+      "next.js",
+      "practices",
+      "file",
+      "conventions",
+      "rsc",
+      "boundaries"
+    ],
+    "tags": [
+      "vercel-labs",
+      "next-best-practices",
+      "next.js",
+      "practices",
+      "file",
+      "conventions",
+      "rsc",
+      "boundaries",
+      "data",
+      "patterns",
+      "async",
+      "apis",
+      "metadata",
+      "error",
+      "handling",
+      "optimization."
+    ],
+    "stacks": [
+      "nextjs",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/next-skills/main/skills/next-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get next-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/next-cache-components",
+    "name": "next-cache-components",
+    "description": "Next.js 16 Cache Components guidance covering PPR, use cache directive, cacheLife, cacheTag, and updateTag.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "next-cache-components",
+      "next.js",
+      "cache",
+      "components",
+      "covering",
+      "ppr",
+      "directive"
+    ],
+    "tags": [
+      "vercel-labs",
+      "next-cache-components",
+      "next.js",
+      "cache",
+      "components",
+      "covering",
+      "ppr",
+      "directive",
+      "cachelife",
+      "cachetag",
+      "updatetag."
+    ],
+    "stacks": [
+      "nextjs",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/next-skills/main/skills/next-cache-components/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get next-cache-components",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/react-best-practices",
+    "name": "react-best-practices",
+    "description": "Vercel React best practices for rendering performance, bundle efficiency, and scalable component architecture.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "react-best-practices",
+      "vercel",
+      "react",
+      "practices",
+      "rendering",
+      "performance",
+      "bundle"
+    ],
+    "tags": [
+      "vercel-labs",
+      "react-best-practices",
+      "vercel",
+      "react",
+      "practices",
+      "rendering",
+      "performance",
+      "bundle",
+      "efficiency",
+      "scalable",
+      "component",
+      "architecture."
+    ],
+    "stacks": [
+      "react",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/react-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get react-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/create-adaptable-composable",
+    "name": "create-adaptable-composable",
+    "description": "Create library-grade Vue composables that support plain values, refs, and getters with predictable reactivity.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "create-adaptable-composable",
+      "create",
+      "library-grade",
+      "vue",
+      "composables",
+      "support",
+      "plain"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "create-adaptable-composable",
+      "create",
+      "library-grade",
+      "vue",
+      "composables",
+      "support",
+      "plain",
+      "values",
+      "refs",
+      "getters",
+      "predictable",
+      "reactivity."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/create-adaptable-composable/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get create-adaptable-composable",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-best-practices",
+    "name": "vue-best-practices",
+    "description": "Core Vue development best practices for component architecture, reactivity, and maintainable code.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-best-practices",
+      "core",
+      "vue",
+      "development",
+      "practices",
+      "component",
+      "architecture"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-best-practices",
+      "core",
+      "vue",
+      "development",
+      "practices",
+      "component",
+      "architecture",
+      "reactivity",
+      "maintainable",
+      "code."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-jsx-best-practices",
+    "name": "vue-jsx-best-practices",
+    "description": "Guidance for writing robust, type-safe, and readable Vue components using JSX.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-jsx-best-practices",
+      "writing",
+      "robust",
+      "type-safe",
+      "readable",
+      "vue",
+      "components"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-jsx-best-practices",
+      "writing",
+      "robust",
+      "type-safe",
+      "readable",
+      "vue",
+      "components",
+      "jsx."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-jsx-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-jsx-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-options-api-best-practices",
+    "name": "vue-options-api-best-practices",
+    "description": "Best practices for structuring and scaling Vue applications built with the Options API.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-options-api-best-practices",
+      "practices",
+      "structuring",
+      "scaling",
+      "vue",
+      "applications",
+      "built"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-options-api-best-practices",
+      "practices",
+      "structuring",
+      "scaling",
+      "vue",
+      "applications",
+      "built",
+      "options",
+      "api."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-options-api-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-options-api-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-pinia-best-practices",
+    "name": "vue-pinia-best-practices",
+    "description": "Patterns for clean, scalable state management in Vue apps using Pinia stores.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-pinia-best-practices",
+      "patterns",
+      "clean",
+      "scalable",
+      "state",
+      "management",
+      "vue"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-pinia-best-practices",
+      "patterns",
+      "clean",
+      "scalable",
+      "state",
+      "management",
+      "vue",
+      "apps",
+      "pinia",
+      "stores."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-pinia-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-pinia-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-router-best-practices",
+    "name": "vue-router-best-practices",
+    "description": "Routing architecture and navigation patterns for maintainable Vue Router applications.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-router-best-practices",
+      "routing",
+      "architecture",
+      "navigation",
+      "patterns",
+      "maintainable",
+      "vue"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-router-best-practices",
+      "routing",
+      "architecture",
+      "navigation",
+      "patterns",
+      "maintainable",
+      "vue",
+      "router",
+      "applications."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-router-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-router-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "wshobson/interaction-design",
+    "name": "interaction-design",
+    "description": "Design and implement microinteractions, motion design, transitions, and user feedback patterns for delightful user experiences.",
+    "category": "experience-design",
+    "phases": [
+      "structure",
+      "validate"
+    ],
+    "triggers": [
+      "wshobson",
+      "interaction-design",
+      "implement",
+      "microinteractions",
+      "motion",
+      "transitions",
+      "user",
+      "feedback"
+    ],
+    "tags": [
+      "wshobson",
+      "interaction-design",
+      "implement",
+      "microinteractions",
+      "motion",
+      "transitions",
+      "user",
+      "feedback",
+      "patterns",
+      "delightful",
+      "experiences."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/wshobson/agents/main/plugins/ui-design/skills/interaction-design/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get interaction-design",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "zarazhangrui/frontend-slides",
+    "name": "frontend-slides",
+    "description": "Create animation-rich HTML presentations from scratch or convert PPT/PPTX files into polished web slides.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "zarazhangrui",
+      "frontend-slides",
+      "create",
+      "animation-rich",
+      "html",
+      "presentations",
+      "scratch",
+      "convert"
+    ],
+    "tags": [
+      "zarazhangrui",
+      "frontend-slides",
+      "create",
+      "animation-rich",
+      "html",
+      "presentations",
+      "scratch",
+      "convert",
+      "ppt",
+      "pptx",
+      "files",
+      "polished",
+      "web",
+      "slides."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/zarazhangrui/frontend-slides/main/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get frontend-slides",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/colorize",
+    "name": "colorize",
+    "description": "Introduce strategic color systems to interfaces that feel dull, monochrome, or visually flat.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "colorize",
+      "introduce",
+      "strategic",
+      "color",
+      "systems",
+      "interfaces",
+      "feel"
+    ],
+    "tags": [
+      "pbakaus",
+      "colorize",
+      "introduce",
+      "strategic",
+      "color",
+      "systems",
+      "interfaces",
+      "feel",
+      "dull",
+      "monochrome",
+      "visually",
+      "flat."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/colorize.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get colorize",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/12-principles-of-animation",
+    "name": "12-principles-of-animation",
+    "description": "Apply Disney's 12 animation principles to web interfaces to make motion feel natural, organic, and human.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "12-principles-of-animation",
+      "apply",
+      "disney",
+      "animation",
+      "principles",
+      "web",
+      "interfaces"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "12-principles-of-animation",
+      "apply",
+      "disney",
+      "animation",
+      "principles",
+      "web",
+      "interfaces",
+      "make",
+      "motion",
+      "feel",
+      "natural",
+      "organic",
+      "human."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/12-principles-of-animation/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get 12-principles-of-animation",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "accesslint/audit-and-fix",
+    "name": "audit-and-fix",
+    "description": "Accessibility auditing and remediation workflow that combines detection, prioritization, and practical fixes for WCAG issues.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accesslint",
+      "audit-and-fix",
+      "accessibility",
+      "auditing",
+      "remediation",
+      "workflow",
+      "combines",
+      "detection"
+    ],
+    "tags": [
+      "accesslint",
+      "audit-and-fix",
+      "accessibility",
+      "auditing",
+      "remediation",
+      "workflow",
+      "combines",
+      "detection",
+      "prioritization",
+      "practical",
+      "fixes",
+      "wcag",
+      "issues."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/AccessLint/claude-marketplace/main/plugins/accesslint/skills/audit-and-fix/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get audit-and-fix",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "addyosmani/frontend-ui-engineering",
+    "name": "frontend-ui-engineering",
+    "description": "Frontend UI engineering guidance covering component architecture, responsive design, accessibility, and maintainable implementation patterns.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "addyosmani",
+      "frontend-ui-engineering",
+      "frontend",
+      "engineering",
+      "covering",
+      "component",
+      "architecture",
+      "responsive"
+    ],
+    "tags": [
+      "addyosmani",
+      "frontend-ui-engineering",
+      "frontend",
+      "engineering",
+      "covering",
+      "component",
+      "architecture",
+      "responsive",
+      "accessibility",
+      "maintainable",
+      "implementation",
+      "patterns."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/addyosmani/agent-skills/main/skills/frontend-ui-engineering/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get frontend-ui-engineering",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "addyosmani/web-quality-audit",
+    "name": "web-quality-audit",
+    "description": "Web quality auditing skill for Lighthouse-style analysis across performance, accessibility, best practices, and SEO signals.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "addyosmani",
+      "web-quality-audit",
+      "web",
+      "quality",
+      "auditing",
+      "lighthouse-style",
+      "analysis",
+      "across"
+    ],
+    "tags": [
+      "addyosmani",
+      "web-quality-audit",
+      "web",
+      "quality",
+      "auditing",
+      "lighthouse-style",
+      "analysis",
+      "across",
+      "performance",
+      "accessibility",
+      "practices",
+      "seo",
+      "signals."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/addyosmani/web-quality-skills/main/skills/web-quality-audit/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get web-quality-audit",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vitest",
+    "name": "vitest",
+    "description": "Vitest testing best practices for unit tests, mocking, coverage, fixtures, and test filtering.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "antfu",
+      "vitest",
+      "testing",
+      "practices",
+      "unit",
+      "tests",
+      "mocking",
+      "coverage"
+    ],
+    "tags": [
+      "antfu",
+      "vitest",
+      "testing",
+      "practices",
+      "unit",
+      "tests",
+      "mocking",
+      "coverage",
+      "fixtures",
+      "test",
+      "filtering."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vitest/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vitest",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vue-testing-best-practices",
+    "name": "vue-testing-best-practices",
+    "description": "Vue testing guidance using Vitest, Vue Test Utils, component testing, mocking, and Playwright E2E.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "antfu",
+      "vue-testing-best-practices",
+      "vue",
+      "testing",
+      "vitest",
+      "test",
+      "utils",
+      "component"
+    ],
+    "tags": [
+      "antfu",
+      "vue-testing-best-practices",
+      "vue",
+      "testing",
+      "vitest",
+      "test",
+      "utils",
+      "component",
+      "mocking",
+      "playwright",
+      "e2e."
+    ],
+    "stacks": [
+      "vue",
+      "playwright",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vue-testing-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-testing-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "description": "Review UI code for web interface guideline compliance, including accessibility and UX best practices.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "antfu",
+      "web-design-guidelines",
+      "review",
+      "code",
+      "web",
+      "interface",
+      "guideline",
+      "compliance"
+    ],
+    "tags": [
+      "antfu",
+      "web-design-guidelines",
+      "review",
+      "code",
+      "web",
+      "interface",
+      "guideline",
+      "compliance",
+      "accessibility",
+      "practices."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/web-design-guidelines/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get web-design-guidelines",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "anthropics/frontend-design",
+    "name": "frontend-design",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Generates creative, polished code and UI design that avoids generic AI aesthetics.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "anthropics",
+      "frontend-design",
+      "create",
+      "distinctive",
+      "production-grade",
+      "frontend",
+      "interfaces",
+      "high"
+    ],
+    "tags": [
+      "anthropics",
+      "frontend-design",
+      "create",
+      "distinctive",
+      "production-grade",
+      "frontend",
+      "interfaces",
+      "high",
+      "quality.",
+      "generates",
+      "creative",
+      "polished",
+      "code",
+      "avoids",
+      "generic",
+      "aesthetics."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get frontend-design",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "bencium/bencium-innovative-ux-designer",
+    "name": "bencium-innovative-ux-designer",
+    "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, or applications. Generates creative, polished code that avoids generic AI aesthetics.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "bencium",
+      "bencium-innovative-ux-designer",
+      "create",
+      "distinctive",
+      "production-grade",
+      "frontend",
+      "interfaces",
+      "high"
+    ],
+    "tags": [
+      "bencium",
+      "bencium-innovative-ux-designer",
+      "create",
+      "distinctive",
+      "production-grade",
+      "frontend",
+      "interfaces",
+      "high",
+      "quality.",
+      "user",
+      "asks",
+      "build",
+      "web",
+      "components",
+      "pages",
+      "applications.",
+      "generates",
+      "creative"
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/bencium/bencium-marketplace/main/bencium-innovative-ux-designer/skills/bencium-innovative-ux-designer/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get bencium-innovative-ux-designer",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "ibelick/fixing-accessibility",
+    "name": "fixing-accessibility",
+    "description": "Audit and fix HTML accessibility issues including ARIA labels, keyboard navigation, focus management, color contrast, and form errors. Use when adding interactive controls, forms, dialogs, or reviewing WCAG compliance.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "ibelick",
+      "fixing-accessibility",
+      "audit",
+      "fix",
+      "html",
+      "accessibility",
+      "issues",
+      "aria"
+    ],
+    "tags": [
+      "ibelick",
+      "fixing-accessibility",
+      "audit",
+      "fix",
+      "html",
+      "accessibility",
+      "issues",
+      "aria",
+      "labels",
+      "keyboard",
+      "navigation",
+      "focus",
+      "management",
+      "color",
+      "contrast",
+      "form",
+      "errors.",
+      "adding"
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/fixing-accessibility/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get fixing-accessibility",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "ibelick/fixing-metadata",
+    "name": "fixing-metadata",
+    "description": "Audit and fix page metadata including titles, meta descriptions, Open Graph, Twitter cards, canonical URLs, and JSON-LD structured data. Use when shipping new pages or fixing SEO and social preview issues.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "ibelick",
+      "fixing-metadata",
+      "audit",
+      "fix",
+      "page",
+      "metadata",
+      "titles",
+      "meta"
+    ],
+    "tags": [
+      "ibelick",
+      "fixing-metadata",
+      "audit",
+      "fix",
+      "page",
+      "metadata",
+      "titles",
+      "meta",
+      "descriptions",
+      "open",
+      "graph",
+      "twitter",
+      "cards",
+      "canonical",
+      "urls",
+      "json-ld",
+      "structured",
+      "data."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/fixing-metadata/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get fixing-metadata",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "ibelick/fixing-motion-performance",
+    "name": "fixing-motion-performance",
+    "description": "Audit and fix animation performance issues including layout thrashing, compositor properties, scroll-linked motion, and blur effects. Use when animations stutter, transitions jank, or reviewing CSS/JS animation performance.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "ibelick",
+      "fixing-motion-performance",
+      "audit",
+      "fix",
+      "animation",
+      "performance",
+      "issues",
+      "layout"
+    ],
+    "tags": [
+      "ibelick",
+      "fixing-motion-performance",
+      "audit",
+      "fix",
+      "animation",
+      "performance",
+      "issues",
+      "layout",
+      "thrashing",
+      "compositor",
+      "properties",
+      "scroll-linked",
+      "motion",
+      "blur",
+      "effects.",
+      "animations",
+      "stutter",
+      "transitions"
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/fixing-motion-performance/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get fixing-motion-performance",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "jakubkrehel/oklch-skill",
+    "name": "oklch-skill",
+    "description": "Practical OKLCH color workflow skill for building consistent, accessible, and tunable color systems in modern UIs.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "jakubkrehel",
+      "oklch-skill",
+      "practical",
+      "oklch",
+      "color",
+      "workflow",
+      "building",
+      "consistent"
+    ],
+    "tags": [
+      "jakubkrehel",
+      "oklch-skill",
+      "practical",
+      "oklch",
+      "color",
+      "workflow",
+      "building",
+      "consistent",
+      "accessible",
+      "tunable",
+      "systems",
+      "modern",
+      "uis."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/jakubkrehel/oklch-skill/main/skills/oklch-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get oklch-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/redesign-skill",
+    "name": "redesign-skill",
+    "description": "Audit and upgrade existing interfaces to premium visual quality while preserving product functionality.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "redesign-skill",
+      "audit",
+      "upgrade",
+      "existing",
+      "interfaces",
+      "premium",
+      "visual"
+    ],
+    "tags": [
+      "leonxlnx",
+      "redesign-skill",
+      "audit",
+      "upgrade",
+      "existing",
+      "interfaces",
+      "premium",
+      "visual",
+      "quality",
+      "while",
+      "preserving",
+      "product",
+      "functionality."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/redesign-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get redesign-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/taste-skill",
+    "name": "taste-skill",
+    "description": "Senior UI/UX frontend skill that enforces anti-slop design decisions, motion quality, and architecture discipline.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "taste-skill",
+      "senior",
+      "frontend",
+      "enforces",
+      "anti-slop",
+      "decisions",
+      "motion"
+    ],
+    "tags": [
+      "leonxlnx",
+      "taste-skill",
+      "senior",
+      "frontend",
+      "enforces",
+      "anti-slop",
+      "decisions",
+      "motion",
+      "quality",
+      "architecture",
+      "discipline."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get taste-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "microsoft/playwright-cli",
+    "name": "playwright-cli",
+    "description": "Official Playwright CLI skill for browser automation, test generation, tracing, and session-driven end-to-end testing workflows.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "microsoft",
+      "playwright-cli",
+      "official",
+      "playwright",
+      "cli",
+      "browser",
+      "automation",
+      "test"
+    ],
+    "tags": [
+      "microsoft",
+      "playwright-cli",
+      "official",
+      "playwright",
+      "cli",
+      "browser",
+      "automation",
+      "test",
+      "generation",
+      "tracing",
+      "session-driven",
+      "end-to-end",
+      "testing",
+      "workflows."
+    ],
+    "stacks": [
+      "playwright"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/microsoft/playwright-cli/main/skills/playwright-cli/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get playwright-cli",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "millionco/react-doctor",
+    "name": "react-doctor",
+    "description": "Run React Doctor to detect regressions in security, performance, correctness, and architecture, with score-based quality checks.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "millionco",
+      "react-doctor",
+      "run",
+      "react",
+      "doctor",
+      "detect",
+      "regressions",
+      "security"
+    ],
+    "tags": [
+      "millionco",
+      "react-doctor",
+      "run",
+      "react",
+      "doctor",
+      "detect",
+      "regressions",
+      "security",
+      "performance",
+      "correctness",
+      "architecture",
+      "score-based",
+      "quality",
+      "checks."
+    ],
+    "stacks": [
+      "react",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/millionco/react-doctor/main/skills/react-doctor/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get react-doctor",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/adapt",
+    "name": "adapt",
+    "description": "Adapt designs across breakpoints, device contexts, and platform constraints with responsive interaction quality.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "adapt",
+      "designs",
+      "across",
+      "breakpoints",
+      "device",
+      "contexts",
+      "platform"
+    ],
+    "tags": [
+      "pbakaus",
+      "adapt",
+      "designs",
+      "across",
+      "breakpoints",
+      "device",
+      "contexts",
+      "platform",
+      "constraints",
+      "responsive",
+      "interaction",
+      "quality."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/adapt.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get adapt",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/audit",
+    "name": "audit",
+    "description": "Run technical UI quality audits across accessibility, performance, theming, responsive behavior, and anti-patterns.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "pbakaus",
+      "audit",
+      "run",
+      "technical",
+      "quality",
+      "audits",
+      "across",
+      "accessibility"
+    ],
+    "tags": [
+      "pbakaus",
+      "audit",
+      "run",
+      "technical",
+      "quality",
+      "audits",
+      "across",
+      "accessibility",
+      "performance",
+      "theming",
+      "responsive",
+      "behavior",
+      "anti-patterns."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/audit.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get audit",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/critique",
+    "name": "critique",
+    "description": "Evaluate design quality with structured UX scoring, persona checks, and actionable remediation guidance.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "critique",
+      "evaluate",
+      "quality",
+      "structured",
+      "scoring",
+      "persona",
+      "checks"
+    ],
+    "tags": [
+      "pbakaus",
+      "critique",
+      "evaluate",
+      "quality",
+      "structured",
+      "scoring",
+      "persona",
+      "checks",
+      "actionable",
+      "remediation",
+      "guidance."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/critique.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get critique",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/harden",
+    "name": "harden",
+    "description": "Make interfaces production-ready with robust empty states, edge cases, errors, onboarding, and i18n resilience.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "pbakaus",
+      "harden",
+      "make",
+      "interfaces",
+      "production-ready",
+      "robust",
+      "empty",
+      "states"
+    ],
+    "tags": [
+      "pbakaus",
+      "harden",
+      "make",
+      "interfaces",
+      "production-ready",
+      "robust",
+      "empty",
+      "states",
+      "edge",
+      "cases",
+      "errors",
+      "onboarding",
+      "i18n",
+      "resilience."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/harden.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get harden",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/polish",
+    "name": "polish",
+    "description": "Final quality pass for spacing, alignment, and consistency to prepare UI for launch.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "polish",
+      "final",
+      "quality",
+      "pass",
+      "spacing",
+      "alignment",
+      "consistency"
+    ],
+    "tags": [
+      "pbakaus",
+      "polish",
+      "final",
+      "quality",
+      "pass",
+      "spacing",
+      "alignment",
+      "consistency",
+      "prepare",
+      "launch."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/polish.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get polish",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/quieter",
+    "name": "quieter",
+    "description": "Tone down overly intense designs while keeping quality high and preserving hierarchy.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "quieter",
+      "tone",
+      "down",
+      "overly",
+      "intense",
+      "designs",
+      "while"
+    ],
+    "tags": [
+      "pbakaus",
+      "quieter",
+      "tone",
+      "down",
+      "overly",
+      "intense",
+      "designs",
+      "while",
+      "keeping",
+      "quality",
+      "high",
+      "preserving",
+      "hierarchy."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/quieter.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get quieter",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "rams/rams",
+    "name": "rams",
+    "description": "Real-time design feedback skill focused on accessibility, spacing, typography, contrast, and component quality.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "rams",
+      "real-time",
+      "feedback",
+      "focused",
+      "accessibility",
+      "spacing",
+      "typography",
+      "contrast"
+    ],
+    "tags": [
+      "rams",
+      "real-time",
+      "feedback",
+      "focused",
+      "accessibility",
+      "spacing",
+      "typography",
+      "contrast",
+      "component",
+      "quality."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://www.rams.ai/rams.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get rams",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/generating-sounds-with-ai",
+    "name": "generating-sounds-with-ai",
+    "description": "Audit Web Audio API code for procedural sound synthesis quality, UX decisions, and parameter best practices.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "generating-sounds-with-ai",
+      "audit",
+      "web",
+      "audio",
+      "api",
+      "code",
+      "procedural"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "generating-sounds-with-ai",
+      "audit",
+      "web",
+      "audio",
+      "api",
+      "code",
+      "procedural",
+      "sound",
+      "synthesis",
+      "quality",
+      "decisions",
+      "parameter",
+      "practices."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/generating-sounds-with-ai/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get generating-sounds-with-ai",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/mastering-animate-presence",
+    "name": "mastering-animate-presence",
+    "description": "Audit Motion and Framer Motion exit/presence patterns with practical fixes for AnimatePresence usage.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "mastering-animate-presence",
+      "audit",
+      "motion",
+      "framer",
+      "exit",
+      "presence",
+      "patterns"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "mastering-animate-presence",
+      "audit",
+      "motion",
+      "framer",
+      "exit",
+      "presence",
+      "patterns",
+      "practical",
+      "fixes",
+      "animatepresence",
+      "usage."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/mastering-animate-presence/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get mastering-animate-presence",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/pseudo-elements",
+    "name": "pseudo-elements",
+    "description": "Audit CSS pseudo-elements and View Transitions usage for hover effects, decorative layers, and transitions.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "pseudo-elements",
+      "audit",
+      "css",
+      "view",
+      "transitions",
+      "usage",
+      "hover"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "pseudo-elements",
+      "audit",
+      "css",
+      "view",
+      "transitions",
+      "usage",
+      "hover",
+      "effects",
+      "decorative",
+      "layers",
+      "transitions."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/pseudo-elements/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get pseudo-elements",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/sounds-on-the-web",
+    "name": "sounds-on-the-web",
+    "description": "Audit interface sound feedback for UX quality, accessibility, and practical implementation patterns.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "sounds-on-the-web",
+      "audit",
+      "interface",
+      "sound",
+      "feedback",
+      "quality",
+      "accessibility"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "sounds-on-the-web",
+      "audit",
+      "interface",
+      "sound",
+      "feedback",
+      "quality",
+      "accessibility",
+      "practical",
+      "implementation",
+      "patterns."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/sounds-on-the-web/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get sounds-on-the-web",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "raphaelsalaja/to-spring-or-not-to-spring",
+    "name": "to-spring-or-not-to-spring",
+    "description": "Audit animation timing choices to decide when springs versus easing curves produce better motion.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "raphaelsalaja",
+      "to-spring-or-not-to-spring",
+      "audit",
+      "animation",
+      "timing",
+      "choices",
+      "decide",
+      "springs"
+    ],
+    "tags": [
+      "raphaelsalaja",
+      "to-spring-or-not-to-spring",
+      "audit",
+      "animation",
+      "timing",
+      "choices",
+      "decide",
+      "springs",
+      "versus",
+      "easing",
+      "curves",
+      "produce",
+      "better",
+      "motion."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/raphaelsalaja/skill/main/skills/to-spring-or-not-to-spring/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get to-spring-or-not-to-spring",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/agent-browser",
+    "name": "agent-browser",
+    "description": "Browser automation CLI for AI agents for navigation, form actions, extraction, screenshots, QA, and app testing.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "agent-browser",
+      "browser",
+      "automation",
+      "cli",
+      "agents",
+      "navigation",
+      "form"
+    ],
+    "tags": [
+      "vercel-labs",
+      "agent-browser",
+      "browser",
+      "automation",
+      "cli",
+      "agents",
+      "navigation",
+      "form",
+      "actions",
+      "extraction",
+      "screenshots",
+      "app",
+      "testing."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/agent-browser/main/skills/agent-browser/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get agent-browser",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/next-upgrade",
+    "name": "next-upgrade",
+    "description": "Upgrade Next.js to the latest version using official migration guides and codemods.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "next-upgrade",
+      "upgrade",
+      "next.js",
+      "latest",
+      "version",
+      "official",
+      "migration"
+    ],
+    "tags": [
+      "vercel-labs",
+      "next-upgrade",
+      "upgrade",
+      "next.js",
+      "latest",
+      "version",
+      "official",
+      "migration",
+      "guides",
+      "codemods."
+    ],
+    "stacks": [
+      "nextjs",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/next-skills/main/skills/next-upgrade/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get next-upgrade",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vercel-labs/web-design-guidelines",
+    "name": "web-design-guidelines",
+    "description": "Review UI code for Web Interface Guidelines compliance. Audit design, accessibility, and UX against Vercel's best practices.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "vercel-labs",
+      "web-design-guidelines",
+      "review",
+      "code",
+      "web",
+      "interface",
+      "guidelines",
+      "compliance."
+    ],
+    "tags": [
+      "vercel-labs",
+      "web-design-guidelines",
+      "review",
+      "code",
+      "web",
+      "interface",
+      "guidelines",
+      "compliance.",
+      "audit",
+      "accessibility",
+      "against",
+      "vercel",
+      "practices."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vercel-labs/agent-skills/main/skills/web-design-guidelines/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get web-design-guidelines",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-debug-guides",
+    "name": "vue-debug-guides",
+    "description": "Practical debugging workflows for diagnosing and fixing Vue reactivity, rendering, and state issues.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-debug-guides",
+      "practical",
+      "debugging",
+      "workflows",
+      "diagnosing",
+      "fixing",
+      "vue"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-debug-guides",
+      "practical",
+      "debugging",
+      "workflows",
+      "diagnosing",
+      "fixing",
+      "vue",
+      "reactivity",
+      "rendering",
+      "state",
+      "issues."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-debug-guides/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-debug-guides",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vuejs-ai/vue-testing-best-practices",
+    "name": "vue-testing-best-practices",
+    "description": "Testing strategies for Vue applications, including component tests, integration tests, and reliability patterns.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "vuejs-ai",
+      "vue-testing-best-practices",
+      "testing",
+      "strategies",
+      "vue",
+      "applications",
+      "component",
+      "tests"
+    ],
+    "tags": [
+      "vuejs-ai",
+      "vue-testing-best-practices",
+      "testing",
+      "strategies",
+      "vue",
+      "applications",
+      "component",
+      "tests",
+      "integration",
+      "reliability",
+      "patterns."
+    ],
+    "stacks": [
+      "vue",
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/vuejs-ai/skills/main/skills/vue-testing-best-practices/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vue-testing-best-practices",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "wshobson/wcag-audit-patterns",
+    "name": "wcag-audit-patterns",
+    "description": "Conduct WCAG 2.2 accessibility audits with automated testing, manual verification, and remediation guidance. Use when auditing websites for accessibility, fixing WCAG violations, or implementing accessible design patterns.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "wshobson",
+      "wcag-audit-patterns",
+      "conduct",
+      "wcag",
+      "2.2",
+      "accessibility",
+      "audits",
+      "automated"
+    ],
+    "tags": [
+      "wshobson",
+      "wcag-audit-patterns",
+      "conduct",
+      "wcag",
+      "2.2",
+      "accessibility",
+      "audits",
+      "automated",
+      "testing",
+      "manual",
+      "verification",
+      "remediation",
+      "guidance.",
+      "auditing",
+      "websites",
+      "fixing",
+      "violations",
+      "implementing"
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/wshobson/agents/main/plugins/accessibility-compliance/skills/wcag-audit-patterns/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get wcag-audit-patterns",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "accesslint/contrast-checker",
+    "name": "contrast-checker",
+    "description": "Compatibility listing for contrast-checker installs from AccessLint's marketplace skill set.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accesslint",
+      "contrast-checker",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "tags": [
+      "accesslint",
+      "contrast-checker",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/AccessLint/claude-marketplace/main/plugins/accesslint/skills/audit-and-fix/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get contrast-checker",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "accesslint/link-purpose",
+    "name": "link-purpose",
+    "description": "Compatibility listing for link-purpose installs from AccessLint's marketplace skill set.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accesslint",
+      "link-purpose",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "tags": [
+      "accesslint",
+      "link-purpose",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/AccessLint/claude-marketplace/main/plugins/accesslint/skills/audit-and-fix/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get link-purpose",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "accesslint/refactor",
+    "name": "refactor",
+    "description": "Compatibility listing for refactor installs from AccessLint's marketplace skill set.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accesslint",
+      "refactor",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "tags": [
+      "accesslint",
+      "refactor",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/AccessLint/claude-marketplace/main/plugins/accesslint/skills/audit-and-fix/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get refactor",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "accesslint/use-of-color",
+    "name": "use-of-color",
+    "description": "Compatibility listing for use-of-color installs from AccessLint's marketplace skill set.",
+    "category": "quality-assurance",
+    "phases": [
+      "verify",
+      "live"
+    ],
+    "triggers": [
+      "accesslint",
+      "use-of-color",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "tags": [
+      "accesslint",
+      "use-of-color",
+      "compatibility",
+      "listing",
+      "installs",
+      "marketplace",
+      "set."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/AccessLint/claude-marketplace/main/plugins/accesslint/skills/audit-and-fix/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "official-or-primary-upstream",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get use-of-color",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/antfu",
+    "name": "antfu",
+    "description": "Anthony Fu's opinionated tooling and conventions for JavaScript/TypeScript projects.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "anthony",
+      "opinionated",
+      "tooling",
+      "conventions",
+      "javascript",
+      "typescript",
+      "projects."
+    ],
+    "tags": [
+      "antfu",
+      "anthony",
+      "opinionated",
+      "tooling",
+      "conventions",
+      "javascript",
+      "typescript",
+      "projects."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/antfu/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get antfu",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/pnpm",
+    "name": "pnpm",
+    "description": "pnpm package manager guidance for strict dependency resolution, workspaces, catalogs, patches, and overrides.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "pnpm",
+      "package",
+      "manager",
+      "strict",
+      "dependency",
+      "resolution",
+      "workspaces"
+    ],
+    "tags": [
+      "antfu",
+      "pnpm",
+      "package",
+      "manager",
+      "strict",
+      "dependency",
+      "resolution",
+      "workspaces",
+      "catalogs",
+      "patches",
+      "overrides."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/pnpm/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get pnpm",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/unocss",
+    "name": "unocss",
+    "description": "UnoCSS atomic CSS engine guidance for rules, shortcuts, and presets like Wind, Icons, and Attributify.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "unocss",
+      "atomic",
+      "css",
+      "engine",
+      "rules",
+      "shortcuts",
+      "presets"
+    ],
+    "tags": [
+      "antfu",
+      "unocss",
+      "atomic",
+      "css",
+      "engine",
+      "rules",
+      "shortcuts",
+      "presets",
+      "like",
+      "wind",
+      "icons",
+      "attributify."
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/unocss/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get unocss",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "antfu/vite",
+    "name": "vite",
+    "description": "Vite configuration and plugin guidance, including SSR and Vite 8 Rolldown migration patterns.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "antfu",
+      "vite",
+      "configuration",
+      "plugin",
+      "ssr",
+      "rolldown",
+      "migration",
+      "patterns."
+    ],
+    "tags": [
+      "antfu",
+      "vite",
+      "configuration",
+      "plugin",
+      "ssr",
+      "rolldown",
+      "migration",
+      "patterns."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/antfu/skills/main/skills/vite/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get vite",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "dammyjay93/interface-design",
+    "name": "interface-design",
+    "description": "Specialized skill for interface design: dashboards, admin panels, and SaaS apps. Focused on craft and consistency.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "dammyjay93",
+      "interface-design",
+      "specialized",
+      "interface",
+      "dashboards",
+      "admin",
+      "panels",
+      "saas"
+    ],
+    "tags": [
+      "dammyjay93",
+      "interface-design",
+      "specialized",
+      "interface",
+      "dashboards",
+      "admin",
+      "panels",
+      "saas",
+      "apps.",
+      "focused",
+      "craft",
+      "consistency."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Dammyjay93/interface-design/main/.claude/skills/interface-design/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get interface-design",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "dimillian/swiftui-ui-patterns",
+    "name": "swiftui-ui-patterns",
+    "description": "Best practices and example-driven guidance for building SwiftUI views and components. Includes tab architecture and screen composition.",
+    "category": "implementation",
+    "phases": [
+      "implement",
+      "verify"
+    ],
+    "triggers": [
+      "dimillian",
+      "swiftui-ui-patterns",
+      "practices",
+      "example-driven",
+      "building",
+      "swiftui",
+      "views",
+      "components."
+    ],
+    "tags": [
+      "dimillian",
+      "swiftui-ui-patterns",
+      "practices",
+      "example-driven",
+      "building",
+      "swiftui",
+      "views",
+      "components.",
+      "includes",
+      "tab",
+      "architecture",
+      "screen",
+      "composition."
+    ],
+    "stacks": [
+      "ios"
+    ],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/dimillian/skills/main/swiftui-ui-patterns/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get swiftui-ui-patterns",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "ibelick/ui-skills-root",
+    "name": "ui-skills-root",
+    "description": "Use when the user needs UI help and you must route by topic, stack, and intent to the smallest useful set of UI skills.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "ibelick",
+      "ui-skills-root",
+      "user",
+      "needs",
+      "help",
+      "you",
+      "must",
+      "route"
+    ],
+    "tags": [
+      "ibelick",
+      "ui-skills-root",
+      "user",
+      "needs",
+      "help",
+      "you",
+      "must",
+      "route",
+      "topic",
+      "stack",
+      "intent",
+      "smallest",
+      "useful",
+      "set",
+      "skills."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/ui-skills-root/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get ui-skills-root",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/brutalist-skill",
+    "name": "brutalist-skill",
+    "description": "Raw, mechanical interface direction mixing Swiss print structure with terminal-inspired brutalist aesthetics.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "brutalist-skill",
+      "raw",
+      "mechanical",
+      "interface",
+      "direction",
+      "mixing",
+      "swiss"
+    ],
+    "tags": [
+      "leonxlnx",
+      "brutalist-skill",
+      "raw",
+      "mechanical",
+      "interface",
+      "direction",
+      "mixing",
+      "swiss",
+      "print",
+      "structure",
+      "terminal-inspired",
+      "brutalist",
+      "aesthetics."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/brutalist-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get brutalist-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/minimalist-skill",
+    "name": "minimalist-skill",
+    "description": "Editorial minimal interfaces with monochrome palettes, typographic contrast, and restrained visuals.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "minimalist-skill",
+      "editorial",
+      "minimal",
+      "interfaces",
+      "monochrome",
+      "palettes",
+      "typographic"
+    ],
+    "tags": [
+      "leonxlnx",
+      "minimalist-skill",
+      "editorial",
+      "minimal",
+      "interfaces",
+      "monochrome",
+      "palettes",
+      "typographic",
+      "contrast",
+      "restrained",
+      "visuals."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/minimalist-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get minimalist-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/soft-skill",
+    "name": "soft-skill",
+    "description": "High-end visual design guidance for premium typography, spacing, depth, and animation systems.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "soft-skill",
+      "high-end",
+      "visual",
+      "premium",
+      "typography",
+      "spacing",
+      "depth"
+    ],
+    "tags": [
+      "leonxlnx",
+      "soft-skill",
+      "high-end",
+      "visual",
+      "premium",
+      "typography",
+      "spacing",
+      "depth",
+      "animation",
+      "systems."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/soft-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get soft-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "leonxlnx/stitch-skill",
+    "name": "stitch-skill",
+    "description": "Semantic design-system skill for Google Stitch with strict anti-generic UI generation rules.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "leonxlnx",
+      "stitch-skill",
+      "semantic",
+      "design-system",
+      "google",
+      "stitch",
+      "strict",
+      "anti-generic"
+    ],
+    "tags": [
+      "leonxlnx",
+      "stitch-skill",
+      "semantic",
+      "design-system",
+      "google",
+      "stitch",
+      "strict",
+      "anti-generic",
+      "generation",
+      "rules."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/stitch-skill/SKILL.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get stitch-skill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/bolder",
+    "name": "bolder",
+    "description": "Increase visual impact and personality for interfaces that feel too safe, bland, or generic.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "bolder",
+      "increase",
+      "visual",
+      "impact",
+      "personality",
+      "interfaces",
+      "feel"
+    ],
+    "tags": [
+      "pbakaus",
+      "bolder",
+      "increase",
+      "visual",
+      "impact",
+      "personality",
+      "interfaces",
+      "feel",
+      "too",
+      "safe",
+      "bland",
+      "generic."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/bolder.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get bolder",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/distill",
+    "name": "distill",
+    "description": "Simplify noisy interfaces by removing non-essential complexity and restoring clear visual focus.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "distill",
+      "simplify",
+      "noisy",
+      "interfaces",
+      "removing",
+      "non-essential",
+      "complexity"
+    ],
+    "tags": [
+      "pbakaus",
+      "distill",
+      "simplify",
+      "noisy",
+      "interfaces",
+      "removing",
+      "non-essential",
+      "complexity",
+      "restoring",
+      "clear",
+      "visual",
+      "focus."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/distill.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get distill",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/layout",
+    "name": "layout",
+    "description": "Fix spacing, composition, and hierarchy rhythm when UI layout feels crowded, flat, or misaligned.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "layout",
+      "fix",
+      "spacing",
+      "composition",
+      "hierarchy",
+      "rhythm",
+      "feels"
+    ],
+    "tags": [
+      "pbakaus",
+      "layout",
+      "fix",
+      "spacing",
+      "composition",
+      "hierarchy",
+      "rhythm",
+      "feels",
+      "crowded",
+      "flat",
+      "misaligned."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/layout.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get layout",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "pbakaus/typeset",
+    "name": "typeset",
+    "description": "Improve typography systems, hierarchy, readability, and text cadence for more intentional interfaces.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "pbakaus",
+      "typeset",
+      "improve",
+      "typography",
+      "systems",
+      "hierarchy",
+      "readability",
+      "text"
+    ],
+    "tags": [
+      "pbakaus",
+      "typeset",
+      "improve",
+      "typography",
+      "systems",
+      "hierarchy",
+      "readability",
+      "text",
+      "cadence",
+      "more",
+      "intentional",
+      "interfaces."
+    ],
+    "stacks": [],
+    "path": null,
+    "url": "https://raw.githubusercontent.com/pbakaus/impeccable/main/skill/reference/typeset.md",
+    "source": "ui-skills-registry",
+    "trust": "external-review-required",
+    "license": "inspect upstream",
+    "install": "npx ui-skills get typeset",
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vendor/ui-skills-root",
+    "name": "ui-skills-root",
+    "description": "Preserved upstream UI Skills routing snapshot for minimal-context selection.",
+    "category": "orchestration",
+    "phases": [
+      "orient",
+      "define",
+      "explore"
+    ],
+    "triggers": [
+      "find UI skill",
+      "route task",
+      "smallest skill set"
+    ],
+    "tags": [
+      "routing",
+      "skill-selection",
+      "ui-skills"
+    ],
+    "stacks": [],
+    "path": "skills/vendor/ui-skills-root/SKILL.md",
+    "url": "https://raw.githubusercontent.com/ibelick/ui-skills/main/skills/ui-skills-root/SKILL.md",
+    "source": "vendor-snapshot",
+    "trust": "preserved-upstream",
+    "license": "MIT",
+    "install": null,
+    "updated": "2026-06-25"
+  },
+  {
+    "id": "vendor/design-taste-frontend",
+    "name": "design-taste-frontend",
+    "description": "Preserved upstream Taste Skill v2 snapshot for expressive frontend craft.",
+    "category": "visual-design",
+    "phases": [
+      "explore",
+      "systemize",
+      "verify"
+    ],
+    "triggers": [
+      "landing page",
+      "portfolio",
+      "redesign",
+      "anti slop",
+      "frontend taste"
+    ],
+    "tags": [
+      "taste",
+      "anti-slop",
+      "frontend",
+      "visual-direction"
+    ],
+    "stacks": [
+      "web"
+    ],
+    "path": "skills/vendor/design-taste-frontend/SKILL.md",
+    "url": "https://raw.githubusercontent.com/Leonxlnx/taste-skill/main/skills/taste-skill/SKILL.md",
+    "source": "vendor-snapshot",
+    "trust": "preserved-upstream",
+    "license": "MIT",
+    "install": null,
+    "updated": "2026-06-25"
+  }
+]
