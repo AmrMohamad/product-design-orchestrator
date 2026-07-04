@@ -1,6 +1,6 @@
 {
   "product_id": "professional-product-design-orchestrator",
-  "version": "4.1.0",
+  "version": "0.4.1",
   "component": "portable-agent-plugin-source",
   "managed": true
 }

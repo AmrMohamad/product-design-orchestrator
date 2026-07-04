@@ -1,6 +1,6 @@
 # Changelog
 
-## 4.1.0 — 2026-06-25
+## 0.4.1 — 2026-06-25 (beta)
 
 - Added a local-only, cross-platform, receipt-driven self-installer for Codex and Claude Code with project/user scope, dry-run, verification, idempotent updates, conflict protection, and reversible uninstall.
 - Added a generated flat plugin bundle with valid `.codex-plugin/plugin.json` and `.claude-plugin/plugin.json` manifests, all 69 existing skills, a `pdo-start` gateway, and self-contained governance/resources.
@@ -10,7 +10,7 @@
 - Added Bash, PowerShell, and CMD wrappers, installer smoke tests, platform research notes, and expanded package validation.
 - Preserved the v4.0 design methods, skill content, playbooks, registries, templates, and authority model unchanged.
 
-## 4.0.0 — 2026-06-25
+## 0.4.0 — 2026-06-25 (beta)
 
 - Rebuilt the former 5,000-line monolithic guide as a 955-line controlling orchestrator plus modular expertise.
 - Added a complete, proportional product/service lifecycle from orientation and discovery through live learning and retirement.

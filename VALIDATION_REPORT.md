@@ -1,11 +1,11 @@
 # Validation report
 
 Build date: 2026-06-25  
-Package version: 4.1.0
+Package version: 0.4.1 (beta)
 
 ## Preservation check
 
-The product-design system itself was preserved from version 4.0.0. Byte-for-byte comparisons passed for:
+The product-design protocol itself was preserved from internal method version 4.0.0. Byte-for-byte comparisons passed for:
 
 - `DESIGN.md`
 - `SOUL.md`
@@ -15,7 +15,7 @@ The product-design system itself was preserved from version 4.0.0. Byte-for-byte
 - every file under `templates/`
 - every file under `registry/`
 
-Version 4.1.0 adds agent-platform adapters, installation tooling, supporting documentation, manifests, tests, and generated portable views; it does not alter the design method or canonical skill content.
+Package version 0.4.1 adds agent-platform adapters, installation tooling, supporting documentation, manifests, tests, and generated portable views; it remains a beta release and does not alter the design method or canonical skill content.
 
 ## Platform documentation review
 
@@ -49,7 +49,7 @@ The exact official source list and the decisions derived from it are recorded in
 - Canonical skill names are unique.
 - The portable plugin contains exactly the canonical skill set plus the `pdo-start` gateway.
 - Every portable plugin skill directory matches its frontmatter name.
-- Codex and Claude Code manifests parse and identify version 4.1.0.
+- Codex and Claude Code manifests parse and identify version 0.4.1.
 - Both manifests point to `./skills/` at plugin root.
 - The Codex repository marketplace uses the documented local-source object and policy fields.
 - The Claude Code local marketplace uses the documented marketplace root and relative plugin source.

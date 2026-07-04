@@ -1,6 +1,6 @@
 {
   "name": "Product Design Orchestrator",
-  "version": "4.1.0",
+  "version": "0.4.1",
   "built": "2026-06-25",
   "file_count": 295,
   "files": [
@@ -12,7 +12,7 @@
     {
       "path": ".claude-plugin/marketplace.json",
       "bytes": 689,
-      "sha256": "68129abc90882670110cd48f5921df0ac88213382d7a4559e0aa8d38013526d2"
+      "sha256": "60b2f412613c924f3654d46c34b2f483b5b689690978989217a9224846b2b251"
     },
     {
       "path": ".gitignore",
@@ -26,8 +26,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 2340,
-      "sha256": "267533b9285aeefb56fbd5783a2d7915c8674ddb7c102d781eceab42fd01836e"
+      "bytes": 2354,
+      "sha256": "2e759482a33e1ac06aae9e95700a8b49fcf31d7aed7fa27a456e4da3ff610ae4"
     },
     {
       "path": "CLAUDE.md",
@@ -81,13 +81,13 @@
     },
     {
       "path": "VALIDATION_REPORT.md",
-      "bytes": 4877,
-      "sha256": "19c81074f4c95f2ad769b2d74e3c6b27a663bd90317212c34c060d15aaa3b68a"
+      "bytes": 4937,
+      "sha256": "f6b5e9cfecd4e11a13873b200eefb22d6fcd9d30c747ab840ec942aa4f2d9f5c"
     },
     {
       "path": "VERSION",
       "bytes": 6,
-      "sha256": "3b10b6ad566eadbcacadb33c591f1ec629593d6adf47442e56e0f61996829ef7"
+      "sha256": "f62184cee8787f2f6941c82041a5725d4edc9aa293ebe5dbf664406e82ec1fe1"
     },
     {
       "path": "integrations/README.md",
@@ -97,17 +97,17 @@
     {
       "path": "integrations/product-design-orchestrator-plugin/.claude-plugin/plugin.json",
       "bytes": 452,
-      "sha256": "abfc031df2a1966e351a012a5721a9b1aa83e4db2c7404a8298d238a6df6c6a6"
+      "sha256": "1bb2262049f45b5cd4000144bcf99e2a2f0a303034315a943f3158cf4604078a"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/.codex-plugin/plugin.json",
       "bytes": 1115,
-      "sha256": "ea03a5082773c55532292eba90afc138d4a077b84b3e336164f1c3687afbed5e"
+      "sha256": "7c0005b3d0bba227a7062869c513658b758ae0122768bb18be81e7b59333c5d7"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/.pdo-managed.json",
       "bytes": 151,
-      "sha256": "56c5c0ff6dfcc6f72adf911c4db8f464ea937970b5aa500c227fbb64e2dda653"
+      "sha256": "cd60ac1ca0ef6d6320b3b7fb7e9f44ab67ce01682855d34910567c9b3755cd6f"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/AGENTS.md",
@@ -116,8 +116,8 @@
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/CHANGELOG.md",
-      "bytes": 2340,
-      "sha256": "267533b9285aeefb56fbd5783a2d7915c8674ddb7c102d781eceab42fd01836e"
+      "bytes": 2354,
+      "sha256": "2e759482a33e1ac06aae9e95700a8b49fcf31d7aed7fa27a456e4da3ff610ae4"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/CLAUDE.md",
@@ -157,7 +157,7 @@
     {
       "path": "integrations/product-design-orchestrator-plugin/README.md",
       "bytes": 556,
-      "sha256": "8dcbfa6b43ac8049f7691aff070cacce12cb7399395426c83b6fcf302c9348e2"
+      "sha256": "a3e8aef4a021ff7081662bc551861dfb84c8f39de382b1b13dc19a983989acc5"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/SKILLS.md",
@@ -167,7 +167,7 @@
     {
       "path": "integrations/product-design-orchestrator-plugin/SKILL_INDEX.json",
       "bytes": 1808,
-      "sha256": "87a5269e724bd2c1e77a818f4654a07b8a14122c8f4aca596298c7103422fd98"
+      "sha256": "5bccc9a127982f9130b0a7b886379d2a98b147cc6e10fa98ed421094bcf81d9e"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/SOUL.md",
@@ -177,7 +177,7 @@
     {
       "path": "integrations/product-design-orchestrator-plugin/VERSION",
       "bytes": 6,
-      "sha256": "3b10b6ad566eadbcacadb33c591f1ec629593d6adf47442e56e0f61996829ef7"
+      "sha256": "f62184cee8787f2f6941c82041a5725d4edc9aa293ebe5dbf664406e82ec1fe1"
     },
     {
       "path": "integrations/product-design-orchestrator-plugin/playbooks/README.md",
