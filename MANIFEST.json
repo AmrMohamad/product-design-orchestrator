@@ -2,7 +2,7 @@
   "name": "Product Design Orchestrator",
   "version": "0.4.1",
   "built": "2026-06-25",
-  "file_count": 295,
+  "file_count": 298,
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -40,6 +40,21 @@
       "sha256": "d2cd88d20a40d658e199e25932a625e95568969d0abe3f2e510add52c4e5d25f"
     },
     {
+      "path": "docs/assets/product-design-orchestrator.png",
+      "bytes": 1075304,
+      "sha256": "3a71ec7388d1922b5e00a7dc0fe6772bc147cd790ffd5d3b9979aedaa92bb638"
+    },
+    {
+      "path": "docs/assets/product-design-orchestrator.svg",
+      "bytes": 71971,
+      "sha256": "3df8c1f8042ba5460cfd242913d783d66a5ee0c2aa0ced1c993ed1c803f8addb"
+    },
+    {
+      "path": "docs/index.html",
+      "bytes": 75014,
+      "sha256": "6fe7f65bad2edcb01296ec84161c9694ee30389a0b6feaac33bdb192467e4868"
+    },
+    {
       "path": "FIND_A_SKILL.md",
       "bytes": 1111,
       "sha256": "425e69db2546f567eaab141759d8cd95db59f2a473dbb4e56ac62da965d9ee88"
@@ -61,8 +76,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4442,
-      "sha256": "eff74018b7399099b988d8e55b3a404b5c32a9d47dcb075916197ced0a9b5691"
+      "bytes": 5132,
+      "sha256": "5aae7c271a064ec69861a22745172db10fc6cd6e56af5c884c20a9c7decccea5"
     },
     {
       "path": "SELF_INSTALL.md",

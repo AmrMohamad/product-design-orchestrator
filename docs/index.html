@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>How the Professional Product Design Orchestrator Works</title>
+<style>
+:root{--canvas-w:2728px;--canvas-h:1536px;--paper:#F8F7F3;--ink:#10243B}
+*{box-sizing:border-box}
+html,body{margin:0;min-width:0;background:#0D2034}
+body{min-height:100vh}
+main{width:100%;min-width:0}
+svg{display:block;width:100%;max-width:var(--canvas-w);height:auto;margin:0 auto;background:var(--paper)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.text-summary{width:100%;max-width:var(--canvas-w);margin:0 auto;background:var(--paper);padding:32px 48px;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+.text-summary>summary{font-size:22px;font-weight:700;cursor:pointer;margin-bottom:24px}
+.text-summary h2{font-size:28px;font-weight:800;margin:0 0 16px}
+.text-summary p{font-size:18px;color:#526273;margin:0 0 20px;max-width:1700px}
+.text-summary ol{font-size:17px;line-height:1.8;margin-top:24px;max-width:1800px}
+@media (max-width:600px){.text-summary{padding:24px}.text-summary>summary{font-size:18px}.text-summary h2{font-size:24px}.text-summary p,.text-summary ol{font-size:16px}}
+</style>
+</head>
+<body>
+<main aria-labelledby="page-title">
+<h1 id="page-title" class="sr-only">How the Professional Product Design Orchestrator Works</h1>
+<svg xmlns="http://www.w3.org/2000/svg" width="2728" height="1536" viewBox="0 0 5456 3072" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="diagram-title diagram-description">
+<title id="diagram-title">Professional Product Design Orchestrator system map</title>
+<desc id="diagram-description">An eight-section system map. Inputs and governance feed a central AI agent orchestrator. The orchestrator requests and receives specialist skills, then coordinates a ten-step design lifecycle supported by reusable playbooks. Design-to-code execution and lifecycle validation feed quality gates, evidence feeds provenance, and learning loops refresh playbooks and earlier lifecycle stages.</desc>
+<defs>
+  <marker id="arrow-navy" markerWidth="24" markerHeight="20" refX="22" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L23 10 L1 19 Z" fill="#12314F"/></marker>
+  <marker id="arrow-purple" markerWidth="24" markerHeight="20" refX="22" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L23 10 L1 19 Z" fill="#6E4FA1"/></marker>
+  <marker id="arrow-green" markerWidth="24" markerHeight="20" refX="22" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L23 10 L1 19 Z" fill="#0F766E"/></marker>
+  <marker id="arrow-orange" markerWidth="22" markerHeight="18" refX="20" refY="9" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L21 9 L1 17 Z" fill="#A85A25"/></marker>
+  <marker id="arrow-orange-small" markerWidth="16" markerHeight="14" refX="15" refY="7" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L15 7 L1 13 Z" fill="#A85A25"/></marker>
+  <marker id="arrow-teal" markerWidth="24" markerHeight="20" refX="22" refY="10" orient="auto" markerUnits="userSpaceOnUse"><path d="M1 1 L23 10 L1 19 Z" fill="#147D83"/></marker>
+  <linearGradient id="orchestrator-grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#123E67"/><stop offset="0.55" stop-color="#0B3154"/><stop offset="1" stop-color="#071E36"/></linearGradient>
+  <linearGradient id="footer-grad" x1="0" x2="1"><stop offset="0" stop-color="#10243B"/><stop offset="0.5" stop-color="#173B60"/><stop offset="1" stop-color="#10243B"/></linearGradient>
+  <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" result="b"/><feOffset dx="0" dy="10" result="o"/><feFlood flood-color="#082846" flood-opacity="0.14" result="c"/><feComposite in="c" in2="o" operator="in" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <symbol id="i-doc" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M18 8h21l10 10v38H18z"></path><path d="M39 8v12h10"></path><path d="M25 31h17M25 42h14"></path></g></symbol>
+<symbol id="i-target" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="32" cy="32" r="21"></circle><circle cx="32" cy="32" r="10"></circle><path d="M32 4v10M32 50v10M4 32h10M50 32h10"></path></g></symbol>
+<symbol id="i-lock" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="27" rx="5" width="36" x="14" y="27"></rect><path d="M22 27v-8a10 10 0 0 1 20 0v8"></path><path d="M32 38v7"></path></g></symbol>
+<symbol id="i-code" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M24 18 10 32l14 14M40 18l14 14-14 14M35 13 28 51"></path></g></symbol>
+<symbol id="i-palette" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M33 8C20 8 9 18 9 31c0 12 9 23 23 23h5c5 0 7-6 3-9-2-2-1-5 2-6h5c5 0 8-4 8-9C55 18 46 8 33 8z"></path><circle cx="23" cy="24" r="2"></circle><circle cx="34" cy="20" r="2"></circle><circle cx="44" cy="28" r="2"></circle><circle cx="26" cy="37" r="2"></circle></g></symbol>
+<symbol id="i-question" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="32" cy="32" r="24"></circle><path d="M24 25c1-6 6-10 13-8 9 3 9 14 0 18-4 2-5 4-5 8"></path><path d="M32 50h.1"></path></g></symbol>
+<symbol id="i-access" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="32" cy="10" r="5"></circle><path d="M13 22h38M32 22v36M22 58l10-22 10 22"></path></g></symbol>
+<symbol id="i-gear" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="32" cy="32" r="9"></circle><path d="M32 7v9M32 48v9M7 32h9M48 32h9M14 14l7 7M43 43l7 7M50 14l-7 7M21 43l-7 7"></path></g></symbol>
+<symbol id="i-pen" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M13 50l6-17 25-25 12 12-25 25z"></path><path d="M37 15l12 12M19 33l12 12"></path></g></symbol>
+<symbol id="i-brain" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M28 14c-8-7-20 0-17 11-8 5-5 18 5 19-1 9 11 14 17 7V15"></path><path d="M36 14c8-7 20 0 17 11 8 5 5 18-5 19 1 9-11 14-17 7V15"></path><path d="M21 25h12M22 40h11M43 25H31M42 40H31"></path></g></symbol>
+<symbol id="i-flow" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="14" rx="2" width="14" x="25" y="8"></rect><rect height="14" rx="2" width="14" x="8" y="42"></rect><rect height="14" rx="2" width="14" x="42" y="42"></rect><path d="M32 22v10H15v10M32 32h17v10"></path></g></symbol>
+<symbol id="i-magnify" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="28" cy="28" r="17"></circle><path d="M41 41l14 14"></path></g></symbol>
+<symbol id="i-chess" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M26 12h12l-4 11c7 4 11 10 11 18H19c0-8 4-14 11-18z"></path><path d="M18 52h28M22 41h20"></path></g></symbol>
+<symbol id="i-ia" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="14" width="14" x="25" y="9"></rect><rect height="14" width="14" x="7" y="42"></rect><rect height="14" width="14" x="25" y="42"></rect><rect height="14" width="14" x="43" y="42"></rect><path d="M32 23v9H14v10M32 32v10M32 32h18v10"></path></g></symbol>
+<symbol id="i-userflow" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="14" cy="32" r="6"></circle><circle cx="32" cy="18" r="6"></circle><circle cx="50" cy="32" r="6"></circle><circle cx="32" cy="48" r="6"></circle><path d="M20 29l7-7M38 22l7 7M45 36l-7 8M26 44l-7-8"></path></g></symbol>
+<symbol id="i-grid" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="5"><rect height="16" rx="2" width="16" x="10" y="10"></rect><rect height="16" rx="2" width="16" x="38" y="10"></rect><rect height="16" rx="2" width="16" x="10" y="38"></rect><rect height="16" rx="2" width="16" x="38" y="38"></rect></g></symbol>
+<symbol id="i-brush" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M39 9l16 16-22 22-16-16z"></path><path d="M17 31c-5 6-5 14-1 21 7 1 16-1 21-7"></path></g></symbol>
+<symbol id="i-click" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M22 8l22 22-13 2 8 15-8 4-8-15-9 9z"></path><path d="M47 8l7-5M53 22h8M40 3l-2-8"></path></g></symbol>
+<symbol id="i-writing" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="36" rx="5" width="44" x="10" y="12"></rect><path d="M19 24h26M19 34h18M22 55l8-7"></path></g></symbol>
+<symbol id="i-cube" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M32 7l22 12v26L32 57 10 45V19z"></path><path d="M10 19l22 13 22-13M32 32v25"></path></g></symbol>
+<symbol id="i-shield" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M32 7l21 8v15c0 15-8 24-21 28C19 54 11 45 11 30V15z"></path><path d="M22 32l7 7 14-16"></path></g></symbol>
+<symbol id="i-binoculars" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M18 24l-7 22h18l3-16 3 16h18l-7-22"></path><path d="M18 24l7-9h14l7 9M29 46h6"></path></g></symbol>
+<symbol id="i-rocket" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M35 42c11-6 18-16 19-31-15 1-25 8-31 19l-9 1-5 11 13-1 1 13 11-5z"></path><circle cx="41" cy="24" r="5"></circle><path d="M21 43l-8 8"></path></g></symbol>
+<symbol id="i-bars" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M14 50V33M32 50V18M50 50V25M9 50h46"></path></g></symbol>
+<symbol id="i-book" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M12 13h18c6 0 9 3 9 9v34c0-6-3-9-9-9H12z"></path><path d="M52 13H34c-6 0-9 3-9 9v34c0-6 3-9 9-9h18z"></path></g></symbol>
+<symbol id="i-folder" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M8 18h20l6 7h22v28H8z"></path></g></symbol>
+<symbol id="i-license" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="46" rx="4" width="34" x="15" y="8"></rect><path d="M24 23h16M24 34h16"></path><path d="M32 54l-7 6-1-9M32 54l7 6 1-9"></path></g></symbol>
+<symbol id="i-fingerprint" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="5"><path d="M20 53c-5-11-4-27 12-27 13 0 14 10 13 17"></path><path d="M29 54c-4-9-3-19 5-20 5 0 7 4 7 9"></path><path d="M16 35c1-10 8-17 18-17 9 0 16 6 18 14"></path><path d="M12 25C17 14 28 9 39 12c8 2 14 8 17 15"></path></g></symbol>
+<symbol id="i-list" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="44" rx="5" width="40" x="12" y="10"></rect><path d="M24 24h18M24 34h18M24 44h18M19 24h.1M19 34h.1M19 44h.1"></path></g></symbol>
+<symbol id="i-network" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><circle cx="14" cy="32" r="6"></circle><circle cx="32" cy="14" r="6"></circle><circle cx="50" cy="32" r="6"></circle><circle cx="32" cy="50" r="6"></circle><path d="M18 28l10-10M36 18l10 10M46 36L36 46M28 46L18 36M20 32h24"></path></g></symbol>
+<symbol id="i-report" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="48" rx="4" width="40" x="12" y="8"></rect><path d="M23 45V33M32 45V24M41 45V29M22 18h20"></path></g></symbol>
+<symbol id="i-devices" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="26" rx="3" width="34" x="7" y="17"></rect><rect height="38" rx="3" width="12" x="46" y="12"></rect><path d="M19 52h10M24 43v9"></path></g></symbol>
+<symbol id="i-chat" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M10 15h37v25H24L13 50V40h-3z"></path><path d="M27 46h15l10 8V46h2V25"></path></g></symbol>
+<symbol id="i-checklist" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><rect height="48" rx="4" width="36" x="14" y="8"></rect><path d="M23 23l4 4 8-10M23 40l4 4 8-10M39 25h3M39 42h3"></path></g></symbol>
+<symbol id="i-cloud" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"><path d="M20 48h27c8 0 12-5 12-11 0-7-5-12-12-12-2-9-10-14-19-12-8 2-13 8-14 16-6 1-10 5-10 10 0 6 5 9 16 9z"></path><path d="M32 25v18M23 36l9 9 9-9"></path></g></symbol>
+</defs>
+<style>
+  svg{font-family:Arial,Helvetica,sans-serif;text-rendering:geometricPrecision;background:#F8F7F3}
+  .connector{fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .primary{stroke:#12314F;stroke-width:6;marker-end:url(#arrow-navy)}
+  .governance{stroke:#6E4FA1;stroke-width:5;marker-end:url(#arrow-purple)}
+  .skill-return{stroke:#0F766E;stroke-width:5;stroke-dasharray:16 12;marker-end:url(#arrow-green)}
+  .feedback{stroke:#A85A25;stroke-width:4.8;stroke-dasharray:16 12}
+  .feedback-arrow{stroke:#A85A25;stroke-width:4.8;stroke-dasharray:16 12;marker-end:url(#arrow-orange)}
+  .quality{stroke:#147D83;stroke-width:5;marker-end:url(#arrow-teal)}
+  .hairline{shape-rendering:geometricPrecision}
+</style>
+<rect x="0" y="0" width="5456" height="3072" rx="0" fill="#F8F7F3" stroke="none" stroke-width="0"/>
+<rect x="24" y="24" width="5408" height="3024" rx="28" fill="none" stroke="#12314F" stroke-width="6" opacity="0.92"/>
+<text x="2728" y="92" font-size="78" font-weight="800" fill="#10243B" text-anchor="middle" letter-spacing="-1.4">How the Professional Product Design Orchestrator Works</text>
+<text x="2728" y="148" font-size="36" font-weight="600" fill="#526273" text-anchor="middle" font-style="italic">A governed AI-agent system for research, skill routing, delivery, validation, and evidence</text>
+<rect x="790" y="184" width="3876" height="84" rx="28" fill="#FFFFFF" stroke="#D8E1E9" stroke-width="2.5"/>
+<text x="842" y="237" font-size="27" font-weight="800" fill="#10243B" text-anchor="start" >FLOW KEY</text>
+<path d="M1160 227 H1252" fill="none" stroke="#12314F" stroke-width="5.5" marker-end="url(#arrow-navy)" stroke-linecap="round"/>
+<text x="1272" y="236" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Primary flow</text>
+<path d="M1880 227 H1972" fill="none" stroke="#6E4FA1" stroke-width="5.5" marker-end="url(#arrow-purple)" stroke-linecap="round"/>
+<text x="1992" y="236" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Governance</text>
+<path d="M2590 227 H2682" fill="none" stroke="#0F766E" stroke-width="5.5" marker-end="url(#arrow-green)" stroke-dasharray="16 12" stroke-linecap="round"/>
+<text x="2702" y="236" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Skill return</text>
+<path d="M3300 227 H3392" fill="none" stroke="#A85A25" stroke-width="5.5" marker-end="url(#arrow-orange)" stroke-dasharray="16 12" stroke-linecap="round"/>
+<text x="3412" y="236" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Learning loop</text>
+<path d="M4010 227 H4102" fill="none" stroke="#147D83" stroke-width="5.5" marker-end="url(#arrow-teal)" stroke-linecap="round"/>
+<text x="4122" y="236" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Quality evidence</text>
+<g id="connector-layer-back">
+<path d="M916 1000 H994" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M1903 700 V758" fill="none" stroke="#6E4FA1" stroke-width="5" class="connector governance"/>
+<path d="M2810 925 H2888" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M2890 1090 H2812" fill="none" stroke="#0F766E" stroke-width="5" class="connector skill-return" stroke-dasharray="16 12"/>
+<path d="M1903 1270 V1368" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M4080 1270 V1368" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M916 1615 H994" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M4310 1700 H4388" fill="none" stroke="#12314F" stroke-width="6" class="connector primary"/>
+<path d="M3330 2020 V2108" fill="none" stroke="#147D83" stroke-width="5" class="connector quality"/>
+<path d="M4875 2020 V2108" fill="none" stroke="#147D83" stroke-width="5" class="connector quality"/>
+<path d="M2728 2530 V2578" fill="none" stroke="#147D83" stroke-width="5" class="connector quality"/>
+</g>
+<rect x="1430" y="1290" width="430" height="46" rx="16" fill="#FFFFFF" stroke="#12314F" stroke-width="1.8"/>
+<text x="1645.0" y="1321" font-size="23" font-weight="700" fill="#12314F" text-anchor="middle" >Orchestrated delivery plan</text>
+<rect x="3630" y="1290" width="420" height="46" rx="16" fill="#FFFFFF" stroke="#12314F" stroke-width="1.8"/>
+<text x="3840.0" y="1321" font-size="23" font-weight="700" fill="#12314F" text-anchor="middle" >Routed specialist skills</text>
+<rect x="3370" y="2042" width="350" height="46" rx="16" fill="#FFFFFF" stroke="#147D83" stroke-width="1.8"/>
+<text x="3545.0" y="2073" font-size="23" font-weight="700" fill="#147D83" text-anchor="middle" >Validated experience</text>
+<rect x="4898" y="2042" width="380" height="46" rx="16" fill="#FFFFFF" stroke="#147D83" stroke-width="1.8"/>
+<text x="5088.0" y="2073" font-size="23" font-weight="700" fill="#147D83" text-anchor="middle" >Implementation checks</text>
+<rect x="2755" y="2535" width="276" height="46" rx="16" fill="#FFFFFF" stroke="#147D83" stroke-width="1.8"/>
+<text x="2893.0" y="2566" font-size="22" font-weight="700" fill="#147D83" text-anchor="middle" >Evidence pack</text>
+<circle cx="996" cy="1000" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="1903" cy="760" r="9" fill="#FFFFFF" stroke="#6E4FA1" stroke-width="5"/>
+<circle cx="2810" cy="925" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="2810" cy="1090" r="9" fill="#FFFFFF" stroke="#0F766E" stroke-width="5"/>
+<circle cx="1903" cy="1270" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="4080" cy="1270" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="996" cy="1615" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="4310" cy="1700" r="9" fill="#FFFFFF" stroke="#12314F" stroke-width="5"/>
+<circle cx="3330" cy="2020" r="9" fill="#FFFFFF" stroke="#147D83" stroke-width="5"/>
+<circle cx="4875" cy="2020" r="9" fill="#FFFFFF" stroke="#147D83" stroke-width="5"/>
+<circle cx="2728" cy="2530" r="9" fill="#FFFFFF" stroke="#147D83" stroke-width="5"/>
+<rect x="96" y="300" width="820" height="740" rx="28" fill="#FFFFFF" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="96" y="300" width="820" height="72" rx="24" fill="#12314F" stroke="none" stroke-width="0"/>
+<circle cx="132" cy="336" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="132" y="346" font-size="30" font-weight="800" fill="#12314F" text-anchor="middle" >1</text>
+<text x="174" y="347" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Inputs and Context</text>
+<rect x="132" y="400" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="411" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-doc" x="153" y="420" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="447" font-size="30" font-weight="600" fill="#10243B" text-anchor="start" >User brief</text>
+<rect x="132" y="484" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="495" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-target" x="153" y="504" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="531" font-size="30" font-weight="600" fill="#10243B" text-anchor="start" >Business goals</text>
+<rect x="132" y="568" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="579" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-lock" x="153" y="588" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="615" font-size="30" font-weight="600" fill="#10243B" text-anchor="start" >Product constraints</text>
+<rect x="132" y="652" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="663" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-code" x="153" y="672" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="682" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="218" dy="0">Existing project</tspan><tspan x="218" dy="27">or codebase</tspan></text>
+<rect x="132" y="736" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="747" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-palette" x="153" y="756" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="783" font-size="30" font-weight="600" fill="#10243B" text-anchor="start" >Brand references</text>
+<rect x="132" y="820" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="831" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-question" x="153" y="840" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="867" font-size="30" font-weight="600" fill="#10243B" text-anchor="start" >Research questions</text>
+<rect x="132" y="904" width="748" height="74" rx="15" fill="#FBFCFD" stroke="#D8E2EB" stroke-width="2"/>
+<rect x="144" y="915" width="52" height="52" rx="14" fill="#F4F7FA" stroke="none" stroke-width="0"/>
+<use href="#i-access" x="153" y="924" width="34" height="34" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="934" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="218" dy="0">Accessibility and</tspan><tspan x="218" dy="27">platform requirements</tspan></text>
+<text x="506" y="1014" font-size="26" font-weight="600" fill="#526273" text-anchor="middle" font-style="italic">Context enters as evidence, not assumptions.</text>
+<rect x="996" y="300" width="1814" height="400" rx="28" fill="#F3EFF9" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="996" y="300" width="1814" height="72" rx="24" fill="#6E4FA1" stroke="none" stroke-width="0"/>
+<circle cx="1032" cy="336" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="1032" y="346" font-size="30" font-weight="800" fill="#6E4FA1" text-anchor="middle" >2</text>
+<text x="1074" y="347" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Core Governance Layer</text>
+<rect x="1036" y="398" width="414" height="270" rx="22" fill="#FFFFFF" stroke="#CDBEE0" stroke-width="2.5"/>
+<rect x="1187" y="420" width="112" height="90" rx="22" fill="#F3EFF9" stroke="none" stroke-width="0"/>
+<use href="#i-gear" x="1214" y="436" width="58" height="58" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="1243" y="548" font-size="33" font-weight="700" fill="#10243B" text-anchor="middle" >AGENTS.md</text>
+<text x="1243" y="590" font-size="27" font-weight="500" fill="#526273" text-anchor="middle" ><tspan x="1243" dy="0">Defines how the agent</tspan><tspan x="1243" dy="31">uses DESIGN.md.</tspan></text>
+<rect x="1476" y="398" width="414" height="270" rx="22" fill="#FFFFFF" stroke="#CDBEE0" stroke-width="2.5"/>
+<rect x="1627" y="420" width="112" height="90" rx="22" fill="#F3EFF9" stroke="none" stroke-width="0"/>
+<use href="#i-pen" x="1654" y="436" width="58" height="58" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="1683" y="548" font-size="33" font-weight="700" fill="#10243B" text-anchor="middle" >DESIGN.md</text>
+<text x="1683" y="590" font-size="27" font-weight="500" fill="#526273" text-anchor="middle" ><tspan x="1683" dy="0">Operating system for</tspan><tspan x="1683" dy="31">UI/UX decisions.</tspan></text>
+<rect x="1916" y="398" width="414" height="270" rx="22" fill="#FFFFFF" stroke="#CDBEE0" stroke-width="2.5"/>
+<rect x="2067" y="420" width="112" height="90" rx="22" fill="#F3EFF9" stroke="none" stroke-width="0"/>
+<use href="#i-brain" x="2094" y="436" width="58" height="58" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="2123" y="548" font-size="33" font-weight="700" fill="#10243B" text-anchor="middle" >SOUL.md</text>
+<text x="2123" y="590" font-size="27" font-weight="500" fill="#526273" text-anchor="middle" ><tspan x="2123" dy="0">Product-design mindset,</tspan><tspan x="2123" dy="31">standards, and voice.</tspan></text>
+<rect x="2356" y="398" width="414" height="270" rx="22" fill="#FFFFFF" stroke="#CDBEE0" stroke-width="2.5"/>
+<rect x="2507" y="420" width="112" height="90" rx="22" fill="#F3EFF9" stroke="none" stroke-width="0"/>
+<use href="#i-flow" x="2534" y="436" width="58" height="58" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="2563" y="548" font-size="33" font-weight="700" fill="#10243B" text-anchor="middle" >SKILLS.md</text>
+<text x="2563" y="590" font-size="27" font-weight="500" fill="#526273" text-anchor="middle" ><tspan x="2563" dy="0">Capability map and</tspan><tspan x="2563" dy="31">routing rules.</tspan></text>
+<g id="orchestrator-section">
+<rect x="996" y="760" width="1814" height="510" rx="28" fill="url(#orchestrator-grad)" stroke="#315C7E" stroke-width="3" filter="url(#soft-shadow)"/>
+<circle cx="1072" cy="844" r="48" fill="#174A73" stroke="#6FD0F1" stroke-width="3"/>
+<use href="#i-brain" x="1039" y="811" width="66" height="66" color="#86E7FF" aria-hidden="true" focusable="false"/>
+<text x="1148" y="830" font-size="47" font-weight="800" fill="#FFFFFF" text-anchor="start" >AI AGENT ORCHESTRATOR</text>
+<text x="1148" y="873" font-size="27" font-weight="500" fill="#C9E5F4" text-anchor="start" >Interprets context, enforces constraints, routes expertise, and coordinates delivery.</text>
+<text x="2766" y="908" font-size="22" font-weight="700" fill="#8BE7FF" text-anchor="end" >Capability request</text>
+<text x="2766" y="1178" font-size="22" font-weight="700" fill="#8CE5C8" text-anchor="end" >Selected or acquired skill</text>
+<rect x="1040" y="930" width="392" height="222" rx="22" fill="#123B61" stroke="#3A6687" stroke-width="2"/>
+<circle cx="1084" cy="972" r="22" fill="#7EDBF6" stroke="none" stroke-width="0"/>
+<text x="1084" y="981" font-size="24" font-weight="800" fill="#082846" text-anchor="middle" >1</text>
+<use href="#i-doc" x="1122" y="949" width="48" height="48" color="#8BE7FF" aria-hidden="true" focusable="false"/>
+<text x="1064" y="1032" font-size="29" font-weight="700" fill="#FFFFFF" text-anchor="start" >Understand context</text>
+<text x="1064" y="1070" font-size="26" font-weight="500" fill="#C8DFED" text-anchor="start" ><tspan x="1064" dy="0">Brief, evidence,</tspan><tspan x="1064" dy="29">constraints</tspan></text>
+<rect x="1460" y="930" width="392" height="222" rx="22" fill="#123B61" stroke="#3A6687" stroke-width="2"/>
+<circle cx="1504" cy="972" r="22" fill="#7EDBF6" stroke="none" stroke-width="0"/>
+<text x="1504" y="981" font-size="24" font-weight="800" fill="#082846" text-anchor="middle" >2</text>
+<use href="#i-shield" x="1542" y="949" width="48" height="48" color="#8BE7FF" aria-hidden="true" focusable="false"/>
+<text x="1484" y="1032" font-size="29" font-weight="700" fill="#FFFFFF" text-anchor="start" >Apply governance</text>
+<text x="1484" y="1070" font-size="26" font-weight="500" fill="#C8DFED" text-anchor="start" ><tspan x="1484" dy="0">Rules, standards,</tspan><tspan x="1484" dy="29">decision boundaries</tspan></text>
+<rect x="1880" y="930" width="392" height="222" rx="22" fill="#123B61" stroke="#3A6687" stroke-width="2"/>
+<circle cx="1924" cy="972" r="22" fill="#7EDBF6" stroke="none" stroke-width="0"/>
+<text x="1924" y="981" font-size="24" font-weight="800" fill="#082846" text-anchor="middle" >3</text>
+<use href="#i-flow" x="1962" y="949" width="48" height="48" color="#8BE7FF" aria-hidden="true" focusable="false"/>
+<text x="1904" y="1032" font-size="29" font-weight="700" fill="#FFFFFF" text-anchor="start" >Route capabilities</text>
+<text x="1904" y="1070" font-size="26" font-weight="500" fill="#C8DFED" text-anchor="start" ><tspan x="1904" dy="0">Best-fit skills,</tspan><tspan x="1904" dy="29">local-first lookup</tspan></text>
+<rect x="2300" y="930" width="392" height="222" rx="22" fill="#123B61" stroke="#3A6687" stroke-width="2"/>
+<circle cx="2344" cy="972" r="22" fill="#7EDBF6" stroke="none" stroke-width="0"/>
+<text x="2344" y="981" font-size="24" font-weight="800" fill="#082846" text-anchor="middle" >4</text>
+<use href="#i-network" x="2382" y="949" width="48" height="48" color="#8BE7FF" aria-hidden="true" focusable="false"/>
+<text x="2324" y="1032" font-size="29" font-weight="700" fill="#FFFFFF" text-anchor="start" >Coordinate delivery</text>
+<text x="2324" y="1070" font-size="26" font-weight="500" fill="#C8DFED" text-anchor="start" ><tspan x="2324" dy="0">Lifecycle, code,</tspan><tspan x="2324" dy="29">quality, evidence</tspan></text>
+<line x1="1040" y1="1187" x2="2766" y2="1187" stroke="#3B6686" stroke-width="2"/>
+<text x="1040" y="1227" font-size="26" font-weight="700" fill="#8BE7FF" text-anchor="start" >Working contract:</text>
+<text x="1270" y="1227" font-size="26" font-weight="500" fill="#D7EAF4" text-anchor="start" >make assumptions explicit, keep decisions traceable, and escalate uncertainty.</text>
+</g>
+<rect x="2890" y="300" width="2470" height="970" rx="28" fill="#EAF6F2" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="2890" y="300" width="2470" height="72" rx="24" fill="#0F766E" stroke="none" stroke-width="0"/>
+<circle cx="2926" cy="336" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="2926" y="346" font-size="30" font-weight="800" fill="#0F766E" text-anchor="middle" >3</text>
+<text x="2968" y="347" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Skill Discovery, Routing, and Acquisition</text>
+<rect x="2930" y="400" width="570" height="820" rx="24" fill="#FFFFFF" stroke="#B9DAD0" stroke-width="2.5"/>
+<rect x="2930" y="400" width="570" height="72" rx="24" fill="#0F766E" stroke="none" stroke-width="0"/>
+<use href="#i-target" x="2960" y="415" width="42" height="42" color="#FFFFFF" aria-hidden="true" focusable="false"/>
+<text x="3020" y="449" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Skill inventory</text>
+<rect x="2960" y="500" width="230" height="88" rx="16" fill="#EAF6F2" stroke="#CDE5DE" stroke-width="1.8"/>
+<text x="2978" y="537" font-size="34" font-weight="800" fill="#0F766E" text-anchor="start" >67</text>
+<text x="2978" y="568" font-size="24" font-weight="600" fill="#10243B" text-anchor="start" >specialist skills</text>
+<rect x="3210" y="500" width="230" height="88" rx="16" fill="#EAF6F2" stroke="#CDE5DE" stroke-width="1.8"/>
+<text x="3228" y="537" font-size="34" font-weight="800" fill="#0F766E" text-anchor="start" >2</text>
+<text x="3228" y="568" font-size="24" font-weight="600" fill="#10243B" text-anchor="start" >licensed references</text>
+<rect x="2960" y="608" width="230" height="88" rx="16" fill="#EAF6F2" stroke="#CDE5DE" stroke-width="1.8"/>
+<text x="2978" y="645" font-size="34" font-weight="800" fill="#0F766E" text-anchor="start" >192</text>
+<text x="2978" y="676" font-size="24" font-weight="600" fill="#10243B" text-anchor="start" >registry skills</text>
+<rect x="3210" y="608" width="230" height="88" rx="16" fill="#EAF6F2" stroke="#CDE5DE" stroke-width="1.8"/>
+<text x="3228" y="645" font-size="34" font-weight="800" fill="#0F766E" text-anchor="start" >110</text>
+<text x="3228" y="676" font-size="24" font-weight="600" fill="#10243B" text-anchor="start" >UI catalog items</text>
+<text x="2960" y="736" font-size="24" font-weight="800" fill="#0F766E" text-anchor="start" letter-spacing="0.8">ROUTING PRINCIPLES</text>
+<path d="M2964 791 l10 10 l22 -27" fill="none" stroke="#0F766E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="3010" y="803" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Safe skill discovery</text>
+<path d="M2964 863 l10 10 l22 -27" fill="none" stroke="#0F766E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="3010" y="875" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Markdown acquisition</text>
+<path d="M2964 935 l10 10 l22 -27" fill="none" stroke="#0F766E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="3010" y="947" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >Local skill execution</text>
+<path d="M2964 1007 l10 10 l22 -27" fill="none" stroke="#0F766E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="3010" y="1019" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" >External lookup fallback</text>
+<rect x="2960" y="1088" width="510" height="92" rx="18" fill="#EAF6F2" stroke="#CDE5DE" stroke-width="1.8"/>
+<text x="3215" y="1124" font-size="27" font-weight="700" fill="#0F766E" text-anchor="middle" >Local-first by default</text>
+<text x="3215" y="1155" font-size="24" font-weight="500" fill="#526273" text-anchor="middle" >Acquire only when no safe match exists.</text>
+<text x="3560" y="434" font-size="25" font-weight="800" fill="#0F766E" text-anchor="start" letter-spacing="0.8">CAPABILITY MATRIX</text>
+<text x="3560" y="466" font-size="25" font-weight="500" fill="#526273" text-anchor="start" >Matched to task, stage, stack, and risk.</text>
+<rect x="3560" y="500" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="3578" y="518" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-magnify" x="3594" y="534" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="3672" y="564" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >UX Research</text>
+<rect x="4120" y="500" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="4138" y="518" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-click" x="4154" y="534" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4232" y="564" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >Interaction Design</text>
+<rect x="3560" y="632" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="3578" y="650" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-chess" x="3594" y="666" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="3672" y="696" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >Product Strategy</text>
+<rect x="4120" y="632" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="4138" y="650" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-access" x="4154" y="666" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4232" y="696" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >Accessibility</text>
+<rect x="3560" y="764" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="3578" y="782" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-ia" x="3594" y="798" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="3672" y="806" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="3672" dy="0">Information</tspan><tspan x="3672" dy="27">Architecture</tspan></text>
+<rect x="4120" y="764" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="4138" y="782" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-writing" x="4154" y="798" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4232" y="806" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4232" dy="0">Content and</tspan><tspan x="4232" dy="27">UX Writing</tspan></text>
+<rect x="3560" y="896" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="3578" y="914" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-userflow" x="3594" y="930" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="3672" y="960" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >User Flows</text>
+<rect x="4120" y="896" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="4138" y="914" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-cube" x="4154" y="930" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4232" y="960" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >Prototyping</text>
+<rect x="3560" y="1028" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="3578" y="1046" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-grid" x="3594" y="1062" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="3672" y="1092" font-size="28" font-weight="600" fill="#10243B" text-anchor="start" >Design Systems</text>
+<rect x="4120" y="1028" width="530" height="108" rx="18" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<rect x="4138" y="1046" width="72" height="72" rx="18" fill="#EAF6F2" stroke="none" stroke-width="0"/>
+<use href="#i-code" x="4154" y="1062" width="40" height="40" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4232" y="1070" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4232" dy="0">Frontend</tspan><tspan x="4232" dy="27">Implementation</tspan></text>
+<rect x="4680" y="400" width="640" height="820" rx="24" fill="#E4F3EE" stroke="#B9DAD0" stroke-width="2.5"/>
+<text x="5000" y="446" font-size="31" font-weight="700" fill="#0F766E" text-anchor="middle" >Acquire only when needed</text>
+<text x="5000" y="478" font-size="24" font-weight="500" fill="#526273" text-anchor="middle" font-style="italic">No safe match in the local registry</text>
+<rect x="4740" y="530" width="520" height="132" rx="20" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<circle cx="4790" cy="596" r="24" fill="#0F766E" stroke="none" stroke-width="0"/>
+<text x="4790" y="605" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle" >1</text>
+<text x="4834" y="582" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Discover</text>
+<text x="4834" y="618" font-size="25" font-weight="500" fill="#526273" text-anchor="start" >trusted resources</text>
+<path d="M5000 662 V716" fill="none" stroke="#0F766E" stroke-width="4" marker-end="url(#arrow-green)" stroke-linecap="round"/>
+<rect x="4740" y="720" width="520" height="132" rx="20" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<circle cx="4790" cy="786" r="24" fill="#0F766E" stroke="none" stroke-width="0"/>
+<text x="4790" y="795" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle" >2</text>
+<text x="4834" y="772" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Validate</text>
+<text x="4834" y="808" font-size="25" font-weight="500" fill="#526273" text-anchor="start" >content, license, safety</text>
+<path d="M5000 852 V906" fill="none" stroke="#0F766E" stroke-width="4" marker-end="url(#arrow-green)" stroke-linecap="round"/>
+<rect x="4740" y="910" width="520" height="132" rx="20" fill="#FFFFFF" stroke="#C2DDD5" stroke-width="2"/>
+<circle cx="4790" cy="976" r="24" fill="#0F766E" stroke="none" stroke-width="0"/>
+<text x="4790" y="985" font-size="25" font-weight="800" fill="#FFFFFF" text-anchor="middle" >3</text>
+<text x="4834" y="962" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Register</text>
+<text x="4834" y="998" font-size="25" font-weight="500" fill="#526273" text-anchor="start" >markdown skill locally</text>
+<path d="M5000 1042 V1076" fill="none" stroke="#0F766E" stroke-width="4" marker-end="url(#arrow-green)" stroke-dasharray="13 11" stroke-linecap="round"/>
+<rect x="4740" y="1082" width="520" height="100" rx="18" fill="#EAF6F2" stroke="#C2DDD5" stroke-width="2"/>
+<use href="#i-flow" x="4764" y="1106" width="48" height="48" color="#0F766E" aria-hidden="true" focusable="false"/>
+<text x="4832" y="1121" font-size="26" font-weight="700" fill="#0F766E" text-anchor="start" >Available locally next time</text>
+<text x="4832" y="1156" font-size="24" font-weight="500" fill="#526273" text-anchor="start" >Inventory updated with provenance.</text>
+<rect x="96" y="1120" width="820" height="900" rx="28" fill="#FFFFFF" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="96" y="1120" width="820" height="72" rx="24" fill="#12314F" stroke="none" stroke-width="0"/>
+<circle cx="132" cy="1156" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="132" y="1166" font-size="30" font-weight="800" fill="#12314F" text-anchor="middle" >4</text>
+<text x="174" y="1167" font-size="31" font-weight="700" fill="#FFFFFF" text-anchor="start" >Reusable Playbooks and Templates</text>
+<rect x="136" y="1215" width="350" height="154" rx="20" fill="#F4F7FA" stroke="#D7E2EB" stroke-width="2"/>
+<rect x="156" y="1244" width="76" height="76" rx="18" fill="#FFFFFF" stroke="#D7E2EB" stroke-width="1.5"/>
+<use href="#i-book" x="171" y="1259" width="46" height="46" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="256" y="1263" font-size="52" font-weight="800" fill="#12314F" text-anchor="start" >9</text>
+<text x="256" y="1300" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="256" dy="0">complete</tspan><tspan x="256" dy="26">playbooks</tspan></text>
+<rect x="526" y="1215" width="350" height="154" rx="20" fill="#F4F7FA" stroke="#D7E2EB" stroke-width="2"/>
+<rect x="546" y="1244" width="76" height="76" rx="18" fill="#FFFFFF" stroke="#D7E2EB" stroke-width="1.5"/>
+<use href="#i-doc" x="561" y="1259" width="46" height="46" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="646" y="1263" font-size="52" font-weight="800" fill="#12314F" text-anchor="start" >17</text>
+<text x="646" y="1300" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="646" dy="0">working</tspan><tspan x="646" dy="26">templates</tspan></text>
+<text x="506" y="1410" font-size="26" font-weight="500" fill="#526273" text-anchor="middle" >Versioned assets reduce rework and preserve decisions.</text>
+<rect x="136" y="1460" width="350" height="210" rx="18" fill="#FBFCFD" stroke="#D7E2EB" stroke-width="2"/>
+<text x="154" y="1498" font-size="22" font-weight="800" fill="#12314F" text-anchor="start" letter-spacing="0.35">DISCOVER AND RESEARCH</text>
+<line x1="154" y1="1514" x2="468" y2="1514" stroke="#DCE4EC" stroke-width="1.5"/>
+<circle cx="164" cy="1544" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="184" y="1551" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Design brief</text>
+<circle cx="164" cy="1602" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="184" y="1609" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Research synthesis</text>
+<rect x="526" y="1460" width="350" height="210" rx="18" fill="#FBFCFD" stroke="#D7E2EB" stroke-width="2"/>
+<text x="544" y="1498" font-size="22" font-weight="800" fill="#12314F" text-anchor="start" letter-spacing="0.35">DEFINE AND STRUCTURE</text>
+<line x1="544" y1="1514" x2="858" y2="1514" stroke="#DCE4EC" stroke-width="1.5"/>
+<circle cx="554" cy="1544" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="574" y="1551" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >IA and user-flow specs</text>
+<circle cx="554" cy="1602" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="574" y="1609" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Decision records</text>
+<rect x="136" y="1698" width="350" height="210" rx="18" fill="#FBFCFD" stroke="#D7E2EB" stroke-width="2"/>
+<text x="154" y="1736" font-size="22" font-weight="800" fill="#12314F" text-anchor="start" letter-spacing="0.35">DESIGN AND BUILD</text>
+<line x1="154" y1="1752" x2="468" y2="1752" stroke="#DCE4EC" stroke-width="1.5"/>
+<circle cx="164" cy="1782" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="184" y="1789" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Component specification</text>
+<circle cx="164" cy="1840" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="184" y="1847" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Handoff package</text>
+<rect x="526" y="1698" width="350" height="210" rx="18" fill="#FBFCFD" stroke="#D7E2EB" stroke-width="2"/>
+<text x="544" y="1736" font-size="22" font-weight="800" fill="#12314F" text-anchor="start" letter-spacing="0.35">VALIDATE AND RELEASE</text>
+<line x1="544" y1="1752" x2="858" y2="1752" stroke="#DCE4EC" stroke-width="1.5"/>
+<circle cx="554" cy="1782" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="574" y="1789" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Review scorecard</text>
+<circle cx="554" cy="1840" r="6" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="574" y="1847" font-size="26" font-weight="600" fill="#10243B" text-anchor="start" >Testing plan</text>
+<text x="506" y="1972" font-size="25" font-weight="700" fill="#12314F" text-anchor="middle" font-style="italic">Curated, versioned, and ready to reuse.</text>
+<rect x="996" y="1370" width="3314" height="650" rx="28" fill="#FFF2E7" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="996" y="1370" width="3314" height="72" rx="24" fill="#A85A25" stroke="none" stroke-width="0"/>
+<circle cx="1032" cy="1406" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="1032" y="1416" font-size="30" font-weight="800" fill="#A85A25" text-anchor="middle" >5</text>
+<text x="1074" y="1417" font-size="33" font-weight="700" fill="#FFFFFF" text-anchor="start" >End-to-End Product Design and Delivery Lifecycle</text>
+<path d="M1656 1516 H1684" fill="none" stroke="#A85A25" stroke-width="3.5" marker-end="url(#arrow-orange-small)" stroke-linecap="round"/>
+<path d="M2308 1516 H2336" fill="none" stroke="#A85A25" stroke-width="3.5" marker-end="url(#arrow-orange-small)" stroke-linecap="round"/>
+<path d="M2960 1516 H2988" fill="none" stroke="#A85A25" stroke-width="3.5" marker-end="url(#arrow-orange-small)" stroke-linecap="round"/>
+<path d="M3612 1516 H3640" fill="none" stroke="#A85A25" stroke-width="3.5" marker-end="url(#arrow-orange-small)" stroke-linecap="round"/>
+<rect x="1036" y="1470" width="620" height="480" rx="22" fill="#FFFFFF" stroke="#EBC8AA" stroke-width="2.2"/>
+<rect x="1036" y="1470" width="620" height="70" rx="22" fill="#FFF8F1" stroke="none" stroke-width="0"/>
+<circle cx="1074" cy="1505" r="22" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1074" y="1514" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle" >1</text>
+<text x="1112" y="1515" font-size="27" font-weight="700" fill="#A85A25" text-anchor="start" >Discover + Research</text>
+<rect x="1058" y="1565" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="1074" y="1599" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-binoculars" x="1089" y="1614" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="1148" cy="1593" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1148" y="1601" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >1</text>
+<text x="1170" y="1619" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Discover</text>
+<text x="1170" y="1655" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="1170" dy="0">Stakeholders, problem,</tspan><tspan x="1170" dy="27">goals</tspan></text>
+<rect x="1058" y="1737" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="1074" y="1771" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-magnify" x="1089" y="1786" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="1148" cy="1765" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1148" y="1773" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >2</text>
+<text x="1170" y="1791" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Research</text>
+<text x="1170" y="1827" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="1170" dy="0">Evidence, interviews,</tspan><tspan x="1170" dy="27">heuristics</tspan></text>
+<rect x="1688" y="1470" width="620" height="480" rx="22" fill="#FFFFFF" stroke="#EBC8AA" stroke-width="2.2"/>
+<rect x="1688" y="1470" width="620" height="70" rx="22" fill="#FFF8F1" stroke="none" stroke-width="0"/>
+<circle cx="1726" cy="1505" r="22" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1726" y="1514" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle" >2</text>
+<text x="1764" y="1515" font-size="27" font-weight="700" fill="#A85A25" text-anchor="start" >Define + Structure</text>
+<rect x="1710" y="1565" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="1726" y="1599" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-target" x="1741" y="1614" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="1800" cy="1593" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1800" y="1601" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >3</text>
+<text x="1822" y="1619" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Define</text>
+<text x="1822" y="1655" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="1822" dy="0">Brief, scope,</tspan><tspan x="1822" dy="27">success metrics</tspan></text>
+<rect x="1710" y="1737" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="1726" y="1771" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-ia" x="1741" y="1786" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="1800" cy="1765" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="1800" y="1773" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >4</text>
+<text x="1822" y="1791" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Structure</text>
+<text x="1822" y="1827" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="1822" dy="0">IA, flows,</tspan><tspan x="1822" dy="27">journeys</tspan></text>
+<rect x="2340" y="1470" width="620" height="480" rx="22" fill="#FFFFFF" stroke="#EBC8AA" stroke-width="2.2"/>
+<rect x="2340" y="1470" width="620" height="70" rx="22" fill="#FFF8F1" stroke="none" stroke-width="0"/>
+<circle cx="2378" cy="1505" r="22" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="2378" y="1514" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle" >3</text>
+<text x="2416" y="1515" font-size="27" font-weight="700" fill="#A85A25" text-anchor="start" >Design + Prototype</text>
+<rect x="2362" y="1565" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="2378" y="1599" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-brush" x="2393" y="1614" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="2452" cy="1593" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="2452" y="1601" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >5</text>
+<text x="2474" y="1619" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Design</text>
+<text x="2474" y="1655" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="2474" dy="0">Tokens, components,</tspan><tspan x="2474" dy="27">states</tspan></text>
+<rect x="2362" y="1737" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="2378" y="1771" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-cube" x="2393" y="1786" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="2452" cy="1765" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="2452" y="1773" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >6</text>
+<text x="2474" y="1791" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Prototype</text>
+<text x="2474" y="1827" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="2474" dy="0">Concepts, flows,</tspan><tspan x="2474" dy="27">testable artifacts</tspan></text>
+<rect x="2992" y="1470" width="620" height="480" rx="22" fill="#FFFFFF" stroke="#EBC8AA" stroke-width="2.2"/>
+<rect x="2992" y="1470" width="620" height="70" rx="22" fill="#FFF8F1" stroke="none" stroke-width="0"/>
+<circle cx="3030" cy="1505" r="22" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3030" y="1514" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle" >4</text>
+<text x="3068" y="1515" font-size="27" font-weight="700" fill="#A85A25" text-anchor="start" >Implement + Validate</text>
+<rect x="3014" y="1565" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="3030" y="1599" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-code" x="3045" y="1614" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="3104" cy="1593" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3104" y="1601" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >7</text>
+<text x="3126" y="1619" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Implement</text>
+<text x="3126" y="1655" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="3126" dy="0">Faithful UI,</tspan><tspan x="3126" dy="27">reusable code</tspan></text>
+<rect x="3014" y="1737" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="3030" y="1771" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-shield" x="3045" y="1786" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="3104" cy="1765" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3104" y="1773" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >8</text>
+<text x="3126" y="1791" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Validate</text>
+<text x="3126" y="1827" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="3126" dy="0">Accessibility, QA,</tspan><tspan x="3126" dy="27">heuristics</tspan></text>
+<rect x="3644" y="1470" width="620" height="480" rx="22" fill="#FFFFFF" stroke="#EBC8AA" stroke-width="2.2"/>
+<rect x="3644" y="1470" width="620" height="70" rx="22" fill="#FFF8F1" stroke="none" stroke-width="0"/>
+<circle cx="3682" cy="1505" r="22" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3682" y="1514" font-size="24" font-weight="800" fill="#FFFFFF" text-anchor="middle" >5</text>
+<text x="3720" y="1515" font-size="27" font-weight="700" fill="#A85A25" text-anchor="start" >Release + Learn</text>
+<rect x="3666" y="1565" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="3682" y="1599" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-rocket" x="3697" y="1614" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="3756" cy="1593" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3756" y="1601" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >9</text>
+<text x="3778" y="1619" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Release</text>
+<text x="3778" y="1655" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="3778" dy="0">Readiness, handoff,</tspan><tspan x="3778" dy="27">approvals</tspan></text>
+<rect x="3666" y="1737" width="576" height="146" rx="18" fill="#FFFCFA" stroke="#F0D5C0" stroke-width="1.8"/>
+<rect x="3682" y="1771" width="72" height="72" rx="18" fill="#FFF2E7" stroke="none" stroke-width="0"/>
+<use href="#i-bars" x="3697" y="1786" width="42" height="42" color="#12314F" aria-hidden="true" focusable="false"/>
+<circle cx="3756" cy="1765" r="18" fill="#A85A25" stroke="none" stroke-width="0"/>
+<text x="3756" y="1773" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" >10</text>
+<text x="3778" y="1791" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Learn</text>
+<text x="3778" y="1827" font-size="26" font-weight="500" fill="#526273" text-anchor="start" ><tspan x="3778" dy="0">Feedback, analytics,</tspan><tspan x="3778" dy="27">iteration</tspan></text>
+<rect x="1036" y="1958" width="3230" height="50" rx="18" fill="#FFF9F3" stroke="#EACBB5" stroke-width="1.6"/>
+<path d="M3970 1878 V1983 H3200" fill="none" stroke="#A85A25" stroke-width="4.8" class="connector feedback" stroke-dasharray="16 12"/>
+<path d="M2240 1983 H918" fill="none" stroke="#A85A25" stroke-width="4.8" class="connector feedback-arrow" marker-end="url(#arrow-orange)" stroke-dasharray="16 12"/>
+<path d="M1270 1983 V1952" fill="none" stroke="#A85A25" stroke-width="4.8" class="connector feedback-arrow" marker-end="url(#arrow-orange)" stroke-dasharray="16 12"/>
+<rect x="2240" y="1960" width="960" height="46" rx="16" fill="#FFFFFF" stroke="#A85A25" stroke-width="1.8"/>
+<text x="2720.0" y="1991" font-size="22" font-weight="700" fill="#A85A25" text-anchor="middle" >Learnings refresh playbooks and earlier stages</text>
+<rect x="4390" y="1370" width="970" height="650" rx="28" fill="#EEF3F9" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="4390" y="1370" width="970" height="72" rx="24" fill="#3D638F" stroke="none" stroke-width="0"/>
+<circle cx="4426" cy="1406" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="4426" y="1416" font-size="30" font-weight="800" fill="#3D638F" text-anchor="middle" >6</text>
+<text x="4468" y="1417" font-size="31" font-weight="700" fill="#FFFFFF" text-anchor="start" >Design-to-Code Execution</text>
+<text x="4875" y="1510" font-size="27" font-weight="700" fill="#3D638F" text-anchor="middle" >Design intent → production-ready UI</text>
+<line x1="4430" y1="1698" x2="4850" y2="1698" stroke="#D8E1EB" stroke-width="1.5"/>
+<circle cx="4454" cy="1605" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4444 1603 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4492" y="1601" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4492" dy="0">Translate decisions</tspan><tspan x="4492" dy="29">into implementation</tspan></text>
+<line x1="4900" y1="1698" x2="5320" y2="1698" stroke="#D8E1EB" stroke-width="1.5"/>
+<circle cx="4924" cy="1605" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4914 1603 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4962" y="1601" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4962" dy="0">Match spacing, type,</tspan><tspan x="4962" dy="29">color, and behavior</tspan></text>
+<line x1="4430" y1="1848" x2="4850" y2="1848" stroke="#D8E1EB" stroke-width="1.5"/>
+<circle cx="4454" cy="1755" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4444 1753 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4492" y="1751" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4492" dy="0">Work across any</tspan><tspan x="4492" dy="29">technology stack</tspan></text>
+<line x1="4900" y1="1848" x2="5320" y2="1848" stroke="#D8E1EB" stroke-width="1.5"/>
+<circle cx="4924" cy="1755" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4914 1753 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4962" y="1751" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4962" dy="0">Build reusable</tspan><tspan x="4962" dy="29">components and tokens</tspan></text>
+<circle cx="4454" cy="1905" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4444 1903 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4492" y="1901" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4492" dy="0">Preserve accessibility</tspan><tspan x="4492" dy="29">and responsive behavior</tspan></text>
+<circle cx="4924" cy="1905" r="22" fill="#3D638F" stroke="none" stroke-width="0"/>
+<path d="M4914 1903 l8 9 l15 -18" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="4962" y="1901" font-size="27" font-weight="600" fill="#10243B" text-anchor="start" ><tspan x="4962" dy="0">Keep code faithful</tspan><tspan x="4962" dy="29">to the designed experience</tspan></text>
+<line x1="4875" y1="1552" x2="4875" y2="1988" stroke="#D6E0EA" stroke-width="2"/>
+<rect x="96" y="2110" width="5264" height="420" rx="28" fill="#EAF7F8" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="96" y="2110" width="5264" height="72" rx="24" fill="#147D83" stroke="none" stroke-width="0"/>
+<circle cx="132" cy="2146" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="132" y="2156" font-size="30" font-weight="800" fill="#147D83" text-anchor="middle" >7</text>
+<text x="174" y="2157" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Quality Gates and Verification</text>
+<rect x="136" y="2200" width="1282" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="158" y="2227" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-access" x="174" y="2243" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="258" y="2250" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >WCAG 2.2</text>
+<text x="258" y="2288" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Accessibility requirements</text>
+<rect x="1436" y="2200" width="1282" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="1458" y="2227" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-doc" x="1474" y="2243" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="1558" y="2250" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Screenshot QA</text>
+<text x="1558" y="2288" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Deterministic visual checks</text>
+<rect x="2736" y="2200" width="1282" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="2758" y="2227" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-checklist" x="2774" y="2243" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="2858" y="2250" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >UX Review</text>
+<text x="2858" y="2288" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Rubric-based inspection</text>
+<rect x="4036" y="2200" width="1282" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="4058" y="2227" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-grid" x="4074" y="2243" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="4158" y="2250" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >State Coverage</text>
+<text x="4158" y="2288" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Loading, empty, error, success</text>
+<rect x="136" y="2350" width="1716" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="158" y="2377" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-devices" x="174" y="2393" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="258" y="2400" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Responsive</text>
+<text x="258" y="2438" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Mobile, tablet, desktop, large</text>
+<rect x="1870" y="2350" width="1716" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="1892" y="2377" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-chat" x="1908" y="2393" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="1992" y="2400" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >Content Quality</text>
+<text x="1992" y="2438" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Interaction and writing review</text>
+<rect x="3604" y="2350" width="1716" height="130" rx="18" fill="#FFFFFF" stroke="#C4E0E2" stroke-width="2"/>
+<rect x="3626" y="2377" width="76" height="76" rx="18" fill="#EAF7F8" stroke="none" stroke-width="0"/>
+<use href="#i-shield" x="3642" y="2393" width="44" height="44" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="3726" y="2400" font-size="29" font-weight="700" fill="#10243B" text-anchor="start" >System Compliance</text>
+<text x="3726" y="2438" font-size="27" font-weight="500" fill="#526273" text-anchor="start" >Design-system consistency</text>
+<rect x="96" y="2580" width="5264" height="340" rx="28" fill="#F4F7FA" stroke="#D3DDE6" stroke-width="3"/>
+<rect x="96" y="2580" width="5264" height="72" rx="24" fill="#12314F" stroke="none" stroke-width="0"/>
+<circle cx="132" cy="2616" r="26" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<text x="132" y="2626" font-size="30" font-weight="800" fill="#12314F" text-anchor="middle" >8</text>
+<text x="174" y="2627" font-size="34" font-weight="700" fill="#FFFFFF" text-anchor="start" >Provenance, Traceability, and Maintenance</text>
+<rect x="132" y="2672" width="1712" height="218" rx="18" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+<rect x="132" y="2672" width="8" height="218" rx="8" fill="#12314F" stroke="none" stroke-width="0"/>
+<text x="160" y="2712" font-size="29" font-weight="700" fill="#12314F" text-anchor="start" >Sources and Rights</text>
+<use href="#i-folder" x="160" y="2728" width="40" height="40" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="2754" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Source records</text>
+<text x="562" y="2754" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Origins of skills and assets</text>
+<use href="#i-license" x="160" y="2784" width="40" height="40" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="2810" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Licenses</text>
+<text x="562" y="2810" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Usage rights and obligations</text>
+<use href="#i-fingerprint" x="160" y="2840" width="40" height="40" color="#12314F" aria-hidden="true" focusable="false"/>
+<text x="218" y="2866" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Checksums</text>
+<text x="562" y="2866" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Integrity and change detection</text>
+<rect x="1872" y="2672" width="1712" height="218" rx="18" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+<rect x="1872" y="2672" width="8" height="218" rx="8" fill="#6E4FA1" stroke="none" stroke-width="0"/>
+<text x="1900" y="2712" font-size="29" font-weight="700" fill="#6E4FA1" text-anchor="start" >Knowledge and Mapping</text>
+<use href="#i-list" x="1900" y="2728" width="40" height="40" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="1958" y="2754" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Manifest</text>
+<text x="2302" y="2754" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Skills, versions, and metadata</text>
+<use href="#i-brain" x="1900" y="2784" width="40" height="40" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="1958" y="2810" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Research synthesis</text>
+<text x="2302" y="2810" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Evidence and concise summaries</text>
+<use href="#i-network" x="1900" y="2840" width="40" height="40" color="#6E4FA1" aria-hidden="true" focusable="false"/>
+<text x="1958" y="2866" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Prior-skill crosswalk</text>
+<text x="2302" y="2866" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Skills mapped to activities</text>
+<rect x="3612" y="2672" width="1712" height="218" rx="18" fill="#FFFFFF" stroke="#D4DEE8" stroke-width="2"/>
+<rect x="3612" y="2672" width="8" height="218" rx="8" fill="#147D83" stroke="none" stroke-width="0"/>
+<text x="3640" y="2712" font-size="29" font-weight="700" fill="#147D83" text-anchor="start" >Evidence and Confidence</text>
+<use href="#i-report" x="3640" y="2742" width="40" height="40" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="3698" y="2768" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Validation report</text>
+<text x="4042" y="2768" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Results, evidence, and gate outcomes</text>
+<use href="#i-shield" x="3640" y="2826" width="40" height="40" color="#147D83" aria-hidden="true" focusable="false"/>
+<text x="3698" y="2852" font-size="27" font-weight="700" fill="#10243B" text-anchor="start" >Lifecycle confidence</text>
+<text x="4042" y="2852" font-size="26" font-weight="500" fill="#526273" text-anchor="start" >Traceability, reuse, and governance</text>
+<rect x="48" y="2950" width="5360" height="72" rx="18" fill="url(#footer-grad)" stroke="none" stroke-width="0"/>
+<text x="2728" y="2996" font-size="28" font-weight="600" fill="#FFFFFF" text-anchor="middle" >One governed agent, routed expertise, reusable practice, verified delivery, and traceable evidence.</text>
+</svg>
+<details class="text-summary">
+<summary>Text summary of the diagram</summary>
+<h2>How the Professional Product Design Orchestrator Works</h2>
+<p>The orchestrator turns product context into governed, skill-routed, reusable, verified, and traceable delivery.</p>
+<ol>
+<li><strong>Inputs and Context:</strong> Briefs, goals, constraints, codebase context, brand references, research questions, and accessibility requirements enter as evidence.</li>
+<li><strong>Core Governance Layer:</strong> AGENTS.md, DESIGN.md, SOUL.md, and SKILLS.md constrain decisions and route capabilities.</li>
+<li><strong>Skill Discovery, Routing, and Acquisition:</strong> The system matches specialist capabilities locally and creates a validated markdown skill only when no safe match exists.</li>
+<li><strong>Reusable Playbooks and Templates:</strong> Versioned assets support discovery, structure, design, build, validation, and release.</li>
+<li><strong>Product Design and Delivery Lifecycle:</strong> Ten steps progress from Discover through Learn, with evidence produced throughout.</li>
+<li><strong>Design-to-Code Execution:</strong> Design intent becomes reusable, accessible, responsive, and faithful production UI.</li>
+<li><strong>Quality Gates and Verification:</strong> Accessibility, screenshot, UX, state, responsive, content, and system-compliance checks verify the result.</li>
+<li><strong>Provenance, Traceability, and Maintenance:</strong> Sources, rights, manifests, synthesis, crosswalks, reports, and confidence records preserve evidence.</li>
+</ol>
+</details>
+</main>
+</body>
+</html>

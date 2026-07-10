@@ -4,6 +4,26 @@ A repository-level operating system for an AI agent that must **research, design
 
 It is built to prevent two common failures: a huge rulebook that produces ceremonial output, and attractive code that was never proved as a usable, faithful product experience.
 
+## How the Product Design Orchestrator works
+
+The system map shows how product context, governance, skill routing, reusable playbooks, implementation, quality gates, and evidence work together.
+
+<p align="center">
+  <a href="https://amrmohamad.github.io/product-design-orchestrator/">
+    <img
+      src="./docs/assets/product-design-orchestrator.png"
+      alt="Professional Product Design Orchestrator workflow diagram"
+      width="100%"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="https://amrmohamad.github.io/product-design-orchestrator/">View the full-resolution diagram</a></strong>
+  ·
+  <a href="./docs/assets/product-design-orchestrator.svg">Open the SVG</a>
+</p>
+
 ## Package layers
 
 - `AGENTS.md` — boot and operating instructions for a coding/design agent.
